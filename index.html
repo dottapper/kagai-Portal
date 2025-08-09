@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全国花街ポータルサイト - 日本の花街文化を知る</title>
+    <meta name="description" content="全国の花街と芸者文化の情報を集めたポータルサイト。初心者向けガイドから本格的な文化紹介まで、日本の伝統美を深く知ることができます。">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1 class="logo-text">全国花街</h1>
+                    <span class="logo-subtitle">KAGAI PORTAL</span>
+                </div>
+                
+                <button class="hamburger" aria-label="メニューを開く">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a href="pages/news.html" class="nav-link">News & イベント</a>
+                        <div class="dropdown-menu">
+                            <a href="pages/news.html#news-updates" class="dropdown-link">更新情報</a>
+                            <a href="pages/news.html#calendar" class="dropdown-link">イベントカレンダー</a>
+                            <a href="pages/news.html#monthly-events" class="dropdown-link">月間イベント情報</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/press.html" class="nav-link">プレスリリース</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="pages/guide.html" class="nav-link">花街・芸者ガイド</a>
+                        <div class="dropdown-menu">
+                            <a href="pages/guide.html#beginner" class="dropdown-link">初心者向けガイド</a>
+                            <a href="pages/guide.html#manners" class="dropdown-link">基本マナーと注意点</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/culture.html" class="nav-link">花街・芸者文化の紹介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/overseas.html" class="nav-link">海外の方へ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/glossary.html" class="nav-link">花街・芸者の用語集</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-video-container">
+                <video autoplay muted loop playsinline class="hero-video">
+                    <source src="images/main.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h2 class="hero-title">日本の花街文化を知る</h2>
+                <p class="hero-subtitle">全国の花街と芸者文化の美しい世界へようこそ</p>
+                <a href="pages/culture.html" class="hero-cta">文化を探る</a>
+            </div>
+        </section>
+
+        <section class="featured" id="news">
+            <div class="container">
+                <h2 class="section-title">最新情報</h2>
+                <div class="featured-grid">
+                    <article class="featured-item">
+                        <div class="featured-image">
+                            <img src="images/1.jpg" alt="春の特別公演" loading="lazy">
+                        </div>
+                        <div class="featured-content">
+                            <span class="featured-date">2024.03.15</span>
+                            <h3 class="featured-title">春の特別公演開催のお知らせ</h3>
+                            <p class="featured-excerpt">桜の季節に合わせた特別な舞踊公演を開催いたします。</p>
+                        </div>
+                    </article>
+                    
+                    <article class="featured-item">
+                        <div class="featured-image">
+                            <img src="images/2.jpg" alt="新人芸者紹介" loading="lazy">
+                        </div>
+                        <div class="featured-content">
+                            <span class="featured-date">2024.03.10</span>
+                            <h3 class="featured-title">新人芸者のお見世出し</h3>
+                            <p class="featured-excerpt">この春、新たに芸者としてデビューする舞妓さんをご紹介いたします。</p>
+                        </div>
+                    </article>
+                    
+                    <article class="featured-item">
+                        <div class="featured-image">
+                            <img src="images/3.jpg" alt="文化体験教室" loading="lazy">
+                        </div>
+                        <div class="featured-content">
+                            <span class="featured-date">2024.03.05</span>
+                            <h3 class="featured-title">花街文化体験教室開催</h3>
+                            <p class="featured-excerpt">初心者の方も気軽に参加できる文化体験教室を開催いたします。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="guide" id="beginner">
+            <div class="container">
+                <div class="guide-content">
+                    <div class="guide-text">
+                        <h2 class="section-title">初心者向けガイド</h2>
+                        <p class="guide-description">
+                            花街は日本の伝統文化の宝庫です。芸者さんとの会話の楽しみ方、
+                            お座敷での振る舞い方など、基本的なマナーを丁寧にご案内いたします。
+                        </p>
+                        <a href="pages/guide.html" class="guide-link">マナーを学ぶ</a>
+                    </div>
+                    <div class="guide-image">
+                        <img src="images/4.jpg" alt="花街の風景" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="culture" id="culture">
+            <div class="container">
+                <h2 class="section-title">花街・芸者文化</h2>
+                <div class="culture-grid">
+                    <div class="culture-item">
+                        <div class="culture-icon">舞</div>
+                        <h3>日本舞踊</h3>
+                        <p>長い歴史を持つ日本舞踊の美しさと奥深さを知る</p>
+                    </div>
+                    <div class="culture-item">
+                        <div class="culture-icon">音</div>
+                        <h3>三味線</h3>
+                        <p>三味線の音色が織りなす日本の心を感じる</p>
+                    </div>
+                    <div class="culture-item">
+                        <div class="culture-icon">茶</div>
+                        <h3>茶道</h3>
+                        <p>おもてなしの心が込められた茶道の世界</p>
+                    </div>
+                    <div class="culture-item">
+                        <div class="culture-icon">花</div>
+                        <h3>華道</h3>
+                        <p>季節の花々で表現する日本の美意識</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="overseas" id="overseas">
+            <div class="container">
+                <div class="overseas-content">
+                    <div class="overseas-image">
+                        <img src="images/5.jpg" alt="海外からのお客様" loading="lazy">
+                    </div>
+                    <div class="overseas-text">
+                        <h2 class="section-title">For International Visitors</h2>
+                        <h3>海外の方へ</h3>
+                        <p class="overseas-description">
+                            We welcome international visitors to experience the beauty of Kagai culture.
+                            Our guides provide culturally sensitive explanations and important etiquette points
+                            to ensure a respectful and enriching experience.
+                        </p>
+                        <p class="overseas-description-ja">
+                            海外からお越しの皆様に、花街文化の美しさを体験していただけるよう、
+                            文化の違いに配慮した説明と重要なマナーをご案内いたします。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="container">
+                <h2 class="section-title">花街の四季</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/6.jpg" alt="花街の風景" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/1.jpg" alt="春の花街" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/2.jpg" alt="夏祭り" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/3.jpg" alt="秋の舞台" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">全国花街ポータルサイト</h3>
+                    <p class="footer-description">
+                        日本の伝統文化である花街・芸者文化を次世代に継承するための情報発信サイトです。
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>サイトマップ</h4>
+                    <ul>
+                        <li><a href="pages/news.html">最新情報</a></li>
+                        <li><a href="pages/press.html">プレスリリース</a></li>
+                        <li><a href="pages/guide.html">初心者ガイド</a></li>
+                        <li><a href="pages/culture.html">文化紹介</a></li>
+                        <li><a href="pages/overseas.html">海外の方へ</a></li>
+                        <li><a href="pages/glossary.html">用語集</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 全国花街ポータルサイト. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花街・芸者の用語集 - 全国花街ポータルサイト</title>
+    <meta name="description" content="花街・芸者文化に関する専門用語を網羅した辞典。検索機能付きで、読み方や意味、使用例を詳しく解説します。">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/glossary.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="../index.html">
+                        <h1 class="logo-text">全国花街</h1>
+                        <span class="logo-subtitle">KAGAI PORTAL</span>
+                    </a>
+                </div>
+                
+                <button class="hamburger" aria-label="メニューを開く">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">News & イベント</a>
+                        <div class="dropdown-menu">
+                            <a href="news.html#news" class="dropdown-link">更新情報</a>
+                            <a href="news.html#calendar" class="dropdown-link">イベントカレンダー</a>
+                            <a href="news.html#monthly" class="dropdown-link">月間イベント情報</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="press.html" class="nav-link">プレスリリース</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="guide.html" class="nav-link">花街・芸者ガイド</a>
+                        <div class="dropdown-menu">
+                            <a href="guide.html#beginner" class="dropdown-link">初心者向けガイド</a>
+                            <a href="guide.html#manners" class="dropdown-link">基本マナーと注意点</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="culture.html" class="nav-link">花街・芸者文化の紹介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="overseas.html" class="nav-link">海外の方へ</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="glossary.html" class="nav-link">花街・芸者の用語集</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="glossary-hero">
+            <div class="hero-content">
+                <div class="breadcrumb">
+                    <a href="../index.html">ホーム</a>
+                    <span class="separator">></span>
+                    <span class="current">花街・芸者の用語集</span>
+                </div>
+                <h1 class="hero-title">花街・芸者の用語集</h1>
+                <p class="hero-subtitle">伝統文化を理解するための専門用語辞典</p>
+            </div>
+            <div class="hero-image">
+                <img src="../images/6.jpg" alt="花街の伝統的な風景" loading="eager">
+            </div>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section class="search-section">
+            <div class="container">
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="用語を検索してください..." autocomplete="off">
+                        <button type="button" id="searchButton" aria-label="検索">
+                            <span class="search-icon">🔍</span>
+                        </button>
+                        <button type="button" id="clearButton" aria-label="検索をクリア" style="display: none;">
+                            <span class="clear-icon">✕</span>
+                        </button>
+                    </div>
+                    
+                    <div class="filter-options">
+                        <div class="category-filter">
+                            <label for="categorySelect">カテゴリ:</label>
+                            <select id="categorySelect">
+                                <option value="">すべて</option>
+                                <option value="person">人・役職</option>
+                                <option value="place">場所・建物</option>
+                                <option value="art">芸事・技芸</option>
+                                <option value="costume">衣装・装身具</option>
+                                <option value="event">行事・イベント</option>
+                                <option value="tool">道具・用具</option>
+                                <option value="manner">マナー・作法</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+                        
+                        <div class="sort-options">
+                            <label for="sortSelect">並び順:</label>
+                            <select id="sortSelect">
+                                <option value="alphabetical">五十音順</option>
+                                <option value="category">カテゴリ別</option>
+                                <option value="length">文字数</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="search-stats">
+                    <span id="resultCount">全 <strong>0</strong> 件の用語</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alphabet Navigation -->
+        <section class="alphabet-nav">
+            <div class="container">
+                <div class="alphabet-buttons">
+                    <button class="alphabet-btn active" data-letter="all">すべて</button>
+                    <button class="alphabet-btn" data-letter="あ">あ</button>
+                    <button class="alphabet-btn" data-letter="か">か</button>
+                    <button class="alphabet-btn" data-letter="さ">さ</button>
+                    <button class="alphabet-btn" data-letter="た">た</button>
+                    <button class="alphabet-btn" data-letter="な">な</button>
+                    <button class="alphabet-btn" data-letter="は">は</button>
+                    <button class="alphabet-btn" data-letter="ま">ま</button>
+                    <button class="alphabet-btn" data-letter="や">や</button>
+                    <button class="alphabet-btn" data-letter="ら">ら</button>
+                    <button class="alphabet-btn" data-letter="わ">わ</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Glossary Content -->
+        <section class="glossary-content">
+            <div class="container">
+                <!-- No Results Message -->
+                <div id="noResults" class="no-results" style="display: none;">
+                    <div class="no-results-icon">📚</div>
+                    <h3>該当する用語が見つかりませんでした</h3>
+                    <p>検索条件を変更して、再度お試しください。</p>
+                    <div class="search-suggestions">
+                        <p>検索のコツ:</p>
+                        <ul>
+                            <li>ひらがな・カタカナ・漢字すべてに対応しています</li>
+                            <li>部分一致でも検索できます</li>
+                            <li>カテゴリフィルターもお試しください</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Terms Container -->
+                <div id="termsContainer" class="terms-container">
+                    <!-- Terms will be dynamically populated here -->
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-container" style="display: none;">
+                    <button id="loadMoreBtn" class="load-more-btn">さらに表示 (<span id="remainingCount">0</span>件)</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Terms Section -->
+        <section class="featured-terms">
+            <div class="container">
+                <h2 class="section-title">注目の用語</h2>
+                <div class="featured-grid">
+                    <div class="featured-term">
+                        <div class="featured-icon">👘</div>
+                        <h3>芸者</h3>
+                        <p>日本の伝統芸能を身につけ、お客様をおもてなしするプロフェッショナルな女性。</p>
+                        <button class="view-term-btn" data-term="芸者">詳しく見る</button>
+                    </div>
+                    
+                    <div class="featured-term">
+                        <div class="featured-icon">🏮</div>
+                        <h3>お茶屋</h3>
+                        <p>芸者さんとの宴席を楽しむ伝統的な料亭。一見客お断りの文化で知られる。</p>
+                        <button class="view-term-btn" data-term="お茶屋">詳しく見る</button>
+                    </div>
+                    
+                    <div class="featured-term">
+                        <div class="featured-icon">🎭</div>
+                        <h3>舞妓</h3>
+                        <p>京都特有の呼び方で、芸者になるための修行中の女性を指す。</p>
+                        <button class="view-term-btn" data-term="舞妓">詳しく見る</button>
+                    </div>
+                    
+                    <div class="featured-term">
+                        <div class="featured-icon">🎵</div>
+                        <h3>お座敷遊び</h3>
+                        <p>芸者さんやお客様同士のコミュニケーションを楽しむ伝統的な遊び。</p>
+                        <button class="view-term-btn" data-term="お座敷遊び">詳しく見る</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Usage Tips Section -->
+        <section class="usage-tips">
+            <div class="container">
+                <h2 class="section-title">用語集の使い方</h2>
+                <div class="tips-grid">
+                    <div class="tip-item">
+                        <div class="tip-icon">🔍</div>
+                        <h3>検索機能</h3>
+                        <p>キーワードを入力して関連する用語を素早く見つけることができます。ひらがな、カタカナ、漢字すべてに対応しています。</p>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="tip-icon">📂</div>
+                        <h3>カテゴリ分類</h3>
+                        <p>用語は8つのカテゴリに分類されています。興味のある分野から用語を探すことができます。</p>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="tip-icon">🔤</div>
+                        <h3>五十音順</h3>
+                        <p>五十音順のナビゲーションで、頭文字から用語を探すことができます。</p>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="tip-icon">💡</div>
+                        <h3>詳細情報</h3>
+                        <p>各用語には読み方、意味、使用例、関連用語が含まれており、深い理解を得ることができます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Term Detail Modal -->
+    <div id="termModal" class="term-modal" aria-hidden="true">
+        <div class="modal-overlay" aria-label="モーダルを閉じる"></div>
+        <div class="modal-content" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+            <button class="modal-close" aria-label="モーダルを閉じる">✕</button>
+            
+            <div class="modal-header">
+                <h2 id="modalTitle" class="modal-term"></h2>
+                <span class="modal-reading"></span>
+                <span class="modal-category"></span>
+            </div>
+            
+            <div class="modal-body">
+                <div class="modal-description" id="modalDescription"></div>
+                
+                <div class="modal-section">
+                    <h3>使用例</h3>
+                    <div class="modal-examples"></div>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>関連用語</h3>
+                    <div class="modal-related"></div>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <button class="modal-share-btn" id="shareTermBtn">この用語をシェア</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">全国花街ポータルサイト</h3>
+                    <p class="footer-description">
+                        日本の伝統文化である花街・芸者文化を次世代に継承するための情報発信サイトです。
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>サイトマップ</h4>
+                    <ul>
+                        <li><a href="news.html">最新情報</a></li>
+                        <li><a href="press.html">プレスリリース</a></li>
+                        <li><a href="guide.html">初心者ガイド</a></li>
+                        <li><a href="culture.html">文化紹介</a></li>
+                        <li><a href="overseas.html">海外の方へ</a></li>
+                        <li><a href="glossary.html">用語集</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 全国花街ポータルサイト. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/glossary.js"></script>
+</body>
+</html>
