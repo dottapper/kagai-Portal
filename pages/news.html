@@ -3,334 +3,461 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News &amp; イベント - 全国花街ポータルサイト</title>
-    <meta name="description" content="全国の花街の最新ニュースとイベント情報。更新情報、イベントカレンダー、月間イベント情報をご覧いただけます。">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/news.css">
+    <title>News & イベント - 全国花街ポータル</title>
+    <meta name="description" content="花街の最新情報、イベントカレンダー、月間イベント情報をお届けします。">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/news.css">
 </head>
 <body>
+    <!-- Header Navigation -->
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <a href="../index.html" style="text-decoration: none; color: inherit;">
-                        <h1 class="logo-text">全国花街</h1>
-                        <span class="logo-subtitle">KAGAI PORTAL</span>
+                    <a href="../index.html">
+                        <img src="../images/logo.png" alt="花街ロゴ" class="logo-img">
+                        <span class="logo-text">全国花街ポータル</span>
                     </a>
                 </div>
                 
-                <button class="hamburger" aria-label="メニューを開く">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                
                 <ul class="nav-menu">
-                    <li class="nav-item dropdown active">
-                        <a href="news.html" class="nav-link">News & イベント</a>
-                        <div class="dropdown-menu">
-                            <a href="#news-updates" class="dropdown-link">更新情報</a>
-                            <a href="#calendar" class="dropdown-link">イベントカレンダー</a>
-                            <a href="#monthly-events" class="dropdown-link">月間イベント情報</a>
-                        </div>
+                    <li class="nav-item dropdown">
+                        <a href="news.html" class="nav-link active">News & イベント</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#updates">更新情報</a></li>
+                            <li><a href="#calendar">イベントカレンダー</a></li>
+                            <li><a href="#monthly">月間イベント情報</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a href="press.html" class="nav-link">プレスリリース</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="guide.html" class="nav-link">花街・芸者ガイド</a>
-                        <div class="dropdown-menu">
-                            <a href="guide.html#beginner" class="dropdown-link">初心者向けガイド</a>
-                            <a href="guide.html#manners" class="dropdown-link">基本マナーと注意点</a>
-                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a href="guide.html#beginner">初心者向けガイド</a></li>
+                            <li><a href="guide.html#manners">基本マナーと注意点</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="culture.html" class="nav-link">花街・芸者文化の紹介</a>
+                        <a href="culture.html" class="nav-link">花街・芸者文化</a>
                     </li>
                     <li class="nav-item">
                         <a href="overseas.html" class="nav-link">海外の方へ</a>
                     </li>
                     <li class="nav-item">
-                        <a href="glossary.html" class="nav-link">花街・芸者の用語集</a>
+                        <a href="glossary.html" class="nav-link">用語集</a>
                     </li>
                 </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main id="main">
-        <div class="page-hero">
-            <div class="page-hero-content">
-                <h1 class="page-title">News & イベント</h1>
-                <p class="page-subtitle">全国の花街の最新情報とイベントをお届けします</p>
-            </div>
-        </div>
-
+    <!-- Page Header -->
+    <section class="page-hero">
         <div class="container">
-            <div class="page-navigation">
-                <a href="#news-updates" class="page-nav-link active">更新情報</a>
-                <a href="#calendar" class="page-nav-link">イベントカレンダー</a>
-                <a href="#monthly-events" class="page-nav-link">月間イベント</a>
+            <div class="breadcrumb">
+                <a href="../index.html">ホーム</a>
+                <span>/</span>
+                <span>News & イベント</span>
             </div>
+            <h1 class="page-title">News & イベント</h1>
+            <p class="page-description">花街の最新情報とイベントをお届けします</p>
         </div>
+    </section>
 
-        <section id="news-updates" class="news-section">
+    <main class="main-content">
+        <!-- News Filter -->
+        <section class="filter-section">
             <div class="container">
-                <h2 class="section-title">最新更新情報</h2>
-                
-                <div class="news-grid">
-                    <article class="news-item featured-news">
-                        <div class="news-image">
-                            <img src="../images/1.jpg" alt="春の特別公演" loading="lazy">
-                            <span class="news-badge">重要</span>
-                        </div>
-                        <div class="news-content">
-                            <span class="news-date">2024.03.20</span>
-                            <h3 class="news-title">春の特別公演「桜舞踊」開催決定</h3>
-                            <p class="news-excerpt">
-                                今年も桜の季節に合わせた特別な舞踊公演を開催いたします。京都・東京・金沢の花街から選りすぐりの芸者さんが一堂に会し、伝統的な春の舞踊をご披露いたします。
-                            </p>
-                            <div class="news-details">
-                                <span class="news-location">会場: 国立劇場</span>
-                                <span class="news-time">開演: 18:00</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news-item">
-                        <div class="news-image">
-                            <img src="../images/2.jpg" alt="新人芸者紹介" loading="lazy">
-                        </div>
-                        <div class="news-content">
-                            <span class="news-date">2024.03.15</span>
-                            <h3 class="news-title">新人芸者のお見世出し</h3>
-                            <p class="news-excerpt">
-                                この春、新たに芸者としてデビューする舞妓さん3名をご紹介いたします。長年の修行を積んだ彼女たちの晴れ舞台をぜひご覧ください。
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="news-item">
-                        <div class="news-image">
-                            <img src="../images/3.jpg" alt="文化体験教室" loading="lazy">
-                        </div>
-                        <div class="news-content">
-                            <span class="news-date">2024.03.10</span>
-                            <h3 class="news-title">花街文化体験教室の参加者募集</h3>
-                            <p class="news-excerpt">
-                                初心者の方も気軽に参加できる文化体験教室を開催いたします。日本舞踊、三味線、茶道の基本を学べる貴重な機会です。
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="news-item">
-                        <div class="news-image">
-                            <img src="../images/4.jpg" alt="夏祭りの準備" loading="lazy">
-                        </div>
-                        <div class="news-content">
-                            <span class="news-date">2024.03.05</span>
-                            <h3 class="news-title">夏祭りの準備が始まりました</h3>
-                            <p class="news-excerpt">
-                                今年の夏祭りに向けた準備が各花街で本格的に始まりました。新しい演目の稽古や浴衣の準備など、芸者さんたちの日々の努力をお伝えします。
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="news-item">
-                        <div class="news-image">
-                            <img src="../images/5.jpg" alt="海外からの訪問者" loading="lazy">
-                        </div>
-                        <div class="news-content">
-                            <span class="news-date">2024.02.28</span>
-                            <h3 class="news-title">海外からの文化交流団が来訪</h3>
-                            <p class="news-excerpt">
-                                フランスの文化交流団が花街を訪問し、日本の伝統文化について学びました。国際的な文化交流の重要性を改めて感じる機会となりました。
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="news-item">
-                        <div class="news-image">
-                            <img src="../images/6.jpg" alt="冬の風景" loading="lazy">
-                        </div>
-                        <div class="news-content">
-                            <span class="news-date">2024.02.20</span>
-                            <h3 class="news-title">冬の花街フォトコンテスト結果発表</h3>
-                            <p class="news-excerpt">
-                                今年の冬の花街フォトコンテストの結果を発表いたします。雪化粧した美しい花街の風景や、冬の装いの芸者さんたちの姿を捉えた作品が多数寄せられました。
-                            </p>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="pagination">
-                    <button class="pagination-btn active">1</button>
-                    <button class="pagination-btn">2</button>
-                    <button class="pagination-btn">3</button>
-                    <button class="pagination-btn">次へ</button>
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">すべて</button>
+                    <button class="filter-btn" data-filter="event">イベント</button>
+                    <button class="filter-btn" data-filter="news">ニュース</button>
+                    <button class="filter-btn" data-filter="performance">公演</button>
+                    <button class="filter-btn" data-filter="experience">体験</button>
                 </div>
             </div>
         </section>
 
-        <section id="calendar" class="calendar-section">
+        <!-- Updates Section -->
+        <section id="updates" class="section updates-section">
             <div class="container">
-                <h2 class="section-title">イベントカレンダー</h2>
+                <div class="section-header">
+                    <h2 class="section-title">最新情報</h2>
+                </div>
                 
-                <div class="calendar-controls">
-                    <button class="calendar-nav" id="prevMonth">&lt;</button>
-                    <h3 class="calendar-month" id="currentMonth">2024年 3月</h3>
-                    <button class="calendar-nav" id="nextMonth">&gt;</button>
-                </div>
+                <div class="news-timeline">
+                    <article class="timeline-item" data-category="event">
+                        <div class="timeline-date">
+                            <span class="date-day">15</span>
+                            <span class="date-month">3月</span>
+                            <span class="date-year">2024</span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-badge event">イベント</div>
+                            <h3 class="timeline-title">春の特別公演「桜舞踊会」開催決定</h3>
+                            <p class="timeline-description">
+                                京都・祇園にて春の特別公演が開催されます。桜の季節に合わせた特別な舞踊をお楽しみください。
+                                芸妓・舞妓の皆さんによる華やかな舞台をご堪能いただけます。
+                            </p>
+                            <div class="timeline-meta">
+                                <span class="meta-location">📍 京都・祇園</span>
+                                <span class="meta-time">🕐 19:00～21:00</span>
+                                <span class="meta-price">💴 8,000円～</span>
+                            </div>
+                            <a href="#spring-performance" class="timeline-link">詳細を見る</a>
+                        </div>
+                        <div class="timeline-image">
+                            <img src="../images/1.jpg" alt="春の特別公演">
+                        </div>
+                    </article>
 
-                <div class="calendar-grid" id="calendar">
-                    <div class="calendar-header">日</div>
-                    <div class="calendar-header">月</div>
-                    <div class="calendar-header">火</div>
-                    <div class="calendar-header">水</div>
-                    <div class="calendar-header">木</div>
-                    <div class="calendar-header">金</div>
-                    <div class="calendar-header">土</div>
-                </div>
+                    <article class="timeline-item" data-category="news">
+                        <div class="timeline-date">
+                            <span class="date-day">10</span>
+                            <span class="date-month">3月</span>
+                            <span class="date-year">2024</span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-badge news">お知らせ</div>
+                            <h3 class="timeline-title">新人芸者のお披露目会</h3>
+                            <p class="timeline-description">
+                                この春、新たに芸者としてデビューする方々のお披露目会が行われます。
+                                伝統的な儀式から現代に受け継がれる美しい文化をご覧いただけます。
+                            </p>
+                            <div class="timeline-meta">
+                                <span class="meta-location">📍 各花街</span>
+                                <span class="meta-time">🕐 詳細は各花街にお問い合わせ</span>
+                            </div>
+                            <a href="#debut" class="timeline-link">詳細を見る</a>
+                        </div>
+                        <div class="timeline-image">
+                            <img src="../images/2.jpg" alt="新人芸者のお披露目会">
+                        </div>
+                    </article>
 
-                <div class="event-legend">
-                    <h4>イベント凡例</h4>
-                    <div class="legend-items">
-                        <div class="legend-item">
-                            <span class="legend-color performance"></span>
-                            <span>公演・舞台</span>
+                    <article class="timeline-item" data-category="experience">
+                        <div class="timeline-date">
+                            <span class="date-day">05</span>
+                            <span class="date-month">3月</span>
+                            <span class="date-year">2024</span>
                         </div>
-                        <div class="legend-item">
-                            <span class="legend-color workshop"></span>
-                            <span>体験教室</span>
+                        <div class="timeline-content">
+                            <div class="timeline-badge experience">体験</div>
+                            <h3 class="timeline-title">花街文化体験教室の参加者募集</h3>
+                            <p class="timeline-description">
+                                茶道、華道、日本舞踊など、花街文化を体験できる特別教室を開催いたします。
+                                初心者の方でも安心してご参加いただけるプログラムをご用意しております。
+                            </p>
+                            <div class="timeline-meta">
+                                <span class="meta-location">📍 東京・新橋</span>
+                                <span class="meta-time">🕐 毎週土曜日 14:00～16:00</span>
+                                <span class="meta-price">💴 5,000円</span>
+                            </div>
+                            <a href="#experience" class="timeline-link">詳細を見る</a>
                         </div>
-                        <div class="legend-item">
-                            <span class="legend-color festival"></span>
-                            <span>祭り・行事</span>
+                        <div class="timeline-image">
+                            <img src="../images/3.jpg" alt="文化体験教室">
                         </div>
-                        <div class="legend-item">
-                            <span class="legend-color special"></span>
-                            <span>特別イベント</span>
+                    </article>
+
+                    <article class="timeline-item" data-category="performance">
+                        <div class="timeline-date">
+                            <span class="date-day">28</span>
+                            <span class="date-month">2月</span>
+                            <span class="date-year">2024</span>
                         </div>
+                        <div class="timeline-content">
+                            <div class="timeline-badge performance">公演</div>
+                            <h3 class="timeline-title">梅見の宴　特別公演</h3>
+                            <p class="timeline-description">
+                                早春の梅の季節にちなんだ特別公演を開催いたします。
+                                梅をテーマにした舞踊や音曲をお楽しみください。
+                            </p>
+                            <div class="timeline-meta">
+                                <span class="meta-location">📍 大阪・新地</span>
+                                <span class="meta-time">🕐 18:30～20:30</span>
+                                <span class="meta-price">💴 12,000円～</span>
+                            </div>
+                            <a href="#ume-performance" class="timeline-link">詳細を見る</a>
+                        </div>
+                        <div class="timeline-image">
+                            <img src="../images/4.jpg" alt="梅見の宴">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calendar Section -->
+        <section id="calendar" class="section calendar-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">イベントカレンダー</h2>
+                    <p class="section-subtitle">Interactive Calendar</p>
+                </div>
+                
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button class="calendar-nav prev-month">‹</button>
+                        <h3 class="calendar-title">
+                            <span class="calendar-month">3月</span>
+                            <span class="calendar-year">2024</span>
+                        </h3>
+                        <button class="calendar-nav next-month">›</button>
+                    </div>
+                    
+                    <div class="calendar-grid">
+                        <div class="calendar-weekday">日</div>
+                        <div class="calendar-weekday">月</div>
+                        <div class="calendar-weekday">火</div>
+                        <div class="calendar-weekday">水</div>
+                        <div class="calendar-weekday">木</div>
+                        <div class="calendar-weekday">金</div>
+                        <div class="calendar-weekday">土</div>
+                        
+                        <!-- Calendar dates will be generated by JavaScript -->
+                        <div class="calendar-day prev-month">25</div>
+                        <div class="calendar-day prev-month">26</div>
+                        <div class="calendar-day prev-month">27</div>
+                        <div class="calendar-day prev-month">28</div>
+                        <div class="calendar-day prev-month">29</div>
+                        <div class="calendar-day">1</div>
+                        <div class="calendar-day">2</div>
+                        <div class="calendar-day">3</div>
+                        <div class="calendar-day">4</div>
+                        <div class="calendar-day has-event" data-event="体験教室">5</div>
+                        <div class="calendar-day">6</div>
+                        <div class="calendar-day">7</div>
+                        <div class="calendar-day">8</div>
+                        <div class="calendar-day">9</div>
+                        <div class="calendar-day has-event" data-event="新人お披露目">10</div>
+                        <div class="calendar-day">11</div>
+                        <div class="calendar-day has-event" data-event="体験教室">12</div>
+                        <div class="calendar-day">13</div>
+                        <div class="calendar-day">14</div>
+                        <div class="calendar-day has-event" data-event="桜舞踊会">15</div>
+                        <div class="calendar-day">16</div>
+                        <div class="calendar-day">17</div>
+                        <div class="calendar-day">18</div>
+                        <div class="calendar-day has-event" data-event="体験教室">19</div>
+                        <div class="calendar-day">20</div>
+                        <div class="calendar-day">21</div>
+                        <div class="calendar-day">22</div>
+                        <div class="calendar-day">23</div>
+                        <div class="calendar-day">24</div>
+                        <div class="calendar-day">25</div>
+                        <div class="calendar-day has-event" data-event="体験教室">26</div>
+                        <div class="calendar-day">27</div>
+                        <div class="calendar-day">28</div>
+                        <div class="calendar-day">29</div>
+                        <div class="calendar-day">30</div>
+                        <div class="calendar-day">31</div>
+                        <div class="calendar-day next-month">1</div>
+                        <div class="calendar-day next-month">2</div>
+                        <div class="calendar-day next-month">3</div>
+                        <div class="calendar-day next-month">4</div>
+                        <div class="calendar-day next-month">5</div>
+                        <div class="calendar-day next-month">6</div>
+                    </div>
+                </div>
+                
+                <div class="calendar-legend">
+                    <div class="legend-item">
+                        <span class="legend-dot event"></span>
+                        <span>公演・イベント</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot experience"></span>
+                        <span>体験教室</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot special"></span>
+                        <span>特別公演</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="monthly-events" class="monthly-section">
+        <!-- Monthly Events -->
+        <section id="monthly" class="section monthly-section">
             <div class="container">
-                <h2 class="section-title">3月の主要イベント</h2>
+                <div class="section-header">
+                    <h2 class="section-title">月間イベント情報</h2>
+                    <p class="section-subtitle">Monthly Highlights</p>
+                </div>
                 
                 <div class="monthly-grid">
-                    <div class="monthly-item">
-                        <div class="monthly-date">
-                            <span class="month">3</span>
-                            <span class="day">20</span>
-                            <span class="weekday">水</span>
+                    <div class="monthly-card">
+                        <div class="monthly-header">
+                            <h3 class="monthly-month">3月</h3>
+                            <p class="monthly-theme">春の始まり</p>
                         </div>
                         <div class="monthly-content">
-                            <h4>春の特別公演「桜舞踊」</h4>
-                            <p class="event-location">国立劇場 大劇場</p>
-                            <p class="event-time">開演 18:00 (17:30開場)</p>
-                            <p class="event-description">
-                                京都・東京・金沢の花街から選りすぐりの芸者さんが一堂に会し、春の訪れを祝う伝統的な舞踊をご披露いたします。
-                            </p>
-                            <div class="event-tags">
-                                <span class="tag performance">公演</span>
-                                <span class="tag special">特別企画</span>
+                            <div class="monthly-highlight">
+                                <h4>注目イベント</h4>
+                                <ul>
+                                    <li>桜舞踊会（15日）</li>
+                                    <li>新人芸者お披露目（10日）</li>
+                                    <li>文化体験教室（毎週土曜）</li>
+                                </ul>
+                            </div>
+                            <div class="monthly-season">
+                                <h4>季節の特色</h4>
+                                <p>桜の季節に合わせた春らしい演目が多く披露されます。新人の芸者のデビューの季節でもあります。</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="monthly-item">
-                        <div class="monthly-date">
-                            <span class="month">3</span>
-                            <span class="day">25</span>
-                            <span class="weekday">月</span>
+                    
+                    <div class="monthly-card">
+                        <div class="monthly-header">
+                            <h3 class="monthly-month">4月</h3>
+                            <p class="monthly-theme">桜満開</p>
                         </div>
                         <div class="monthly-content">
-                            <h4>花街文化体験教室</h4>
-                            <p class="event-location">京都花街文化会館</p>
-                            <p class="event-time">10:00-16:00</p>
-                            <p class="event-description">
-                                日本舞踊、三味線、茶道の基本を学べる体験教室。初心者の方大歓迎です。
-                            </p>
-                            <div class="event-tags">
-                                <span class="tag workshop">体験教室</span>
+                            <div class="monthly-highlight">
+                                <h4>予定イベント</h4>
+                                <ul>
+                                    <li>花見の宴（5日～7日）</li>
+                                    <li>春の特別公演（12日）</li>
+                                    <li>外国人向け文化体験（毎週日曜）</li>
+                                </ul>
+                            </div>
+                            <div class="monthly-season">
+                                <h4>季節の特色</h4>
+                                <p>桜をテーマにした舞踊が多く、最も華やかな季節です。花見との組み合わせイベントも開催されます。</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="monthly-item">
-                        <div class="monthly-date">
-                            <span class="month">3</span>
-                            <span class="day">30</span>
-                            <span class="weekday">土</span>
+                    
+                    <div class="monthly-card">
+                        <div class="monthly-header">
+                            <h3 class="monthly-month">5月</h3>
+                            <p class="monthly-theme">新緑の季節</p>
                         </div>
                         <div class="monthly-content">
-                            <h4>桜まつり前夜祭</h4>
-                            <p class="event-location">各花街</p>
-                            <p class="event-time">18:00-21:00</p>
-                            <p class="event-description">
-                                4月の桜まつりを前に、各花街で前夜祭が開催されます。地域の皆様と一緒に春の訪れを祝いましょう。
-                            </p>
-                            <div class="event-tags">
-                                <span class="tag festival">祭り</span>
+                            <div class="monthly-highlight">
+                                <h4>予定イベント</h4>
+                                <ul>
+                                    <li>端午の節句特別公演（5日）</li>
+                                    <li>新緑祭（15日～17日）</li>
+                                    <li>茶道体験教室（毎週金曜）</li>
+                                </ul>
+                            </div>
+                            <div class="monthly-season">
+                                <h4>季節の特色</h4>
+                                <p>新緑の美しい季節。爽やかな初夏の演目と、端午の節句にちなんだ伝統的な公演が特徴です。</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="upcoming-months">
-                    <h3>今後の予定</h3>
-                    <div class="upcoming-list">
-                        <div class="upcoming-item">
-                            <span class="upcoming-date">4月1日-30日</span>
-                            <span class="upcoming-title">桜まつり月間</span>
-                        </div>
-                        <div class="upcoming-item">
-                            <span class="upcoming-date">5月15日</span>
-                            <span class="upcoming-title">新緑祭</span>
-                        </div>
-                        <div class="upcoming-item">
-                            <span class="upcoming-date">6月20日</span>
-                            <span class="upcoming-title">夏至の夜会</span>
-                        </div>
-                    </div>
+        <!-- Newsletter Subscription -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h3 class="newsletter-title">最新情報をお届け</h3>
+                    <p class="newsletter-description">花街の最新イベント情報やニュースをメールでお届けします</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="メールアドレスを入力" required>
+                        <button type="submit" class="btn btn-primary">登録する</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
-                    <h3 class="footer-title">全国花街ポータルサイト</h3>
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../images/logo.png" alt="花街ロゴ" class="footer-logo-img">
+                        <span class="footer-logo-text">全国花街ポータル</span>
+                    </div>
                     <p class="footer-description">
-                        日本の伝統文化である花街・芸者文化を次世代に継承するための情報発信サイトです。
+                        日本の伝統文化である花街・芸者文化を紹介し、<br>
+                        正しい理解と継承をサポートするポータルサイトです。
                     </p>
                 </div>
-                <div class="footer-links">
-                    <h4>サイトマップ</h4>
-                    <ul>
-                        <li><a href="news.html">最新情報</a></li>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">サイトマップ</h3>
+                    <ul class="footer-links">
+                        <li><a href="news.html">News & イベント</a></li>
                         <li><a href="press.html">プレスリリース</a></li>
-                        <li><a href="guide.html">初心者ガイド</a></li>
+                        <li><a href="guide.html">花街・芸者ガイド</a></li>
                         <li><a href="culture.html">文化紹介</a></li>
-                        <li><a href="overseas.html">海外の方へ</a></li>
-                        <li><a href="glossary.html">用語集</a></li>
                     </ul>
                 </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">ガイド・サポート</h3>
+                    <ul class="footer-links">
+                        <li><a href="overseas.html">海外の方へ</a></li>
+                        <li><a href="glossary.html">用語集</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                        <li><a href="../index.html">ホームに戻る</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">フォローする</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2024 全国花街ポータルサイト. All rights reserved.</p>
+                <p class="copyright">&copy; 2024 全国花街ポータルサイト. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">プライバシーポリシー</a>
+                    <a href="#terms">利用規約</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Event Modal -->
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h3 id="modal-title">イベント詳細</h3>
+            </div>
+            <div class="modal-body">
+                <div id="modal-image"></div>
+                <div id="modal-description"></div>
+                <div id="modal-details"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary">参加申し込み</button>
+                <button class="btn btn-outline modal-close">閉じる</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
     <script src="../js/script.js"></script>
     <script src="../js/calendar.js"></script>
 </body>

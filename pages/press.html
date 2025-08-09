@@ -3,337 +3,435 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プレスリリース - 全国花街ポータルサイト</title>
-    <meta name="description" content="花街や関連団体からの公式発表・プレスリリースを掲載。メディア関係者向けの最新情報をお届けします。">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/press.css">
+    <title>プレスリリース - 全国花街ポータル</title>
+    <meta name="description" content="花街や関連団体からの公式発表、プレスリリース情報をお届けします。">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/press.css">
 </head>
 <body>
+    <!-- Header Navigation -->
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <a href="../index.html" style="text-decoration: none; color: inherit;">
-                        <h1 class="logo-text">全国花街</h1>
-                        <span class="logo-subtitle">KAGAI PORTAL</span>
+                    <a href="../index.html">
+                        <img src="../images/logo.png" alt="花街ロゴ" class="logo-img">
+                        <span class="logo-text">全国花街ポータル</span>
                     </a>
                 </div>
-                
-                <button class="hamburger" aria-label="メニューを開く">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
                 
                 <ul class="nav-menu">
                     <li class="nav-item dropdown">
                         <a href="news.html" class="nav-link">News & イベント</a>
-                        <div class="dropdown-menu">
-                            <a href="news.html#news-updates" class="dropdown-link">更新情報</a>
-                            <a href="news.html#calendar" class="dropdown-link">イベントカレンダー</a>
-                            <a href="news.html#monthly-events" class="dropdown-link">月間イベント情報</a>
-                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a href="news.html#updates">更新情報</a></li>
+                            <li><a href="news.html#calendar">イベントカレンダー</a></li>
+                            <li><a href="news.html#monthly">月間イベント情報</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item active">
-                        <a href="press.html" class="nav-link">プレスリリース</a>
+                    <li class="nav-item">
+                        <a href="press.html" class="nav-link active">プレスリリース</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="guide.html" class="nav-link">花街・芸者ガイド</a>
-                        <div class="dropdown-menu">
-                            <a href="guide.html#beginner" class="dropdown-link">初心者向けガイド</a>
-                            <a href="guide.html#manners" class="dropdown-link">基本マナーと注意点</a>
-                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a href="guide.html#beginner">初心者向けガイド</a></li>
+                            <li><a href="guide.html#manners">基本マナーと注意点</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="culture.html" class="nav-link">花街・芸者文化の紹介</a>
+                        <a href="culture.html" class="nav-link">花街・芸者文化</a>
                     </li>
                     <li class="nav-item">
                         <a href="overseas.html" class="nav-link">海外の方へ</a>
                     </li>
                     <li class="nav-item">
-                        <a href="glossary.html" class="nav-link">花街・芸者の用語集</a>
+                        <a href="glossary.html" class="nav-link">用語集</a>
                     </li>
                 </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main id="main">
-        <div class="page-hero">
-            <div class="page-hero-content">
-                <h1 class="page-title">プレスリリース</h1>
-                <p class="page-subtitle">花街や関連団体からの公式発表</p>
-            </div>
-        </div>
-
+    <!-- Page Hero -->
+    <section class="page-hero">
         <div class="container">
-            <div class="press-filters">
-                <button class="filter-btn active" data-filter="all">すべて</button>
-                <button class="filter-btn" data-filter="announcement">お知らせ</button>
-                <button class="filter-btn" data-filter="event">イベント発表</button>
-                <button class="filter-btn" data-filter="media">メディア情報</button>
-                <button class="filter-btn" data-filter="award">受賞・表彰</button>
+            <div class="breadcrumb">
+                <a href="../index.html">ホーム</a>
+                <span>/</span>
+                <span>プレスリリース</span>
             </div>
+            <h1 class="page-title">プレスリリース</h1>
+            <p class="page-description">花街・芸者文化に関する公式発表と報道関係者向け情報</p>
         </div>
+    </section>
 
-        <section class="press-section">
+    <main class="main-content">
+        <!-- Press Filter -->
+        <section class="filter-section">
             <div class="container">
-                <div class="press-grid">
-                    <article class="press-item" data-category="announcement">
-                        <div class="press-header">
-                            <div class="press-date">
-                                <span class="date-year">2024</span>
-                                <span class="date-month">03</span>
-                                <span class="date-day">22</span>
-                            </div>
-                            <div class="press-category">
-                                <span class="category-tag announcement">お知らせ</span>
-                            </div>
-                        </div>
-                        <div class="press-content">
-                            <h3 class="press-title">全国花街文化保存協会 設立10周年記念事業について</h3>
-                            <p class="press-summary">
-                                全国花街文化保存協会は、設立10周年を迎えるにあたり、記念事業として全国規模の文化継承プロジェクトを開始することを発表いたします。
-                            </p>
-                            <div class="press-meta">
-                                <span class="press-source">全国花街文化保存協会</span>
-                                <a href="#" class="press-link">詳細を見る</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="press-item" data-category="event">
-                        <div class="press-header">
-                            <div class="press-date">
-                                <span class="date-year">2024</span>
-                                <span class="date-month">03</span>
-                                <span class="date-day">20</span>
-                            </div>
-                            <div class="press-category">
-                                <span class="category-tag event">イベント発表</span>
-                            </div>
-                        </div>
-                        <div class="press-content">
-                            <h3 class="press-title">春の特別公演「桜舞踊」開催決定のお知らせ</h3>
-                            <p class="press-summary">
-                                2024年4月20日（土）、国立劇場大劇場にて春の特別公演「桜舞踊」を開催いたします。京都・東京・金沢の花街から選りすぐりの芸者が出演予定です。
-                            </p>
-                            <div class="press-meta">
-                                <span class="press-source">国立劇場</span>
-                                <a href="#" class="press-link">詳細を見る</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="press-item" data-category="media">
-                        <div class="press-header">
-                            <div class="press-date">
-                                <span class="date-year">2024</span>
-                                <span class="date-month">03</span>
-                                <span class="date-day">18</span>
-                            </div>
-                            <div class="press-category">
-                                <span class="category-tag media">メディア情報</span>
-                            </div>
-                        </div>
-                        <div class="press-content">
-                            <h3 class="press-title">NHK特集番組「美しき花街の世界」撮影協力について</h3>
-                            <p class="press-summary">
-                                NHK総合テレビで放送予定の特集番組「美しき花街の世界」の撮影に、全国の花街が協力することが決定いたしました。放送は2024年5月予定です。
-                            </p>
-                            <div class="press-meta">
-                                <span class="press-source">NHK・全国花街協会</span>
-                                <a href="#" class="press-link">詳細を見る</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="press-item" data-category="award">
-                        <div class="press-header">
-                            <div class="press-date">
-                                <span class="date-year">2024</span>
-                                <span class="date-month">03</span>
-                                <span class="date-day">15</span>
-                            </div>
-                            <div class="press-category">
-                                <span class="category-tag award">受賞・表彰</span>
-                            </div>
-                        </div>
-                        <div class="press-content">
-                            <h3 class="press-title">文化庁長官表彰を受賞</h3>
-                            <p class="press-summary">
-                                京都・祇園甲部の芸妓「○○○さん」が、長年にわたる日本舞踊の保存と継承への貢献により、文化庁長官表彰を受賞いたしました。
-                            </p>
-                            <div class="press-meta">
-                                <span class="press-source">文化庁・祇園甲部歌舞会</span>
-                                <a href="#" class="press-link">詳細を見る</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="press-item" data-category="announcement">
-                        <div class="press-header">
-                            <div class="press-date">
-                                <span class="date-year">2024</span>
-                                <span class="date-month">03</span>
-                                <span class="date-day">12</span>
-                            </div>
-                            <div class="press-category">
-                                <span class="category-tag announcement">お知らせ</span>
-                            </div>
-                        </div>
-                        <div class="press-content">
-                            <h3 class="press-title">花街文化体験プログラム 新規参加団体募集</h3>
-                            <p class="press-summary">
-                                観光庁と連携した花街文化体験プログラムの新規参加団体を募集いたします。国内外の観光客に向けた文化体験の充実を図ります。
-                            </p>
-                            <div class="press-meta">
-                                <span class="press-source">観光庁・全国花街協会</span>
-                                <a href="#" class="press-link">詳細を見る</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="press-item" data-category="event">
-                        <div class="press-header">
-                            <div class="press-date">
-                                <span class="date-year">2024</span>
-                                <span class="date-month">03</span>
-                                <span class="date-day">08</span>
-                            </div>
-                            <div class="press-category">
-                                <span class="category-tag event">イベント発表</span>
-                            </div>
-                        </div>
-                        <div class="press-content">
-                            <h3 class="press-title">第15回全国花街芸能大会開催決定</h3>
-                            <p class="press-summary">
-                                2024年6月15日（土）・16日（日）の2日間、東京国際フォーラムにて第15回全国花街芸能大会を開催いたします。全国から約200名の芸者が参加予定です。
-                            </p>
-                            <div class="press-meta">
-                                <span class="press-source">全国花街芸能大会実行委員会</span>
-                                <a href="#" class="press-link">詳細を見る</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="press-item" data-category="media">
-                        <div class="press-header">
-                            <div class="press-date">
-                                <span class="date-year">2024</span>
-                                <span class="date-month">03</span>
-                                <span class="date-day">05</span>
-                            </div>
-                            <div class="press-category">
-                                <span class="category-tag media">メディア情報</span>
-                            </div>
-                        </div>
-                        <div class="press-content">
-                            <h3 class="press-title">海外メディア向け花街取材ツアー実施</h3>
-                            <p class="press-summary">
-                                海外メディア関係者を対象とした花街取材ツアーを実施いたします。日本の伝統文化の魅力を世界に発信する機会として期待されます。
-                            </p>
-                            <div class="press-meta">
-                                <span class="press-source">JNTO・全国花街協会</span>
-                                <a href="#" class="press-link">詳細を見る</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="press-item" data-category="announcement">
-                        <div class="press-header">
-                            <div class="press-date">
-                                <span class="date-year">2024</span>
-                                <span class="date-month">02</span>
-                                <span class="date-day">28</span>
-                            </div>
-                            <div class="press-category">
-                                <span class="category-tag announcement">お知らせ</span>
-                            </div>
-                        </div>
-                        <div class="press-content">
-                            <h3 class="press-title">花街文化継承者育成事業 奨学金制度創設</h3>
-                            <p class="press-summary">
-                                花街文化の継承者育成を目的とした奨学金制度を新設いたします。舞妓・芸者を目指す若い女性への支援を強化し、伝統文化の継承を図ります。
-                            </p>
-                            <div class="press-meta">
-                                <span class="press-source">花街文化継承財団</span>
-                                <a href="#" class="press-link">詳細を見る</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="pagination">
-                    <button class="pagination-btn active">1</button>
-                    <button class="pagination-btn">2</button>
-                    <button class="pagination-btn">3</button>
-                    <button class="pagination-btn">4</button>
-                    <button class="pagination-btn">次へ</button>
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">すべて</button>
+                    <button class="filter-btn" data-filter="announcement">お知らせ</button>
+                    <button class="filter-btn" data-filter="event">イベント発表</button>
+                    <button class="filter-btn" data-filter="media">メディア情報</button>
+                    <button class="filter-btn" data-filter="award">受賞・表彰</button>
                 </div>
             </div>
         </section>
 
-        <section class="press-contact">
+        <!-- Featured Press Release -->
+        <section class="featured-press-section">
             <div class="container">
-                <div class="contact-content">
-                    <h2 class="section-title">報道関係者の皆様へ</h2>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <h4>取材のお申し込み</h4>
-                            <p>花街や芸者文化に関する取材をご希望の報道関係者の方は、事前にお申し込みください。</p>
-                            <a href="#" class="contact-link">取材申し込みフォーム</a>
+                <article class="featured-press">
+                    <div class="featured-press-image">
+                        <img src="../images/1.jpg" alt="春の特別公演発表">
+                        <div class="featured-badge">重要発表</div>
+                    </div>
+                    <div class="featured-press-content">
+                        <div class="press-meta">
+                            <span class="press-date">2024年3月15日</span>
+                            <span class="press-category announcement">お知らせ</span>
                         </div>
-                        <div class="contact-item">
-                            <h4>プレスキット</h4>
-                            <p>報道用素材や基本情報をまとめたプレスキットをご用意しています。</p>
-                            <a href="#" class="contact-link">プレスキットダウンロード</a>
-                        </div>
-                        <div class="contact-item">
-                            <h4>お問い合わせ</h4>
-                            <p>プレスリリースに関するお問い合わせは下記までご連絡ください。</p>
-                            <div class="contact-details">
-                                <p>全国花街ポータルサイト 広報担当</p>
-                                <p>Email: press@kagai-portal.jp</p>
-                                <p>Tel: 03-1234-5678</p>
+                        <h2 class="featured-press-title">全国花街連携による「日本文化継承プロジェクト」始動</h2>
+                        <p class="featured-press-excerpt">
+                            全国の主要花街が連携し、日本の伝統文化である芸者・舞妓文化の継承と発展を目的とした
+                            包括的なプロジェクトを開始することを発表いたします。このプロジェクトでは、
+                            文化の正しい理解促進、後継者育成、国際的な文化交流などを推進してまいります。
+                        </p>
+                        <div class="featured-press-details">
+                            <div class="detail-item">
+                                <strong>発表者:</strong> 全国花街連合会
+                            </div>
+                            <div class="detail-item">
+                                <strong>対象地域:</strong> 京都・東京・大阪・金沢・熱海
+                            </div>
+                            <div class="detail-item">
+                                <strong>開始時期:</strong> 2024年4月より順次
                             </div>
                         </div>
+                        <a href="#culture-project" class="btn btn-primary">詳細を読む</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Press Releases List -->
+        <section class="press-list-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">プレスリリース一覧</h2>
+                </div>
+                
+                <div class="press-grid">
+                    <article class="press-card" data-category="event">
+                        <div class="press-card-header">
+                            <span class="press-date">2024.03.10</span>
+                            <span class="press-category event">イベント発表</span>
+                        </div>
+                        <h3 class="press-card-title">春の特別公演「桜舞踊会」開催決定</h3>
+                        <p class="press-card-excerpt">
+                            京都・祇園甲部にて、桜の季節に合わせた特別公演「桜舞踊会」の開催が決定いたしました。
+                            芸妓・舞妓による華やかな舞台をお楽しみいただけます。
+                        </p>
+                        <div class="press-card-meta">
+                            <span class="meta-source">📰 祇園甲部歌舞会</span>
+                            <span class="meta-contact">📧 press@gion-kobu.or.jp</span>
+                        </div>
+                        <button class="press-card-button" data-press-id="sakura-performance">詳細を見る</button>
+                    </article>
+
+                    <article class="press-card" data-category="media">
+                        <div class="press-card-header">
+                            <span class="press-date">2024.03.08</span>
+                            <span class="press-category media">メディア情報</span>
+                        </div>
+                        <h3 class="press-card-title">NHK特別番組「花街の四季」撮影協力について</h3>
+                        <p class="press-card-excerpt">
+                            NHKにて放送予定の特別番組「花街の四季」の撮影に協力することが決定いたしました。
+                            番組では一年を通じた花街の美しい文化をご紹介いたします。
+                        </p>
+                        <div class="press-card-meta">
+                            <span class="meta-source">📺 NHK・花街文化保存会</span>
+                            <span class="meta-contact">📧 media@hanamachi-bunka.jp</span>
+                        </div>
+                        <button class="press-card-button" data-press-id="nhk-program">詳細を見る</button>
+                    </article>
+
+                    <article class="press-card" data-category="award">
+                        <div class="press-card-header">
+                            <span class="press-date">2024.03.05</span>
+                            <span class="press-category award">受賞・表彰</span>
+                        </div>
+                        <h3 class="press-card-title">「文化功労者賞」受賞のお知らせ</h3>
+                        <p class="press-card-excerpt">
+                            長年にわたり花街文化の継承と発展に貢献された〇〇さんが、
+                            この度「文化功労者賞」を受賞されましたことをお知らせいたします。
+                        </p>
+                        <div class="press-card-meta">
+                            <span class="meta-source">🏆 文化庁</span>
+                            <span class="meta-contact">📧 awards@bunka.go.jp</span>
+                        </div>
+                        <button class="press-card-button" data-press-id="cultural-award">詳細を見る</button>
+                    </article>
+
+                    <article class="press-card" data-category="announcement">
+                        <div class="press-card-header">
+                            <span class="press-date">2024.03.01</span>
+                            <span class="press-category announcement">お知らせ</span>
+                        </div>
+                        <h3 class="press-card-title">花街文化体験プログラム拡充のお知らせ</h3>
+                        <p class="press-card-excerpt">
+                            外国人観光客の皆様にも花街文化をより深くご理解いただくため、
+                            多言語対応の体験プログラムを大幅に拡充いたします。
+                        </p>
+                        <div class="press-card-meta">
+                            <span class="meta-source">🌍 国際文化交流協会</span>
+                            <span class="meta-contact">📧 info@hanamachi-experience.com</span>
+                        </div>
+                        <button class="press-card-button" data-press-id="experience-program">詳細を見る</button>
+                    </article>
+
+                    <article class="press-card" data-category="event">
+                        <div class="press-card-header">
+                            <span class="press-date">2024.02.28</span>
+                            <span class="press-category event">イベント発表</span>
+                        </div>
+                        <h3 class="press-card-title">梅見の宴　特別公演開催</h3>
+                        <p class="press-card-excerpt">
+                            早春の梅の季節にちなんだ特別公演「梅見の宴」を開催いたします。
+                            梅をテーマにした美しい舞踊や音曲をお楽しみください。
+                        </p>
+                        <div class="press-card-meta">
+                            <span class="meta-source">🌸 大阪新地歌舞会</span>
+                            <span class="meta-contact">📧 press@osaka-shinchi.or.jp</span>
+                        </div>
+                        <button class="press-card-button" data-press-id="ume-performance">詳細を見る</button>
+                    </article>
+
+                    <article class="press-card" data-category="media">
+                        <div class="press-card-header">
+                            <span class="press-date">2024.02.25</span>
+                            <span class="press-category media">メディア情報</span>
+                        </div>
+                        <h3 class="press-card-title">国際映画祭での花街文化紹介について</h3>
+                        <p class="press-card-excerpt">
+                            カンヌ国際映画祭のジャパンパビリオンにて、花街文化の紹介展示を行うことが決定いたしました。
+                            世界に向けて日本の美しい伝統文化をお届けします。
+                        </p>
+                        <div class="press-card-meta">
+                            <span class="meta-source">🎬 国際文化推進機構</span>
+                            <span class="meta-contact">📧 international@culture-promo.jp</span>
+                        </div>
+                        <button class="press-card-button" data-press-id="cannes-exhibition">詳細を見る</button>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-section">
+                    <button class="btn btn-outline load-more-btn">さらに読み込む</button>
+                    <p class="load-more-text">過去のプレスリリースをさらに表示します</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Contact Section -->
+        <section class="media-contact-section">
+            <div class="container">
+                <div class="media-contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-title">報道関係者の皆様へ</h3>
+                        <p class="contact-description">
+                            花街・芸者文化に関する取材のお申し込みや、資料のご請求は以下までご連絡ください。
+                            専門スタッフが丁寧に対応させていただきます。
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-text">
+                                    <strong>メール</strong><br>
+                                    press@hanamachi-portal.jp
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-text">
+                                    <strong>電話</strong><br>
+                                    03-1234-5678（平日 10:00-17:00）
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📄</div>
+                                <div class="contact-text">
+                                    <strong>プレスキット</strong><br>
+                                    <a href="#presskit">こちらからダウンロード</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <h4 class="form-title">取材申し込みフォーム</h4>
+                        <form class="media-contact-form">
+                            <div class="form-group">
+                                <label for="media-name">媒体名</label>
+                                <input type="text" id="media-name" name="media-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-name">ご担当者名</label>
+                                <input type="text" id="contact-name" name="contact-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">メールアドレス</label>
+                                <input type="email" id="contact-email" name="contact-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="interview-type">取材の種類</label>
+                                <select id="interview-type" name="interview-type" required>
+                                    <option value="">選択してください</option>
+                                    <option value="performance">公演取材</option>
+                                    <option value="interview">インタビュー</option>
+                                    <option value="photo">写真撮影</option>
+                                    <option value="documentary">ドキュメンタリー</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="interview-message">取材内容・ご質問</label>
+                                <textarea id="interview-message" name="interview-message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">申し込みを送信</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Press Archive -->
+        <section class="press-archive-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">年別アーカイブ</h2>
+                </div>
+                
+                <div class="archive-nav">
+                    <button class="archive-btn active" data-year="2024">2024年</button>
+                    <button class="archive-btn" data-year="2023">2023年</button>
+                    <button class="archive-btn" data-year="2022">2022年</button>
+                    <button class="archive-btn" data-year="2021">2021年</button>
+                </div>
+                
+                <div class="archive-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">28</span>
+                        <span class="stat-label">プレスリリース</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">15</span>
+                        <span class="stat-label">メディア掲載</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">受賞・表彰</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">42</span>
+                        <span class="stat-label">イベント発表</span>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
-                    <h3 class="footer-title">全国花街ポータルサイト</h3>
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../images/logo.png" alt="花街ロゴ" class="footer-logo-img">
+                        <span class="footer-logo-text">全国花街ポータル</span>
+                    </div>
                     <p class="footer-description">
-                        日本の伝統文化である花街・芸者文化を次世代に継承するための情報発信サイトです。
+                        日本の伝統文化である花街・芸者文化を紹介し、<br>
+                        正しい理解と継承をサポートするポータルサイトです。
                     </p>
                 </div>
-                <div class="footer-links">
-                    <h4>サイトマップ</h4>
-                    <ul>
-                        <li><a href="news.html">最新情報</a></li>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">サイトマップ</h3>
+                    <ul class="footer-links">
+                        <li><a href="news.html">News & イベント</a></li>
                         <li><a href="press.html">プレスリリース</a></li>
-                        <li><a href="guide.html">初心者ガイド</a></li>
+                        <li><a href="guide.html">花街・芸者ガイド</a></li>
                         <li><a href="culture.html">文化紹介</a></li>
-                        <li><a href="overseas.html">海外の方へ</a></li>
-                        <li><a href="glossary.html">用語集</a></li>
                     </ul>
                 </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">ガイド・サポート</h3>
+                    <ul class="footer-links">
+                        <li><a href="overseas.html">海外の方へ</a></li>
+                        <li><a href="glossary.html">用語集</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                        <li><a href="../index.html">ホームに戻る</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">フォローする</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2024 全国花街ポータルサイト. All rights reserved.</p>
+                <p class="copyright">&copy; 2024 全国花街ポータルサイト. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">プライバシーポリシー</a>
+                    <a href="#terms">利用規約</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Press Detail Modal -->
+    <div id="press-modal" class="modal">
+        <div class="modal-content press-modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-header">
+                <h3 id="press-modal-title">プレスリリース詳細</h3>
+                <div id="press-modal-meta"></div>
+            </div>
+            <div class="modal-body">
+                <div id="press-modal-image"></div>
+                <div id="press-modal-content"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary">お問い合わせ</button>
+                <button class="btn btn-outline modal-close">閉じる</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
     <script src="../js/script.js"></script>
     <script src="../js/press.js"></script>
 </body>

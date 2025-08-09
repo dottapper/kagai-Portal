@@ -3,456 +3,619 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>花街・芸者ガイド - 全国花街ポータルサイト</title>
-    <meta name="description" content="花街・芸者文化の初心者向けガイド。基本的なマナーと注意点、お座敷での振る舞い方を丁寧に解説します。">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/guide.css">
+    <title>花街・芸者ガイド - 全国花街ポータル</title>
+    <meta name="description" content="初心者向けガイドから基本マナーまで、花街・芸者文化を分かりやすく解説します。">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/guide.css">
 </head>
 <body>
+    <!-- Header Navigation -->
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
                     <a href="../index.html">
-                        <h1 class="logo-text">全国花街</h1>
-                        <span class="logo-subtitle">KAGAI PORTAL</span>
+                        <img src="../images/logo.png" alt="花街ロゴ" class="logo-img">
+                        <span class="logo-text">全国花街ポータル</span>
                     </a>
                 </div>
                 
-                <button class="hamburger" aria-label="メニューを開く">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                
                 <ul class="nav-menu">
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">News & イベント</a>
-                        <div class="dropdown-menu">
-                            <a href="news.html#news" class="dropdown-link">更新情報</a>
-                            <a href="news.html#calendar" class="dropdown-link">イベントカレンダー</a>
-                            <a href="news.html#monthly" class="dropdown-link">月間イベント情報</a>
-                        </div>
+                        <a href="news.html" class="nav-link">News & イベント</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="news.html#updates">更新情報</a></li>
+                            <li><a href="news.html#calendar">イベントカレンダー</a></li>
+                            <li><a href="news.html#monthly">月間イベント情報</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a href="press.html" class="nav-link">プレスリリース</a>
                     </li>
-                    <li class="nav-item dropdown active">
-                        <a href="#" class="nav-link">花街・芸者ガイド</a>
-                        <div class="dropdown-menu">
-                            <a href="#beginner" class="dropdown-link">初心者向けガイド</a>
-                            <a href="#manners" class="dropdown-link">基本マナーと注意点</a>
-                        </div>
+                    <li class="nav-item dropdown">
+                        <a href="guide.html" class="nav-link active">花街・芸者ガイド</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#beginner">初心者向けガイド</a></li>
+                            <li><a href="#manners">基本マナーと注意点</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="culture.html" class="nav-link">花街・芸者文化の紹介</a>
+                        <a href="culture.html" class="nav-link">花街・芸者文化</a>
                     </li>
                     <li class="nav-item">
                         <a href="overseas.html" class="nav-link">海外の方へ</a>
                     </li>
                     <li class="nav-item">
-                        <a href="glossary.html" class="nav-link">花街・芸者の用語集</a>
+                        <a href="glossary.html" class="nav-link">用語集</a>
                     </li>
                 </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main id="main">
-        <!-- Hero Section -->
-        <section class="guide-hero">
-            <div class="hero-content">
-                <div class="breadcrumb">
-                    <a href="../index.html">ホーム</a>
-                    <span class="separator">></span>
-                    <span class="current">花街・芸者ガイド</span>
-                </div>
-                <h1 class="hero-title">花街・芸者ガイド</h1>
-                <p class="hero-subtitle">日本の伝統文化を正しく理解し、心豊かな体験を</p>
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">ホーム</a>
+                <span>/</span>
+                <span>花街・芸者ガイド</span>
             </div>
-            <div class="hero-image">
-                <img src="../images/4.jpg" alt="花街の風景" loading="eager">
-            </div>
-        </section>
+            <h1 class="page-title">花街・芸者ガイド</h1>
+            <p class="page-description">初心者の方でも安心して花街文化をお楽しみいただけるよう、丁寧にご案内いたします</p>
+        </div>
+    </section>
 
+    <main class="main-content">
         <!-- Progress Navigation -->
-        <section class="progress-nav">
+        <section class="progress-nav-section">
             <div class="container">
-                <div class="progress-steps">
-                    <div class="step active" data-step="1">
-                        <div class="step-number">1</div>
-                        <div class="step-label">基本知識</div>
+                <div class="progress-nav">
+                    <div class="progress-step active" data-step="1">
+                        <span class="step-number">1</span>
+                        <span class="step-title">基礎知識</span>
                     </div>
-                    <div class="step" data-step="2">
-                        <div class="step-number">2</div>
-                        <div class="step-label">マナー</div>
+                    <div class="progress-step" data-step="2">
+                        <span class="step-number">2</span>
+                        <span class="step-title">マナー</span>
                     </div>
-                    <div class="step" data-step="3">
-                        <div class="step-number">3</div>
-                        <div class="step-label">体験の流れ</div>
+                    <div class="progress-step" data-step="3">
+                        <span class="step-number">3</span>
+                        <span class="step-title">体験方法</span>
                     </div>
-                    <div class="step" data-step="4">
-                        <div class="step-number">4</div>
-                        <div class="step-label">よくある質問</div>
+                    <div class="progress-step" data-step="4">
+                        <span class="step-number">4</span>
+                        <span class="step-title">よくある質問</span>
                     </div>
+                    <div class="progress-line"></div>
                 </div>
             </div>
         </section>
 
         <!-- Step 1: Basic Knowledge -->
-        <section class="guide-step active" id="step1" data-step="1">
+        <section id="beginner" class="guide-step active" data-step="1">
             <div class="container">
-                <div class="step-content">
-                    <h2 class="step-title">花街の基本知識</h2>
-                    <div class="content-grid">
-                        <div class="content-main">
-                            <div class="knowledge-card">
-                                <div class="card-icon">🏮</div>
-                                <h3>花街とは</h3>
-                                <p>花街（かがい）は、芸者や舞妓が在籍する茶屋が集まった街のことです。京都の祇園、東京の新橋など、全国各地に美しい花街があります。</p>
-                            </div>
-                            <div class="knowledge-card">
-                                <div class="card-icon">💃</div>
-                                <h3>芸者・舞妓</h3>
-                                <p>芸者は日本舞踊、三味線、茶道などの芸事を身につけた女性のことです。京都では見習いの芸者を「舞妓」と呼びます。</p>
-                            </div>
-                            <div class="knowledge-card">
-                                <div class="card-icon">🍵</div>
-                                <h3>お茶屋</h3>
-                                <p>芸者との宴席を提供する料亭のことです。一見客お断りの「一見さん」制度が基本で、紹介が必要な場合が多いです。</p>
-                            </div>
-                            <div class="knowledge-card">
-                                <div class="card-icon">🎭</div>
-                                <h3>お座敷遊び</h3>
-                                <p>芸者との宴席で行われる伝統的な遊びや芸事鑑賞のことです。季節に応じた演目が楽しめます。</p>
-                            </div>
+                <div class="section-header">
+                    <p class="section-subtitle">Step 1</p>
+                    <h2 class="section-title">花街・芸者の基礎知識</h2>
+                </div>
+                
+                <div class="knowledge-grid">
+                    <div class="knowledge-card">
+                        <div class="knowledge-icon">
+                            <img src="../images/assets/01.png" alt="花街とは">
                         </div>
-                        <div class="content-sidebar">
-                            <div class="info-box">
-                                <h4>初心者におすすめ</h4>
-                                <ul>
-                                    <li>体験プラン参加</li>
-                                    <li>文化施設での公演鑑賞</li>
-                                    <li>お座敷体験教室</li>
-                                    <li>花街散策ツアー</li>
-                                </ul>
-                            </div>
-                            <div class="tip-box">
-                                <h4>ポイント</h4>
-                                <p>花街は生活の場でもあります。観光地としてだけでなく、伝統文化を継承する大切な場所として敬意を持って接しましょう。</p>
-                            </div>
-                        </div>
+                        <h3 class="knowledge-title">花街とは</h3>
+                        <p class="knowledge-description">
+                            花街（はなまち）は、芸者や舞妓が在籍し、日本の伝統芸能や文化を継承している特別な地域です。
+                            お客様をもてなす「お座敷文化」が今も息づいています。
+                        </p>
+                        <button class="knowledge-learn-more" data-topic="hanamachi">詳しく学ぶ</button>
                     </div>
+                    
+                    <div class="knowledge-card">
+                        <div class="knowledge-icon">
+                            <img src="../images/assets/02.png" alt="芸者と舞妓">
+                        </div>
+                        <h3 class="knowledge-title">芸者と舞妓の違い</h3>
+                        <p class="knowledge-description">
+                            芸者は一人前の芸を身に着けた方、舞妓は芸者になるための修行中の方です。
+                            装いや髪型、着物などに違いがあります。
+                        </p>
+                        <button class="knowledge-learn-more" data-topic="geisha-maiko">詳しく学ぶ</button>
+                    </div>
+                    
+                    <div class="knowledge-card">
+                        <div class="knowledge-icon">
+                            <img src="../images/assets/03.png" alt="お座敷文化">
+                        </div>
+                        <h3 class="knowledge-title">お座敷文化</h3>
+                        <p class="knowledge-description">
+                            お座敷は、芸者や舞妓が舞踊や音曲でお客様をもてなす空間です。
+                            日本の「おもてなし」の心が凝縮された特別な文化です。
+                        </p>
+                        <button class="knowledge-learn-more" data-topic="ozashiki">詳しく学ぶ</button>
+                    </div>
+                    
+                    <div class="knowledge-card">
+                        <div class="knowledge-icon">
+                            <img src="../images/assets/04.png" alt="伝統芸能">
+                        </div>
+                        <h3 class="knowledge-title">伝統芸能</h3>
+                        <p class="knowledge-description">
+                            日本舞踊、長唄、清元、常磐津などの音曲、茶道、華道など、
+                            多岐にわたる伝統芸能を習得されています。
+                        </p>
+                        <button class="knowledge-learn-more" data-topic="traditional-arts">詳しく学ぶ</button>
+                    </div>
+                </div>
+                
+                <div class="step-navigation">
+                    <button class="step-btn step-next" data-next="2">次のステップへ</button>
                 </div>
             </div>
         </section>
 
         <!-- Step 2: Manners -->
-        <section class="guide-step" id="step2" data-step="2">
+        <section id="manners" class="guide-step" data-step="2">
             <div class="container">
-                <div class="step-content">
-                    <h2 class="step-title">基本マナーと注意点</h2>
-                    <div class="manners-section">
+                <div class="section-header">
+                    <p class="section-subtitle">Step 2</p>
+                    <h2 class="section-title">基本マナーと注意点</h2>
+                </div>
+                
+                <div class="manners-content">
+                    <div class="manners-intro">
+                        <h3>花街を訪れる際の心得</h3>
+                        <p>花街は日本の美しい伝統文化が息づく特別な場所です。以下のマナーを守り、敬意を持って接することで、素晴らしい体験をしていただけます。</p>
+                    </div>
+                    
+                    <div class="manners-grid">
                         <div class="manner-category">
-                            <h3>お座敷でのマナー</h3>
-                            <div class="manner-grid">
-                                <div class="manner-item do">
-                                    <div class="manner-icon">✓</div>
-                                    <h4>挨拶を大切に</h4>
-                                    <p>芸者さんや仲居さんには丁寧な挨拶を心がけましょう。</p>
-                                </div>
-                                <div class="manner-item do">
-                                    <div class="manner-icon">✓</div>
-                                    <h4>正しい座り方</h4>
-                                    <p>正座が基本ですが、足が痛い場合は遠慮なくお伝えください。</p>
-                                </div>
-                                <div class="manner-item dont">
-                                    <div class="manner-icon">×</div>
-                                    <h4>過度な接触</h4>
-                                    <p>芸者さんへの不適切な接触は厳禁です。</p>
-                                </div>
-                                <div class="manner-item dont">
-                                    <div class="manner-icon">×</div>
-                                    <h4>無断撮影</h4>
-                                    <p>写真撮影は必ず許可を取ってから行いましょう。</p>
-                                </div>
+                            <div class="manner-header">
+                                <div class="manner-icon">🙏</div>
+                                <h4>基本的な心構え</h4>
                             </div>
+                            <ul class="manner-list">
+                                <li>
+                                    <strong>敬意を持つ</strong>
+                                    <span>芸者・舞妓の皆さんは長年の修行を積んだ芸術家です。敬意を持って接しましょう。</span>
+                                </li>
+                                <li>
+                                    <strong>静かに鑑賞</strong>
+                                    <span>演技中は静かに鑑賞し、適切なタイミングで拍手をしましょう。</span>
+                                </li>
+                                <li>
+                                    <strong>伝統を尊重</strong>
+                                    <span>長い歴史を持つ伝統文化として、その価値を理解し尊重しましょう。</span>
+                                </li>
+                            </ul>
                         </div>
-
+                        
                         <div class="manner-category">
-                            <h3>会話のマナー</h3>
-                            <div class="conversation-tips">
-                                <div class="tip-item">
-                                    <h4>季節の話題</h4>
-                                    <p>四季の移ろいや季節の行事について話すのは、日本文化の基本です。</p>
-                                </div>
-                                <div class="tip-item">
-                                    <h4>芸事への関心</h4>
-                                    <p>日本舞踊や三味線について質問すると、芸者さんも喜ばれます。</p>
-                                </div>
-                                <div class="tip-item">
-                                    <h4>適度な距離感</h4>
-                                    <p>プライベートな質問は控え、芸事や文化について話しましょう。</p>
-                                </div>
+                            <div class="manner-header">
+                                <div class="manner-icon">📸</div>
+                                <h4>撮影について</h4>
                             </div>
+                            <ul class="manner-list">
+                                <li>
+                                    <strong>必ず許可を得る</strong>
+                                    <span>撮影前には必ず許可を得てください。無断撮影は厳禁です。</span>
+                                </li>
+                                <li>
+                                    <strong>フラッシュは控える</strong>
+                                    <span>フラッシュは芸能の妨げになる場合があります。事前に確認しましょう。</span>
+                                </li>
+                                <li>
+                                    <strong>SNS投稿の配慮</strong>
+                                    <span>投稿する際は、相手のプライバシーに配慮しましょう。</span>
+                                </li>
+                            </ul>
                         </div>
-
+                        
                         <div class="manner-category">
-                            <h3>服装のマナー</h3>
-                            <div class="dress-code">
-                                <div class="dress-section">
-                                    <h4>男性の服装</h4>
-                                    <ul>
-                                        <li>スーツまたは和装</li>
-                                        <li>清潔感のある身だしなみ</li>
-                                        <li>派手すぎない色合い</li>
-                                    </ul>
-                                </div>
-                                <div class="dress-section">
-                                    <h4>女性の服装</h4>
-                                    <ul>
-                                        <li>上品なワンピースまたは和装</li>
-                                        <li>露出の少ない服装</li>
-                                        <li>控えめなアクセサリー</li>
-                                    </ul>
-                                </div>
+                            <div class="manner-header">
+                                <div class="manner-icon">👘</div>
+                                <h4>服装について</h4>
                             </div>
+                            <ul class="manner-list">
+                                <li>
+                                    <strong>適切な服装</strong>
+                                    <span>正装または準正装をお勧めします。カジュアル過ぎる服装は控えましょう。</span>
+                                </li>
+                                <li>
+                                    <strong>和装も歓迎</strong>
+                                    <span>着物でのご参加も大変喜ばれます。ただし、適切な着付けを心がけてください。</span>
+                                </li>
+                                <li>
+                                    <strong>季節感を大切に</strong>
+                                    <span>季節に応じた装いで参加するとより一層楽しめます。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="manner-category">
+                            <div class="manner-header">
+                                <div class="manner-icon">🍶</div>
+                                <h4>お座敷でのマナー</h4>
+                            </div>
+                            <ul class="manner-list">
+                                <li>
+                                    <strong>正座または足を崩す</strong>
+                                    <span>正座が基本ですが、楽な姿勢でも構いません。ただし品格を保ちましょう。</span>
+                                </li>
+                                <li>
+                                    <strong>お酒は適量で</strong>
+                                    <span>お酒を楽しむ際は適量を心がけ、品位を保ってお楽しみください。</span>
+                                </li>
+                                <li>
+                                    <strong>会話を楽しむ</strong>
+                                    <span>気軽に会話を楽しんでください。芸者さんは優れた話し相手です。</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                </div>
+                
+                <div class="step-navigation">
+                    <button class="step-btn step-prev" data-prev="1">前のステップ</button>
+                    <button class="step-btn step-next" data-next="3">次のステップへ</button>
                 </div>
             </div>
         </section>
 
-        <!-- Step 3: Experience Flow -->
-        <section class="guide-step" id="step3" data-step="3">
+        <!-- Step 3: How to Experience -->
+        <section class="guide-step" data-step="3">
             <div class="container">
-                <div class="step-content">
-                    <h2 class="step-title">お座敷体験の流れ</h2>
-                    <div class="experience-timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-marker">1</div>
-                            <div class="timeline-content">
-                                <h3>到着・受付</h3>
-                                <p>約束の時間の5分前に到着し、受付でお名前をお伝えください。</p>
-                                <div class="timeline-details">
-                                    <ul>
-                                        <li>携帯電話はマナーモードに</li>
-                                        <li>外套やコートは受付で預ける</li>
-                                        <li>履物は揃えて脱ぐ</li>
-                                    </ul>
+                <div class="section-header">
+                    <p class="section-subtitle">Step 3</p>
+                    <h2 class="section-title">花街文化の体験方法</h2>
+                </div>
+                
+                <div class="experience-content">
+                    <div class="experience-intro">
+                        <h3>あなたに合った体験方法を見つけよう</h3>
+                        <p>初心者の方でも安心して花街文化を体験できる様々な方法をご紹介します。ご自身のレベルや興味に合わせてお選びください。</p>
+                    </div>
+                    
+                    <div class="experience-levels">
+                        <div class="level-card beginner">
+                            <div class="level-header">
+                                <span class="level-badge">初級</span>
+                                <h4 class="level-title">はじめての方向け</h4>
+                            </div>
+                            <div class="level-content">
+                                <p class="level-description">花街文化に初めて触れる方におすすめのプログラムです。</p>
+                                <ul class="level-features">
+                                    <li>✓ 文化体験教室</li>
+                                    <li>✓ ガイド付き花街散策</li>
+                                    <li>✓ 公開イベント参加</li>
+                                    <li>✓ 基礎知識レクチャー</li>
+                                </ul>
+                                <div class="level-price">
+                                    <span class="price-from">料金目安</span>
+                                    <span class="price-amount">5,000円～</span>
                                 </div>
+                                <button class="level-btn" data-level="beginner">詳細を見る</button>
                             </div>
                         </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-marker">2</div>
-                            <div class="timeline-content">
-                                <h3>お座敷入室</h3>
-                                <p>仲居さんの案内でお座敷に入室します。席次は案内に従ってください。</p>
-                                <div class="timeline-details">
-                                    <ul>
-                                        <li>上座・下座の概念を理解する</li>
-                                        <li>正座または胡坐で着席</li>
-                                        <li>芸者さんの入室を待つ</li>
-                                    </ul>
+                        
+                        <div class="level-card intermediate">
+                            <div class="level-header">
+                                <span class="level-badge">中級</span>
+                                <h4 class="level-title">もっと深く知りたい方向け</h4>
+                            </div>
+                            <div class="level-content">
+                                <p class="level-description">基礎知識をお持ちの方向けの、より深い体験プログラムです。</p>
+                                <ul class="level-features">
+                                    <li>✓ 芸能鑑賞会</li>
+                                    <li>✓ 特別公演観覧</li>
+                                    <li>✓ お座敷体験</li>
+                                    <li>✓ 文化講座受講</li>
+                                </ul>
+                                <div class="level-price">
+                                    <span class="price-from">料金目安</span>
+                                    <span class="price-amount">15,000円～</span>
                                 </div>
+                                <button class="level-btn" data-level="intermediate">詳細を見る</button>
                             </div>
                         </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-marker">3</div>
-                            <div class="timeline-content">
-                                <h3>芸者さんとの対面</h3>
-                                <p>芸者さんが入室されたら、丁寧にご挨拶をしましょう。</p>
-                                <div class="timeline-details">
-                                    <ul>
-                                        <li>「お疲れさまでございます」の挨拶</li>
-                                        <li>お名前を教えていただく</li>
-                                        <li>自己紹介を簡潔に</li>
-                                    </ul>
-                                </div>
+                        
+                        <div class="level-card advanced">
+                            <div class="level-header">
+                                <span class="level-badge">上級</span>
+                                <h4 class="level-title">本格的な体験をしたい方向け</h4>
                             </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-marker">4</div>
-                            <div class="timeline-content">
-                                <h3>お食事・お酒</h3>
-                                <p>季節の料理とお酒を楽しみながら、芸者さんとの会話を楽しみます。</p>
-                                <div class="timeline-details">
-                                    <ul>
-                                        <li>乾杯の作法を守る</li>
-                                        <li>お酌の交換を楽しむ</li>
-                                        <li>季節の話題で会話する</li>
-                                    </ul>
+                            <div class="level-content">
+                                <p class="level-description">花街文化を深く理解されている方向けの特別プログラムです。</p>
+                                <ul class="level-features">
+                                    <li>✓ プライベートお座敷</li>
+                                    <li>✓ 特別稽古見学</li>
+                                    <li>✓ 季節行事参加</li>
+                                    <li>✓ 個別コンサルテーション</li>
+                                </ul>
+                                <div class="level-price">
+                                    <span class="price-from">料金目安</span>
+                                    <span class="price-amount">50,000円～</span>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-marker">5</div>
-                            <div class="timeline-content">
-                                <h3>芸事鑑賞</h3>
-                                <p>日本舞踊や三味線などの芸事を鑑賞します。</p>
-                                <div class="timeline-details">
-                                    <ul>
-                                        <li>静かに鑑賞する</li>
-                                        <li>拍手のタイミングを覚える</li>
-                                        <li>感想を伝える</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-marker">6</div>
-                            <div class="timeline-content">
-                                <h3>お座敷遊び</h3>
-                                <p>とらとらや金毘羅船船など、伝統的なお座敷遊びを楽しみます。</p>
-                                <div class="timeline-details">
-                                    <ul>
-                                        <li>ルールを教わる</li>
-                                        <li>積極的に参加する</li>
-                                        <li>負けても楽しく</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-marker">7</div>
-                            <div class="timeline-content">
-                                <h3>お見送り</h3>
-                                <p>お時間になりましたら、感謝の気持ちを込めてお礼を述べます。</p>
-                                <div class="timeline-details">
-                                    <ul>
-                                        <li>「ありがとうございました」のご挨拶</li>
-                                        <li>心付けをお渡しする場合</li>
-                                        <li>次回の約束をする場合</li>
-                                    </ul>
-                                </div>
+                                <button class="level-btn" data-level="advanced">詳細を見る</button>
                             </div>
                         </div>
                     </div>
+                </div>
+                
+                <div class="booking-info">
+                    <h3>ご予約・お申し込みについて</h3>
+                    <div class="booking-steps">
+                        <div class="booking-step">
+                            <div class="booking-number">1</div>
+                            <div class="booking-content">
+                                <h4>プログラム選択</h4>
+                                <p>ご希望のプログラムをお選びください</p>
+                            </div>
+                        </div>
+                        <div class="booking-step">
+                            <div class="booking-number">2</div>
+                            <div class="booking-content">
+                                <h4>日程確認</h4>
+                                <p>開催日程をご確認いただきます</p>
+                            </div>
+                        </div>
+                        <div class="booking-step">
+                            <div class="booking-number">3</div>
+                            <div class="booking-content">
+                                <h4>お申し込み</h4>
+                                <p>必要事項をご記入の上お申し込みください</p>
+                            </div>
+                        </div>
+                        <div class="booking-step">
+                            <div class="booking-number">4</div>
+                            <div class="booking-content">
+                                <h4>確認・当日</h4>
+                                <p>詳細確認後、当日お楽しみください</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-navigation">
+                    <button class="step-btn step-prev" data-prev="2">前のステップ</button>
+                    <button class="step-btn step-next" data-next="4">次のステップへ</button>
                 </div>
             </div>
         </section>
 
         <!-- Step 4: FAQ -->
-        <section class="guide-step" id="step4" data-step="4">
+        <section class="guide-step" data-step="4">
             <div class="container">
-                <div class="step-content">
-                    <h2 class="step-title">よくある質問</h2>
-                    <div class="faq-section">
-                        <div class="faq-item">
-                            <button class="faq-question" aria-expanded="false">
-                                <span>初めてでも参加できますか？</span>
-                                <span class="faq-icon">+</span>
-                            </button>
-                            <div class="faq-answer">
-                                <p>はい、初心者の方でも安心してご参加いただけます。体験プランやガイド付きのプログラムもご用意しております。</p>
+                <div class="section-header">
+                    <p class="section-subtitle">Step 4</p>
+                    <h2 class="section-title">よくある質問</h2>
+                </div>
+                
+                <div class="faq-content">
+                    <div class="faq-intro">
+                        <p>初めて花街文化に触れる方からよく寄せられる質問をまとめました。その他ご不明な点がございましたら、お気軽にお問い合わせください。</p>
+                    </div>
+                    
+                    <div class="faq-categories">
+                        <div class="faq-category active" data-category="basic">基本的な質問</div>
+                        <div class="faq-category" data-category="etiquette">マナー・作法</div>
+                        <div class="faq-category" data-category="booking">予約・料金</div>
+                        <div class="faq-category" data-category="experience">体験内容</div>
+                    </div>
+                    
+                    <div class="faq-list">
+                        <div class="faq-group active" data-category="basic">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>花街と芸者文化について全く知識がありませんが、参加できますか？</h4>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>もちろんです。初心者の方を対象とした基礎講座や体験プログラムをご用意しています。専門スタッフが丁寧にご説明いたしますので、安心してご参加ください。</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>芸者と芸妓、舞妓の違いは何ですか？</h4>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>芸者と芸妓は同じ意味で、一人前の芸を身に着けた方を指します。舞妓は芸妓になるための修行中の方で、主に京都で使われる呼び方です。年齢や技術レベル、装いに違いがあります。</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>花街は観光地として見学できますか？</h4>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>花街は生活の場でもありますので、マナーを守った見学が重要です。ガイド付きの散策ツアーや公開イベントへの参加をお勧めいたします。</p>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="faq-item">
-                            <button class="faq-question" aria-expanded="false">
-                                <span>服装はどうすれば良いですか？</span>
-                                <span class="faq-icon">+</span>
-                            </button>
-                            <div class="faq-answer">
-                                <p>フォーマルな服装が基本です。男性はスーツ、女性は上品なワンピースまたは和装をおすすめします。</p>
+                        
+                        <div class="faq-group" data-category="etiquette">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>どのような服装で参加すれば良いですか？</h4>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>正装または準正装をお勧めします。男性はスーツ、女性はワンピースや着物など品のある装いが適切です。カジュアル過ぎる服装は控えてください。</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>写真撮影はできますか？</h4>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>撮影は事前に許可を得た場合のみ可能です。無断撮影は厳禁です。また、フラッシュの使用や演技中の撮影は控えていただく場合があります。</p>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="faq-item">
-                            <button class="faq-question" aria-expanded="false">
-                                <span>料金はどのくらいかかりますか？</span>
-                                <span class="faq-icon">+</span>
-                            </button>
-                            <div class="faq-answer">
-                                <p>お店やプランによって異なりますが、体験プランで1万円〜、本格的なお座敷遊びは3万円〜が目安です。</p>
+                        
+                        <div class="faq-group" data-category="booking">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>料金はどのくらいかかりますか？</h4>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>体験内容により異なります。基礎的な文化体験教室は5,000円～、本格的なお座敷体験は50,000円～が目安です。詳細は各プログラムページをご確認ください。</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>予約はどのくらい前にすれば良いですか？</h4>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>人気のプログラムは1ヶ月以上前のご予約をお勧めします。特別公演やプライベート体験は2-3ヶ月前からのご予約が安心です。</p>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="faq-item">
-                            <button class="faq-question" aria-expanded="false">
-                                <span>写真撮影はできますか？</span>
-                                <span class="faq-icon">+</span>
-                            </button>
-                            <div class="faq-answer">
-                                <p>芸者さんや仲居さんに許可を取ってからの撮影が可能です。無断撮影は絶対に避けてください。</p>
+                        
+                        <div class="faq-group" data-category="experience">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>お座敷体験では何をするのですか？</h4>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>芸妓・舞妓による舞踊や音曲の鑑賞、お食事、会話などをお楽しみいただけます。伝統的な「おもてなし」を体験できる貴重な機会です。</p>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <button class="faq-question" aria-expanded="false">
-                                <span>お酒が飲めなくても大丈夫ですか？</span>
-                                <span class="faq-icon">+</span>
-                            </button>
-                            <div class="faq-answer">
-                                <p>お茶やソフトドリンクもご用意しております。お酒が飲めない旨を事前にお伝えください。</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <button class="faq-question" aria-expanded="false">
-                                <span>心付けは必要ですか？</span>
-                                <span class="faq-icon">+</span>
-                            </button>
-                            <div class="faq-answer">
-                                <p>必須ではありませんが、特に良いおもてなしを受けた場合は、感謝の気持ちとしてお渡しすることもあります。</p>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>外国人でも参加できますか？</h4>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>もちろんです。外国人向けの特別プログラムもご用意しています。通訳サービスや英語での説明も可能ですので、お申し込み時にご相談ください。</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <div class="step-navigation">
+                    <button class="step-btn step-prev" data-prev="3">前のステップ</button>
+                    <button class="step-btn step-complete">ガイド完了</button>
+                </div>
             </div>
         </section>
 
-        <!-- CTA Section -->
-        <section class="guide-cta">
+        <!-- Contact CTA -->
+        <section class="guide-contact-section">
             <div class="container">
-                <div class="cta-content">
-                    <h2>花街文化を体験してみませんか？</h2>
-                    <p>基本的なマナーを身につけて、日本の美しい伝統文化をご体験ください。</p>
-                    <div class="cta-buttons">
-                        <a href="culture.html" class="btn btn-primary">文化について詳しく</a>
-                        <a href="overseas.html" class="btn btn-secondary">海外の方向け情報</a>
+                <div class="contact-cta">
+                    <h3 class="contact-title">さらに詳しく知りたい方へ</h3>
+                    <p class="contact-description">
+                        個別のご相談やより詳しい情報については、専門スタッフがお答えいたします。<br>
+                        お気軽にお問い合わせください。
+                    </p>
+                    <div class="contact-buttons">
+                        <a href="#contact-form" class="btn btn-primary">お問い合わせフォーム</a>
+                        <a href="tel:03-1234-5678" class="btn btn-outline">📞 03-1234-5678</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
-                    <h3 class="footer-title">全国花街ポータルサイト</h3>
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../images/logo.png" alt="花街ロゴ" class="footer-logo-img">
+                        <span class="footer-logo-text">全国花街ポータル</span>
+                    </div>
                     <p class="footer-description">
-                        日本の伝統文化である花街・芸者文化を次世代に継承するための情報発信サイトです。
+                        日本の伝統文化である花街・芸者文化を紹介し、<br>
+                        正しい理解と継承をサポートするポータルサイトです。
                     </p>
                 </div>
-                <div class="footer-links">
-                    <h4>サイトマップ</h4>
-                    <ul>
-                        <li><a href="news.html">最新情報</a></li>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">サイトマップ</h3>
+                    <ul class="footer-links">
+                        <li><a href="news.html">News & イベント</a></li>
                         <li><a href="press.html">プレスリリース</a></li>
-                        <li><a href="guide.html">初心者ガイド</a></li>
+                        <li><a href="guide.html">花街・芸者ガイド</a></li>
                         <li><a href="culture.html">文化紹介</a></li>
-                        <li><a href="overseas.html">海外の方へ</a></li>
-                        <li><a href="glossary.html">用語集</a></li>
                     </ul>
                 </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">ガイド・サポート</h3>
+                    <ul class="footer-links">
+                        <li><a href="overseas.html">海外の方へ</a></li>
+                        <li><a href="glossary.html">用語集</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                        <li><a href="../index.html">ホームに戻る</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">フォローする</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2024 全国花街ポータルサイト. All rights reserved.</p>
+                <p class="copyright">&copy; 2024 全国花街ポータルサイト. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">プライバシーポリシー</a>
+                    <a href="#terms">利用規約</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Knowledge Detail Modal -->
+    <div id="knowledge-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-header">
+                <h3 id="knowledge-modal-title">詳細情報</h3>
+            </div>
+            <div class="modal-body">
+                <div id="knowledge-modal-content"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline modal-close">閉じる</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
     <script src="../js/script.js"></script>
     <script src="../js/guide.js"></script>
 </body>
