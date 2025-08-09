@@ -16,6 +16,7 @@ class PortalUI {
     this.globalNav = document.getElementById('globalNav');
     this.scrollDown = document.getElementById('scrollDown');
     this.heroVideo = document.querySelector('.hero__video');
+    this.html = document.documentElement;
 
     this.lastY = 0;
     this.menuOpen = false;
@@ -120,10 +121,22 @@ class PortalUI {
   onLoad() {
     this.observe();
     this.lazyImages();
+    this.applyThemeFromQueryOrStorage();
   }
 
   interactions() {
     // 追加のインタラクションはここに
+  }
+
+  applyThemeFromQueryOrStorage() {
+    const params = new URLSearchParams(location.search);
+    const q = params.get('theme');
+    const stored = localStorage.getItem('theme');
+    const next = q || stored;
+    if (next === 'light' || next === 'dark') {
+      this.html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    }
   }
 
   observe() {
