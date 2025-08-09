@@ -44,9 +44,8 @@
 /* ================================
    Tailoring – Portal minimal refines
    ================================ */
-/* Hero: use logo, center, remove video background */
-.hero--portal .hero__bg{display:none}
-.hero--portal .hero__content{padding-top:var(--s-24);padding-bottom:var(--s-24)}
+/* Hero: logo overlay on video */
+.hero--portal .hero__content{padding-top:var(--s-24);padding-bottom:var(--s-24);position:relative;z-index:2}
 .hero__stack{max-width:780px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center}
 .hero__logo{width:clamp(160px,28vw,320px);height:auto;filter:drop-shadow(0 10px 30px rgba(0,0,0,.35))}
 .hero__actions{display:none!important}
