@@ -40,3 +40,32 @@
 @media(max-width:560px){.module-grid{grid-template-columns:1fr}}
 /* Anim */
 .fade-in{opacity:0;transform:translateY(16px);transition:var(--t-slow)}.fade-in.visible{opacity:1;transform:translateY(0)}
+
+/* ================================
+   Tailoring – Portal minimal refines
+   ================================ */
+/* Hero: use logo, center, remove video background */
+.hero--portal .hero__bg{display:none}
+.hero--portal .hero__content{padding-top:var(--s-24);padding-bottom:var(--s-24)}
+.hero__stack{max-width:780px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center}
+.hero__logo{width:clamp(160px,28vw,320px);height:auto;filter:drop-shadow(0 10px 30px rgba(0,0,0,.35))}
+.hero__actions{display:none!important}
+
+/* Square media/cards to reduce template feel */
+.module-card,
+.editorial__lead,
+.editorial__item,
+.news-card,
+.mega__card,
+.mega__preview img,
+.module-card__media img,
+.editorial__lead img,
+.editorial__item img{border-radius:0!important}
+
+/* Subtle shadow tuning */
+.module-card,.editorial__lead,.editorial__item,.news-card{box-shadow:0 1px 0 var(--line),0 10px 32px rgba(0,0,0,.32)}
+
+@media(max-width:980px){
+  .hero--portal .hero__content{padding-top:var(--s-16);padding-bottom:var(--s-16)}
+  .hero__logo{width:clamp(140px,44vw,280px)}
+}
