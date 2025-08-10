@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせ | 全国花街ポータル</title>
+  <meta name="description" content="お問い合わせフォーム。ご意見・ご感想・情報提供などはこちらからお寄せください。" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
+</head>
+<body class="is-subpage">
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html">
+        <img class="brand__mark" src="../images/logo.png" alt="花街ロゴ" />
+        <span class="brand__type">全国花街ポータル</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="global-nav" id="globalNav" aria-label="グローバルナビ">
+        <ul class="nav-list">
+          <li class="nav-item has-mega"><a href="news.html" class="nav-link">News・イベント</a></li>
+          <li class="nav-item"><a href="press.html" class="nav-link">プレスリリース</a></li>
+          <li class="nav-item has-mega"><a href="guide.html" class="nav-link">ガイド</a></li>
+          <li class="nav-item"><a href="culture.html" class="nav-link">文化</a></li>
+          <li class="nav-item"><a href="overseas.html" class="nav-link">For Visitors</a></li>
+          <li class="nav-item"><a href="glossary.html" class="nav-link">用語集</a></li>
+        </ul>
+        <form class="header-search" role="search">
+          <input class="search__input" type="search" placeholder="検索：ニュース・イベント・用語" aria-label="サイト内検索" />
+        </form>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">ホーム</a> <span>/</span> <span>お問い合わせ</span></div>
+      <h1 class="page-title">お問い合わせ</h1>
+      <p class="page-description">ご意見・ご感想・情報提供など、下記フォームよりお寄せください。</p>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <section class="section section--surface">
+      <div class="container">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">お名前 <span class="req">必須</span></label>
+            <input id="name" name="name" type="text" placeholder="山田 太郎" required />
+            <p class="error" data-for="name"></p>
+          </div>
+          <div class="form-row">
+            <label for="email">メールアドレス <span class="req">必須</span></label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <p class="error" data-for="email"></p>
+          </div>
+          <div class="form-row">
+            <label for="subject">件名</label>
+            <input id="subject" name="subject" type="text" placeholder="お問い合わせの件名" />
+          </div>
+          <div class="form-row">
+            <label for="message">本文 <span class="req">必須</span></label>
+            <textarea id="message" name="message" rows="8" placeholder="お問い合わせ内容をできるだけ具体的にご記入ください。" required></textarea>
+            <p class="error" data-for="message"></p>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary">送信する</button>
+            <p class="form-note">送信前に入力内容をご確認ください。</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">個人情報の取扱い</h2>
+        <p>ご提供いただいた個人情報は、お問い合わせ対応の目的に限り利用し、適切に管理いたします。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__logo">全国花街ポータル</p>
+        <p class="footer__text">日本の伝統文化である花街・芸者文化の正しい理解と継承を支えるポータルです。</p>
+      </div>
+      <div class="footer__nav">
+        <div class="footer__col">
+          <h4 class="footer__title">コンテンツ</h4>
+          <ul>
+            <li><a href="news.html">News・イベント</a></li>
+            <li><a href="press.html">プレスリリース</a></li>
+            <li><a href="guide.html">ガイド</a></li>
+            <li><a href="culture.html">文化</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">サポート</h4>
+          <ul>
+            <li><a href="overseas.html">For Visitors</a></li>
+            <li><a href="glossary.html">用語集</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="about.html">このサイトについて</a></li>
+            <li><a href="../index.html">ホーム</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p class="copyright">© 2025 全国花街ポータル</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/contact.js"></script>
+</body>
+</html>

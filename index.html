@@ -29,9 +29,24 @@
         <span class="brand__type">全国花街ポータル</span>
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="header-tools">
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-current" aria-expanded="false" aria-label="言語を選択">
+            <span class="lang-flag">🇯🇵</span>
+            <span class="lang-name">日本語</span>
+            <span class="lang-arrow">▼</span>
+          </button>
+          <ul class="lang-menu" role="menu">
+            <li><a href="#" class="lang-option active" role="menuitem" data-lang="ja">🇯🇵 日本語</a></li>
+            <li><a href="#" class="lang-option" role="menuitem" data-lang="en">🇺🇸 English</a></li>
+            <li><a href="#" class="lang-option" role="menuitem" data-lang="zh">🇨🇳 中文</a></li>
+            <li><a href="#" class="lang-option" role="menuitem" data-lang="ko">🇰🇷 한국어</a></li>
+          </ul>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
 
       <nav class="global-nav" id="globalNav" aria-label="グローバルナビ">
         <ul class="nav-list">
@@ -39,12 +54,10 @@
             <a href="pages/news.html" class="nav-link">News・イベント</a>
             <div class="mega" role="region" aria-label="News メガメニュー">
               <div class="mega__grid">
-                <div class="mega__col">
+                 <div class="mega__col">
                   <h4 class="mega__title">ニュース</h4>
                   <ul class="mega__links">
-                    <li><a href="pages/news.html#updates">更新情報</a></li>
-                    <li><a href="pages/news.html#press">お知らせ</a></li>
-                    <li><a href="pages/press.html">プレスリリース</a></li>
+                    <li><a href="pages/news.html#updates">最新情報</a></li>
                   </ul>
                 </div>
                 <div class="mega__col">
@@ -68,7 +81,7 @@
               </div>
             </div>
           </li>
-          <li class="nav-item"><a href="pages/press.html" class="nav-link">プレス</a></li>
+          <li class="nav-item"><a href="pages/press.html" class="nav-link">プレスリリース</a></li>
           <li class="nav-item has-mega">
             <a href="pages/guide.html" class="nav-link">ガイド</a>
             <div class="mega" role="region" aria-label="ガイド メガメニュー">
@@ -77,14 +90,14 @@
                   <h4 class="mega__title">はじめての方へ</h4>
                   <ul class="mega__links">
                     <li><a href="pages/guide.html#beginner">初心者ガイド</a></li>
-                    <li><a href="pages/guide.html#manners">基本マナー</a></li>
-                    <li><a href="pages/glossary.html">用語集</a></li>
+                    <li><a href="pages/manners.html">基本マナー</a></li>
+                    <li><a href="pages/glossary.html">基本用語（入門）</a></li>
                   </ul>
                 </div>
                 <div class="mega__col">
                   <h4 class="mega__title">体験</h4>
                   <ul class="mega__links">
-                    <li><a href="#booking">見学・体験</a></li>
+                    <li><a href="pages/guide.html#booking">見学・体験</a></li>
                     <li><a href="#qa">よくある質問</a></li>
                   </ul>
                 </div>
@@ -166,8 +179,8 @@
       <div class="quick-links">
         <a class="quick" href="pages/glossary.html"><span class="icon">🔎</span>用語集</a>
         <a class="quick" href="pages/overseas.html"><span class="icon">🌐</span>For Visitors</a>
-        <a class="quick" href="#booking"><span class="icon">🎫</span>体験・申込</a>
-        <a class="quick" href="pages/press.html"><span class="icon">📰</span>プレス</a>
+        <a class="quick" href="pages/guide.html#booking"><span class="icon">🎫</span>体験・申込</a>
+        <a class="quick" href="pages/press.html"><span class="icon">📰</span>プレスリリース</a>
       </div>
     </div>
   </section>
@@ -250,7 +263,7 @@
           <h4 class="footer__title">コンテンツ</h4>
           <ul>
             <li><a href="pages/news.html">News・イベント</a></li>
-            <li><a href="pages/press.html">プレス</a></li>
+            <li><a href="pages/press.html">プレスリリース</a></li>
             <li><a href="pages/guide.html">ガイド</a></li>
             <li><a href="pages/culture.html">文化</a></li>
           </ul>
@@ -260,7 +273,7 @@
           <ul>
             <li><a href="pages/overseas.html">For Visitors</a></li>
             <li><a href="pages/glossary.html">用語集</a></li>
-            <li><a href="#contact">お問い合わせ</a></li>
+            <li><a href="pages/contact.html">お問い合わせ</a></li>
           </ul>
         </div>
       </div>
@@ -272,5 +285,6 @@
 
   <!-- Scripts -->
   <script src="js/script.js"></script>
+  <script src="js/lang-switcher.js"></script>
 </body>
 </html>
