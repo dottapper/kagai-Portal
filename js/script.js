@@ -137,6 +137,9 @@ class PortalUI {
       this.html.setAttribute('data-theme', next);
       localStorage.setItem('theme', next);
     }
+    
+    // テーマ適用後にページを表示（FOUC防止）
+    this.html.classList.add('theme-loaded');
   }
 
   observe() {
