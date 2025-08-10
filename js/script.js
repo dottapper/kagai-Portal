@@ -132,7 +132,7 @@ class PortalUI {
     const params = new URLSearchParams(location.search);
     const q = params.get('theme');
     const stored = localStorage.getItem('theme');
-    const next = q || stored;
+    const next = q || stored || 'dark'; // デフォルトはダークテーマ
     if (next === 'light' || next === 'dark') {
       this.html.setAttribute('data-theme', next);
       localStorage.setItem('theme', next);
