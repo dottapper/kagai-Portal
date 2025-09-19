@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <!-- テーマ適用の先行スクリプト - FOUC/白画面解消 -->
+  <script>try{var d=document.documentElement;var s=(new URLSearchParams(location.search).get('theme'))||localStorage.getItem('theme')||'light';if(s==='light'||s==='dark'){d.setAttribute('data-theme',s);localStorage.setItem('theme',s);}d.classList.add('theme-loaded');}catch(e){document.documentElement.classList.add('theme-loaded');}</script>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>更新情報 | 全国花街ポータル</title>
+  <meta name="description" content="全国花街ポータルの最新更新情報、サイトからのお知らせ、コンテンツ追加履歴をお届けします。新しい情報や機能の更新を逆さずにチェックしてください。" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/updates.css" />
+
+  <!-- OG -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="更新情報 | 全国花街ポータル" />
+  <meta property="og:description" content="全国花街ポータルの最新更新情報とお知らせ" />
+  <link rel="icon" href="../assets/logo.png" type="image/png" />
+</head>
+<body class="is-subpage">
+  <!-- Header / Global Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html">
+        <img class="brand__mark" src="../assets/logo.png" alt="花街ロゴ" loading="lazy" decoding="async" />
+        <span class="brand__type">全国花街ポータル</span>
+      </a>
+
+      <div class="header-tools">
+        <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="global-nav" id="globalNav" aria-label="グローバルナビ">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="events.html" class="nav-link">イベント</a>
+          </li>
+          <li class="nav-item">
+            <a href="guide.html" class="nav-link">花街ガイド</a>
+          </li>
+          <li class="nav-item">
+            <a href="columns.html" class="nav-link">コラム・読み物</a>
+          </li>
+          <li class="nav-item">
+            <a href="sns-links.html" class="nav-link">SNS・リンク</a>
+          </li>
+          <li class="nav-item">
+            <a href="updates.html" class="nav-link" aria-current="page">更新情報</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span>/</span>
+        <span>更新情報</span>
+      </div>
+      <h1 class="page-title">更新情報</h1>
+      <p class="page-description">全国花街ポータルの最新更新情報、サイトからのお知らせ、コンテンツ追加履歴をお届けします。</p>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <!-- 最新の更新情報 -->
+    <section class="section section--surface" id="latest-updates">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Latest</span>
+          <h2 class="section__title">最新の更新情報</h2>
+          <p class="section__description">サイトの最新更新や機能追加のお知らせをお届けします。</p>
+        </div>
+        
+        <article class="update-featured">
+          <div class="update-meta">
+            <span class="update-date">2025年3月15日</span>
+            <span class="update-type">重要更新</span>
+          </div>
+          <h3 class="update-title">全国花街マップ機能を実装しました</h3>
+          <p class="update-description">
+            日本全国の花街を地図上で確認できる機能を追加いたしました。8つの地域に分けて花街の詳細情報を閲覧することができ、
+            各花街の特色や歴史、アクセス情報などを簡単に調べることができます。
+          </p>
+          <div class="update-highlights">
+            <ul>
+              <li>インタラクティブな日本地図を実装</li>
+              <li>8地域の花街詳細ページを追加</li>
+              <li>Excelデータとの連携機能</li>
+              <li>モーダルウィンドウでの詳細表示</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 更新履歴 -->
+    <section class="section" id="update-history">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">History</span>
+          <h2 class="section__title">更新履歴</h2>
+          <p class="section__description">サイトの機能追加やコンテンツ更新の履歴をご確認いただけます。</p>
+        </div>
+        
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-date">2025.03.10</span>
+              <span class="news-category">機能追加</span>
+            </div>
+            <h3 class="news-card__title">イベントカレンダー機能を大幅改善</h3>
+            <div class="news-card__excerpt">
+              <p>イベントカレンダーにExcel連携機能を実装し、詳細ページも追加いたしました。各日付のセルにイベント名が表示され、複数のイベントがある場合は件数も併記されます。</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-date">2025.03.08</span>
+              <span class="news-category">サイト改善</span>
+            </div>
+            <h3 class="news-card__title">ナビゲーションメニューの改善</h3>
+            <div class="news-card__excerpt">
+              <p>PCでのホバー時サブメニューを無効化し、よりシンプルで分かりやすいナビゲーションに変更いたしました。モバイルファーストの観点から使いやすさを向上させています。</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-date">2025.03.05</span>
+              <span class="news-category">デザイン改善</span>
+            </div>
+            <h3 class="news-card__title">ヒーローセクションのデザイン向上</h3>
+            <div class="news-card__excerpt">
+              <p>トップページのヒーローセクションにガラス効果のエッジブレンディングを実装し、背景スライダーとのより自然な馴染みを実現いたしました。</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-date">2025.03.01</span>
+              <span class="news-category">コンテンツ追加</span>
+            </div>
+            <h3 class="news-card__title">SNS・リンクページのコンテンツ更新</h3>
+            <div class="news-card__excerpt">
+              <p>SNS・リンクページに各花街のInstagramアカウントや関連リンク集を追加いたしました。最新の花街情報をより簡単にアクセスできるようになりました。</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-date">2025.02.28</span>
+              <span class="news-category">機能追加</span>
+            </div>
+            <h3 class="news-card__title">花街ガイドページの詳細情報拡充</h3>
+            <div class="news-card__excerpt">
+              <p>花街ガイドページにて、各花街の歴史や特色、アクセス情報などをより詳しく紹介するコンテンツを追加いたしました。</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-date">2025.02.25</span>
+              <span class="news-category">バグ修正</span>
+            </div>
+            <h3 class="news-card__title">各ページのナビゲーション表示問題を修正</h3>
+            <div class="news-card__excerpt">
+              <p>一部のページでナビゲーションメニューが表示されない問題を修正いたしました。また、ブランドロゴクリック時のホームページ遷移も正常に動作するよう改善いたしました。</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-date">2025.02.20</span>
+              <span class="news-category">サイト改善</span>
+            </div>
+            <h3 class="news-card__title">レスポンシブデザインの改善</h3>
+            <div class="news-card__excerpt">
+              <p>スマートフォンやタブレットでの表示を最適化し、すべてのデバイスで快適にサイトをご利用いただけるよう改善いたしました。</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-date">2025.02.18</span>
+              <span class="news-category">サイト開設</span>
+            </div>
+            <h3 class="news-card__title">全国花街ポータルサイト正式開設</h3>
+            <div class="news-card__excerpt">
+              <p>日本の伝統文化である花街・芸者文化の正しい理解と継承を支えるポータルサイトとして、全国花街ポータルを正式に開設いたしました。</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-date">2025.02.15</span>
+              <span class="news-category">コンテンツ追加</span>
+            </div>
+            <h3 class="news-card__title">コラム・読み物セクションを追加</h3>
+            <div class="news-card__excerpt">
+              <p>花街文化に関する詳しい解説や歴史的背景を学べるコラム・読み物セクションを新設いたしました。より深い理解のための情報をお届けします。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 今後の予定 -->
+    <section class="section section--surface" id="upcoming-features">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Coming Soon</span>
+          <h2 class="section__title">今後の予定</h2>
+          <p class="section__description">今後実装予定の機能や追加予定のコンテンツをご紹介します。</p>
+        </div>
+        
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-date">予定</span>
+              <span class="news-category">機能追加</span>
+            </div>
+            <h3 class="news-card__title">多言語対応</h3>
+            <div class="news-card__excerpt">
+              <p>海外からの訪問者の方にも花街文化をご理解いただけるよう、英語・中国語・韓国語での多言語対応を予定しています。</p>
+            </div>
+          </article>
+          
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-date">予定</span>
+              <span class="news-category">コンテンツ追加</span>
+            </div>
+            <h3 class="news-card__title">動画コンテンツ</h3>
+            <div class="news-card__excerpt">
+              <p>花街文化の魅力をより深く伝えるため、舞踊や音曲の動画コンテンツの追加を検討しています。</p>
+            </div>
+          </article>
+          
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-date">予定</span>
+              <span class="news-category">機能改善</span>
+            </div>
+            <h3 class="news-card__title">検索機能強化</h3>
+            <div class="news-card__excerpt">
+              <p>地域別・カテゴリ別の詳細検索機能を実装し、より効率的に情報を見つけられるよう改善予定です。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a class="footer__logo" href="../index.html">
+            <img src="../assets/logo.png" alt="全国花街ポータル ロゴ" loading="lazy" decoding="async" />
+            <span class="footer__brand-text">全国花街ポータル</span>
+          </a>
+          <p class="footer__desc">日本の伝統文化である花街・芸者文化の正しい理解と継承を支えるポータルです。</p>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__col">
+            <h4 class="footer__title">メインコンテンツ</h4>
+            <ul class="footer__links">
+              <li><a href="events.html">イベント</a></li>
+              <li><a href="guide.html">花街ガイド</a></li>
+              <li><a href="columns.html">コラム・読み物</a></li>
+              <li><a href="sns-links.html">SNS・リンク</a></li>
+              <li><a href="updates.html">更新情報</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__title">サイト情報</h4>
+            <ul class="footer__links">
+              <li><a href="about.html">サイト概要</a></li>
+              <li><a href="contact.html">お問い合わせ</a></li>
+              <li><a href="privacy.html">利用規約・プライバシーポリシー</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 全国花街ポータル. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/script.js"></script>
+</body>
+</html>

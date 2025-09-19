@@ -1,0 +1,38 @@
+{
+  "name": "hanamachi-portal",
+  "version": "1.0.0",
+  "description": "全国花街ポータルサイト",
+  "main": "index.html",
+  "scripts": {
+    "build": "npm run build:json && npm run build:eleventy",
+    "build:json": "node scripts/excel-to-json.js",
+    "build:eleventy": "eleventy",
+    "build:static": "node scripts/build-static.js",
+    "build:all": "npm run build:json && npm run build:static",
+    "serve": "eleventy --serve",
+    "dev": "npm run build && eleventy --serve",
+    "clean": "rm -rf _site dist",
+    "update:templates": "node scripts/update-templates.js",
+    "verify:templates": "node scripts/verify-templates.js"
+  },
+  "keywords": [
+    "hanamachi",
+    "geisha",
+    "japanese-culture",
+    "portal",
+    "eleventy",
+    "static-site"
+  ],
+  "author": "全国花街ポータル",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "luxon": "^3.4.4"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

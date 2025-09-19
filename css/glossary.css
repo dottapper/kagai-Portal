@@ -1,0 +1,251 @@
+/* Glossary Page Styles */
+
+/* Controls Section */
+.glossary-controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-6);
+  max-width: var(--w-lg);
+  margin: 0 auto;
+}
+
+.glossary-search {
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: var(--s-3) var(--s-4);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--bg-surface);
+  color: var(--text);
+  font-size: 1rem;
+  font-family: var(--serif);
+  transition: var(--t);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.1);
+}
+
+.search-input::placeholder {
+  color: var(--text-dim);
+}
+
+.glossary-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--s-2) var(--s-4);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  font-family: var(--serif);
+  cursor: pointer;
+  transition: var(--t);
+}
+
+.filter-btn:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.filter-btn.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+/* Glossary Grid */
+.glossary-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-12);
+  max-width: var(--w-xl);
+  margin: 0 auto;
+}
+
+/* Kana Sections */
+.glossary-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-6);
+}
+
+.glossary-kana {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0;
+  padding-bottom: var(--s-2);
+  border-bottom: 2px solid var(--accent);
+  font-family: var(--serif);
+}
+
+/* Glossary Items */
+.glossary-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  padding: var(--s-6);
+  background: var(--bg-surface);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  transition: var(--t);
+}
+
+.glossary-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.glossary-item.hidden {
+  display: none;
+}
+
+/* Term Styling */
+.term {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+  font-family: var(--serif);
+}
+
+.reading {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin: 0;
+  font-style: italic;
+  font-family: var(--sans);
+}
+
+.definition {
+  line-height: 1.8;
+}
+
+.definition p {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--serif);
+}
+
+/* Category Tags (optional, for future use) */
+.glossary-item[data-category="person"] .term::after {
+  content: "人";
+  display: inline-block;
+  margin-left: var(--s-2);
+  padding: var(--s-1) var(--s-2);
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+  font-size: 0.7rem;
+  border-radius: var(--r-sm);
+  font-weight: 400;
+  vertical-align: super;
+}
+
+.glossary-item[data-category="place"] .term::after {
+  content: "場所";
+  display: inline-block;
+  margin-left: var(--s-2);
+  padding: var(--s-1) var(--s-2);
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  font-size: 0.7rem;
+  border-radius: var(--r-sm);
+  font-weight: 400;
+  vertical-align: super;
+}
+
+.glossary-item[data-category="event"] .term::after {
+  content: "行事";
+  display: inline-block;
+  margin-left: var(--s-2);
+  padding: var(--s-1) var(--s-2);
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+  font-size: 0.7rem;
+  border-radius: var(--r-sm);
+  font-weight: 400;
+  vertical-align: super;
+}
+
+.glossary-item[data-category="item"] .term::after {
+  content: "道具";
+  display: inline-block;
+  margin-left: var(--s-2);
+  padding: var(--s-1) var(--s-2);
+  background: rgba(139, 92, 246, 0.1);
+  color: #8b5cf6;
+  font-size: 0.7rem;
+  border-radius: var(--r-sm);
+  font-weight: 400;
+  vertical-align: super;
+}
+
+.glossary-item[data-category="art"] .term::after {
+  content: "芸能";
+  display: inline-block;
+  margin-left: var(--s-2);
+  padding: var(--s-1) var(--s-2);
+  background: rgba(236, 72, 153, 0.1);
+  color: #ec4899;
+  font-size: 0.7rem;
+  border-radius: var(--r-sm);
+  font-weight: 400;
+  vertical-align: super;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .glossary-controls {
+    gap: var(--s-4);
+  }
+  
+  .filter-btn {
+    font-size: 0.8rem;
+    padding: var(--s-2) var(--s-3);
+  }
+  
+  .glossary-grid {
+    gap: var(--s-8);
+  }
+  
+  .glossary-kana {
+    font-size: 1.6rem;
+  }
+  
+  .term {
+    font-size: 1.2rem;
+  }
+  
+  .glossary-item {
+    padding: var(--s-4);
+  }
+}
+
+/* No Results Message */
+.no-results {
+  text-align: center;
+  padding: var(--s-12);
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.no-results.hidden {
+  display: none;
+}

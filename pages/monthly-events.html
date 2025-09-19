@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <!-- テーマ適用の先行スクリプト - FOUC/白画面解消 -->
+  <script>try{var d=document.documentElement;var s=(new URLSearchParams(location.search).get('theme'))||localStorage.getItem('theme')||'light';if(s==='light'||s==='dark'){d.setAttribute('data-theme',s);localStorage.setItem('theme',s);}d.classList.add('theme-loaded');}catch(e){document.documentElement.classList.add('theme-loaded');}</script>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>月別イベント詳細 | 全国花街ポータル</title>
+  <meta name="description" content="全国花街の月別イベント写真と詳細情報。実際の催しの様子を写真とともにお楽しみください。" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/monthly-events.css" />
+
+  <!-- OG -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="月別イベント詳細 | 全国花街ポータル" />
+  <meta property="og:description" content="全国花街の月別イベント写真と詳細情報" />
+  <link rel="icon" href="../assets/logo.png" type="image/png" />
+</head>
+<body class="is-subpage">
+  <!-- Header / Global Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html">
+        <img class="brand__mark" src="../assets/logo.png" alt="花街ロゴ" loading="lazy" decoding="async" />
+        <span class="brand__type">全国花街ポータル</span>
+      </a>
+
+      <div class="header-tools">
+        <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="global-nav" id="globalNav" aria-label="グローバルナビ">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="events.html" class="nav-link">イベント</a>
+          </li>
+          <li class="nav-item">
+            <a href="hanagai-guide.html" class="nav-link">花街ガイド</a>
+          </li>
+          <li class="nav-item">
+            <a href="columns.html" class="nav-link">コラム・読み物</a>
+          </li>
+          <li class="nav-item">
+            <a href="sns-links.html" class="nav-link">SNS・リンク</a>
+          </li>
+          <li class="nav-item">
+            <a href="updates.html" class="nav-link">更新情報</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span>/</span>
+        <a href="events.html">イベント</a>
+        <span>/</span>
+        <span>月別イベント詳細</span>
+      </div>
+      <h1 class="page-title">月別イベント詳細</h1>
+      <p class="page-description">全国花街で開催される月別イベントの写真と詳細情報をお楽しみください</p>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <!-- Month Navigation -->
+    <section class="section month-nav-section">
+      <div class="container">
+        <nav class="month-nav" aria-label="月選択ナビゲーション">
+          <button class="month-btn" data-month="1">1月</button>
+          <button class="month-btn" data-month="2">2月</button>
+          <button class="month-btn" data-month="3">3月</button>
+          <button class="month-btn" data-month="4">4月</button>
+          <button class="month-btn" data-month="5">5月</button>
+          <button class="month-btn" data-month="6">6月</button>
+          <button class="month-btn" data-month="7">7月</button>
+          <button class="month-btn" data-month="8">8月</button>
+          <button class="month-btn" data-month="9">9月</button>
+          <button class="month-btn" data-month="10">10月</button>
+          <button class="month-btn" data-month="11">11月</button>
+          <button class="month-btn" data-month="12">12月</button>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Monthly Events Content -->
+    <section class="section section--surface monthly-content-section">
+      <div class="container">
+        <!-- 1月 -->
+        <div class="month-content" data-month="1">
+          <div class="month-header">
+            <h2 class="month-title">1月のイベント</h2>
+            <p class="month-theme">新春の始まり</p>
+            <p class="month-description">新年を祝う華やかな行事が多く開催される季節です。伝統的な新春の舞踊や茶事をお楽しみください。</p>
+          </div>
+          <div class="event-gallery">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/1月/0107_八王子・新春の舞1（仮）.jpeg" alt="八王子・新春の舞" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">八王子・新春の舞</h3>
+                <p class="event-date">1月7日開催</p>
+                <p class="event-location">東京・八王子</p>
+                <p class="event-description">八王子花街による新春特別公演。伝統的な新年の舞踊を披露し、一年の門出を祝います。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2月 -->
+        <div class="month-content" data-month="2">
+          <div class="month-header">
+            <h2 class="month-title">2月のイベント</h2>
+            <p class="month-theme">梅の季節</p>
+            <p class="month-description">早春の梅をテーマにした優美な公演が特徴的な時期です。節分行事なども行われます。</p>
+          </div>
+          <div class="event-gallery">
+            <div class="event-item">
+              <div class="event-image-grid">
+                <img src="../images/2月/0202_浅草_節分1.JPG" alt="浅草観音文化芸能人節分会" loading="lazy" />
+                <img src="../images/2月/0202_浅草_節分2.JPG" alt="浅草観音文化芸能人節分会" loading="lazy" />
+                <img src="../images/2月/0202_浅草_節分3.JPG" alt="浅草観音文化芸能人節分会" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">浅草観音文化芸能人節分会</h3>
+                <p class="event-date">2月2日開催</p>
+                <p class="kagai-tag tag-asakusa">タグ：浅草</p>
+                <p class="event-location">📍 浅草寺本堂 東側特設舞台</p>
+                <p class="event-time">🕐 14:30～17:15（芸者衆による豆まきは17:00～）</p>
+                <p class="event-price">💴 観覧無料</p>
+                <p class="event-description">浅草芸者衆が浅草寺境内より豆まきを行います。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>浅草観光連盟（TEL：03-3844-1221）</p>
+                  <p><strong>詳細情報：</strong><a href="https://e-asakusa.jp/" target="_blank" rel="noopener noreferrer">浅草観光連盟公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="event-item">
+              <div class="event-image placeholder-gray">
+                <div class="placeholder-text">画像準備中</div>
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">高尾山節分会追儺式</h3>
+                <p class="event-date">2月2日開催</p>
+                <p class="kagai-tag tag-hachioji">タグ：八王子</p>
+                <p class="event-location">📍 高尾山薬王院 境内（東京都八王子市高尾町2177）</p>
+                <p class="event-time">🕐 9:00/10:30/12:00/13:30/14:30(各回異なる芸妓衆が修行予定)</p>
+                <p class="event-price">💴 観覧無料</p>
+                <p class="event-description">八王子芸妓衆が境内より豆まきを行います。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>高尾山薬王院（TEL：０４２-６６１-１１１５）</p>
+                  <p><strong>詳細情報：</strong><a href="https://takaosan.or.jp/setsubun/" target="_blank" rel="noopener noreferrer">高尾山薬王院公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/2月/0202_神楽坂_節分1.JPG" alt="節分豆まき式" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">節分豆まき式</h3>
+                <p class="event-date">2月3日開催</p>
+                <p class="kagai-tag tag-kagurazaka">タグ：神楽坂</p>
+                <p class="event-location">📍 善國寺 境内（東京都新宿区神楽坂5-36）</p>
+                <p class="event-time">🕐 15:00～</p>
+                <p class="event-price">💴 観覧無料</p>
+                <p class="event-description">毘沙門様の愛称で地元の人々に親しまれる善國寺にて芸者衆が豆まきを行います。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>善國寺（TEL：03-3269-0641）</p>
+                  <p><strong>詳細情報：</strong><a href="https://kagurazaka-bishamonten.com/event/" target="_blank" rel="noopener noreferrer">善國寺公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/2月/0209_渋谷円山町_節分1.jpeg" alt="「さかのうえの大宴会」節分お化け" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">「さかのうえの大宴会」節分お化け</h3>
+                <p class="event-date">2月9日開催</p>
+                <p class="kagai-tag tag-shibuya">タグ：渋谷</p>
+                <p class="event-location">📍 つくね侍 さかのうえ（東京都渋谷区円山町２０－１ 新大宗丸山ビル１階）</p>
+                <p class="event-time">🕐 18:00～21:30</p>
+                <p class="event-price">💴 15,000円（お食事お飲み物付き）</p>
+                <p class="event-description">古民家風のしつらえで、様々な芸能とともに円山芸者衆の芸をご堪能いただきます。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>つくね侍 さかのうえ（TEL：03-6809-0450）</p>
+                  <p><strong>詳細情報：</strong><a href="https://tsukunesamurai-sakanoue.owst.jp/blogs/3431914" target="_blank" rel="noopener noreferrer">つくね侍 さかのうえ公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/2月/0215_神楽坂_かぐら坂への誘い.JPG" alt="かぐら坂への誘い" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">かぐら坂への誘い</h3>
+                <p class="event-date">2月15日開催</p>
+                <p class="kagai-tag tag-kagurazaka">タグ：神楽坂</p>
+                <p class="event-location">📍 神楽坂 東京大神宮内 マツヤサロン（東京都千代田区富士見2-4-1）</p>
+                <p class="event-time">🕐 第一部：12:00～/15:30（各回、開場は３０分前・所要時間約1時間30分予定/演目は両回同様）</p>
+                <p class="event-price">💴 22,000円（全席指定・御飲食料込）</p>
+                <p class="event-description">「特製懐石弁当」をお召上がりいただきながら、神楽坂芸者衆の踊りをお楽しみいただきます。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>東京神楽坂組合 見番事務所（TEL：03-3260-3291）</p>
+                  <p><strong>詳細情報：</strong><a href="https://kagurazaka-kumiai.com/news/192/" target="_blank" rel="noopener noreferrer">東京神楽坂組合公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3月 -->
+        <div class="month-content" data-month="3">
+          <div class="month-header">
+            <h2 class="month-title">3月のイベント</h2>
+            <p class="month-theme">春の訪れ</p>
+            <p class="month-description">桜の開花とともに春らしい演目が増える季節です。新人芸者のお披露目なども行われます。</p>
+          </div>
+          <div class="event-gallery">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/3月/0322_赤坂_TCS_1.JPG" alt="「Tokyo Creative Salon 2025」AKASAKA GEISHA PARADE" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">「Tokyo Creative Salon 2025」AKASAKA GEISHA PARADE</h3>
+                <p class="event-date">3月22日開催</p>
+                <p class="kagai-tag tag-akasaka">タグ：赤坂</p>
+                <p class="event-location">📍 赤坂一ツ木通り、エスプラナード赤坂、みすじ通り、赤坂通り（東京都港区赤坂）</p>
+                <p class="event-time">🕐 12:00～（約１時間予定）</p>
+                <p class="event-price">💴 観覧無料</p>
+                <p class="event-description">赤坂芸者衆と赤坂24町会の方々が、赤坂の街を練り歩きます。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>TBS（TEL：03-3746-1111）</p>
+                  <p><strong>詳細情報：</strong><a href="https://www.tbs.co.jp/tcs-akasaka/#geisha" target="_blank" rel="noopener noreferrer">Tokyo Creative Salon 2025公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/3月/0327-0406_向嶋_芸妓茶屋_1.JPG" alt="墨堤さくらまつり「芸妓茶屋」" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">墨堤さくらまつり「芸妓茶屋」</h3>
+                <p class="event-date">3月27日～4月6日開催</p>
+                <p class="kagai-tag tag-mukojima">タグ：向嶋</p>
+                <p class="event-location">📍 桜橋デッキスクエア（東京都墨田区向島5-1-1）</p>
+                <p class="event-time">🕐 平日11:30～15:30/土日11:30～16:00（雨天強風は中止）</p>
+                <p class="event-price">💴 茶屋の飲食は有料</p>
+                <p class="event-description">隅田公園に期間限定で「芸妓茶屋」を設置。お団子等をご購入いただきますと、お席まで芸者衆がお運びします。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>墨田区観光協会（TEL：03-6657-5160）</p>
+                  <p><strong>詳細情報：</strong><a href="https://visit-sumida.jp/event/sakuramatsuri2025/" target="_blank" rel="noopener noreferrer">墨堤さくらまつり公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/3月/0330_浅草_花見の会_2.JPG" alt="浅草花街「お花見会」" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">浅草花街「お花見会」</h3>
+                <p class="event-date">3月30日開催</p>
+                <p class="kagai-tag tag-asakusa">タグ：浅草</p>
+                <p class="event-location">📍 浅草ビューホテル3階【祥雲の間】（東京都台東区西浅草3-17-1）</p>
+                <p class="event-time">🕐 16:00～（15:30開場）</p>
+                <p class="event-price">💴 27,500円（お食事・お飲み物付き）</p>
+                <p class="event-description">浅草芸者衆と幇間衆が勢ぞろいし、お客様を春の味覚と踊りでおもてなしいたします。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>東京浅草組合 浅草見番（TEL：03-3874-3131）</p>
+                  <p><strong>詳細情報：</strong><a href="https://asakusakenban.com/information/" target="_blank" rel="noopener noreferrer">浅草見番公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4月 -->
+        <div class="month-content" data-month="4">
+          <div class="month-header">
+            <h2 class="month-title">4月のイベント</h2>
+            <p class="month-theme">桜満開</p>
+            <p class="month-description">桜が満開となり、最も華やかで美しい季節を迎えます。花見と合わせた特別な公演も開催されます。</p>
+          </div>
+          <div class="event-gallery">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/3月/0327-0406_向嶋_芸妓茶屋_1.JPG" alt="墨堤さくらまつり「芸妓茶屋」" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">墨堤さくらまつり「芸妓茶屋」</h3>
+                <p class="event-date">3月27日～4月6日開催</p>
+                <p class="kagai-tag tag-mukojima">タグ：向嶋</p>
+                <p class="event-location">📍 桜橋デッキスクエア（東京都墨田区向島5-1-1）</p>
+                <p class="event-time">🕐 平日11:30～15:30/土日11:30～16:00（雨天強風は中止）</p>
+                <p class="event-price">💴 茶屋の飲食は有料</p>
+                <p class="event-description">隅田公園に期間限定で「芸妓茶屋」を設置。お団子等をご購入いただきますと、お席まで芸者衆がお運びします。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>墨田区観光協会（TEL：03-6657-5160）</p>
+                  <p><strong>詳細情報：</strong><a href="https://visit-sumida.jp/event/sakuramatsuri2025/" target="_blank" rel="noopener noreferrer">墨堤さくらまつり公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/4月/0412_渋谷円山町.JPG" alt="「さかのうえの大宴会」春爛漫さかのうえのお花見大宴会" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">「さかのうえの大宴会」春爛漫さかのうえのお花見大宴会</h3>
+                <p class="event-date">4月12日開催</p>
+                <p class="kagai-tag tag-shibuya">タグ：渋谷</p>
+                <p class="event-location">📍 つくね侍 さかのうえ（東京都渋谷区円山町２０－１ 新大宗丸山ビル１階）</p>
+                <p class="event-time">🕐 18:00～21:30</p>
+                <p class="event-price">💴 13,000円（お食事お飲み物付き）</p>
+                <p class="event-description">古民家風のしつらえで、様々な芸能とともに円山芸者衆の芸をご堪能いただきます。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>つくね侍 さかのうえ（TEL：03-6809-0450）</p>
+                  <p><strong>詳細情報：</strong><a href="https://tsukunesamurai-sakanoue.owst.jp/blogs/3436064" target="_blank" rel="noopener noreferrer">つくね侍 さかのうえ公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/4月/0418-0419_八王子_八王子をどり2.jpeg" alt="第4回 八王子をどり" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">第4回 八王子をどり</h3>
+                <p class="event-date">4月18・19日開催</p>
+                <p class="kagai-tag tag-hachioji">タグ：八王子</p>
+                <p class="event-location">📍 いちょうホール 大ホール 八王子市芸術文化会館（八王子市本町24-1）</p>
+                <p class="event-time">🕐 〈昼の部〉13:00開演・〈夜の部〉17時開演（開場は各回1時間前）</p>
+                <p class="event-price">💴 8,000円（全席指定、プログラム・イヤホンガイド付）</p>
+                <p class="event-description">2021年の開催から5年ぶりの開催、桑都に舞う艶姿をお楽しみください。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>いちょうホール（TEL：042-621-3001）</p>
+                  <p><strong>詳細情報：</strong><a href="https://www.hachiojibunka.or.jp/icho/archives/eventinfo/10018/" target="_blank" rel="noopener noreferrer">いちょうホール公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/4月/0424-0425_神楽坂_神楽坂をどり1.JPG" alt="第40回 特別公演 神楽坂をどり" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">第40回 特別公演 神楽坂をどり</h3>
+                <p class="event-date">4月24・25日開催</p>
+                <p class="kagai-tag tag-kagurazaka">タグ：神楽坂</p>
+                <p class="event-location">📍 東急歌舞伎町タワー THEATER MILANO-Za（東京都新宿区歌舞伎町1-29-1）</p>
+                <p class="event-time">🕐 17：00開演（16：15開場）・12：30開演（11：45開場）・16：00開演（15：15開場）</p>
+                <p class="event-price">💴 ○○○○円※11月下旬発売開始予定</p>
+                <p class="event-description">今回は「東急歌舞伎町タワー・THEATER MILANO-Za」に移し、特別公演として開催いたします。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>東京神楽坂組合 見番事務所（TEL：03-3260-3291）</p>
+                  <p><strong>詳細情報：</strong><a href="https://kagurazaka-kumiai.com/news/215/" target="_blank" rel="noopener noreferrer">東京神楽坂組合公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5月 -->
+        <div class="month-content" data-month="5">
+          <div class="month-header">
+            <h2 class="month-title">5月のイベント</h2>
+            <p class="month-theme">新緑の季節</p>
+            <p class="month-description">新緑が美しく、爽やかな初夏の演目が楽しめる季節です。三社祭などの伝統行事も行われます。</p>
+          </div>
+          <div class="event-gallery">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/5月/0517_浅草_三社祭「大行列」1.JPG" alt="三社祭「大行列」" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">三社祭「大行列」</h3>
+                <p class="event-date">5月16日開催</p>
+                <p class="kagai-tag tag-asakusa">タグ：浅草</p>
+                <p class="event-location">📍 【西廻り】柳通り→千束通り→ひさご通り→浅草六区→雷門通り→雷門→仲見世→浅草神社</p>
+                <p class="event-time">🕐 13:00浅草見番前出発（雨天中止）</p>
+                <p class="event-price">💴 観覧無料</p>
+                <p class="event-description">お囃子屋台・鳶頭木遣り・びんざさら舞・白鷺の舞とともに、浅草芸者衆・幇間衆が浅草の町を練り歩きます。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>浅草神社社々務所（TEL：03-3844-1575）</p>
+                  <p><strong>詳細情報：</strong><a href="https://www.asakusajinja.jp/sanjamatsuri/schedule/index.html" target="_blank" rel="noopener noreferrer">浅草神社公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/5月/0518_浅草_三社祭「くみ踊り鑑賞の集い」2.JPG" alt="三社祭「くみ踊り鑑賞の集い」" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">三社祭「くみ踊り鑑賞の集い」</h3>
+                <p class="event-date">5月17・18日開催</p>
+                <p class="kagai-tag tag-asakusa">タグ：浅草</p>
+                <p class="event-location">📍 浅草三業会館（浅草見番：東京都台東区浅草3-33-5）</p>
+                <p class="event-time">🕐 13:00開演（12:30開場）</p>
+                <p class="event-price">💴 5,500円（自由席・定員150名）</p>
+                <p class="event-description">芸者衆が数人ずつ組になり踊るほか、幇間衆も出演する賑やかな会をお届けします。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>東京浅草組合（見番）（TEL：03-3874-3131）/カンフェティ（TEL：0120-240-540）</p>
+                  <p><strong>詳細情報：</strong><a href="https://asakusakenban.com/information/" target="_blank" rel="noopener noreferrer">東京浅草組合公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/5月/0518_浅草_三社祭奉納踊り」1.jpeg" alt="三社祭「奉納舞踊」" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">三社祭「奉納舞踊」</h3>
+                <p class="event-date">5月18日開催</p>
+                <p class="kagai-tag tag-asakusa">タグ：浅草</p>
+                <p class="event-location">📍 浅草神社内の神楽殿（東京都台東区浅草2-3-1）</p>
+                <p class="event-time">🕐 15:00～</p>
+                <p class="event-price">💴 観覧無料</p>
+                <p class="event-description">浅草神社内の神楽殿にて、浅草芸者衆・幇間衆が踊りと幇間芸を奉納します。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>浅草神社社々務所（TEL：03-3844-1575）</p>
+                  <p><strong>詳細情報：</strong><a href="https://www.asakusajinja.jp/sanjamatsuri/schedule/index.html" target="_blank" rel="noopener noreferrer">浅草神社公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/5月/0518_赤坂_華のおどり3.JPG" alt="華のおどり" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">華のおどり</h3>
+                <p class="event-date">5月18日開催</p>
+                <p class="kagai-tag tag-akasaka">タグ：赤坂</p>
+                <p class="event-location">📍 きらぼし銀行本店8階（東京都港区南青山3-10-43）</p>
+                <p class="event-time">🕐 15:30～開演（15:00開場）</p>
+                <p class="event-price">💴 観賞無料（※港区在住・在勤・在学者限定、事前申込・先着順/応募締め切り4/11）</p>
+                <p class="event-description">赤坂花街の伝統文化を継承する取り組みとして、赤坂芸者衆による踊「華のおどり」をお届けします。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>㈱東京きらぼしフィナンシャルグループ事業戦略部（TEL：03-6447-5891）</p>
+                  <p><strong>詳細情報：</strong><a href="https://dp700d203kaax.cloudfront.net/zyouhousi/back-number/pdf/Kissport_25-04.pdf" target="_blank" rel="noopener noreferrer">きらぼし銀行公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/5月/0521_新橋_東をどり1.JPG" alt="第100回 東をどり" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">第100回 東をどり</h3>
+                <p class="event-date">5月21〜27日開催</p>
+                <p class="kagai-tag tag-shinbashi">タグ：新橋</p>
+                <p class="event-location">📍 新橋演舞場（東京都中央区銀座6-18-2）</p>
+                <p class="event-time">🕐 〈昼の回〉 12:30開演/〈夕の回〉 16:00開演（開場は各回30分前）</p>
+                <p class="event-price">💴 桟敷席：12,000円/雪席：10,000円（1階/2階前方）/月席：6,000円（2階後方/2階左右）/花席：2,000円（3階自由席）※学生割引：当日会場窓口販売の当日券に限り、学生証ご提示で全席半額</p>
+                <p class="event-description">普段は一見お断りと閉ざす新橋花柳界の門。年一度の東をどりにその扉が開き、百回を迎え 新橋芸者に華を添えます。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>チケットホン松竹（TEL：0570-000-489 / 03-6745-0888）</p>
+                  <p><strong>詳細情報：</strong><a href="https://azuma-odori.net/" target="_blank" rel="noopener noreferrer">東をどり公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/5月/0525_赤坂_茜まつり1.JPG" alt="茜まつり" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">茜まつり</h3>
+                <p class="event-date">5月25日開催</p>
+                <p class="kagai-tag tag-akasaka">タグ：赤坂</p>
+                <p class="event-location">📍 赤坂サカス広場（東京都港区赤坂5-3-1）</p>
+                <p class="event-time">🕐 18:00～</p>
+                <p class="event-price">💴 観覧無料（※天候によりイベントは予告なく変更・終了する可能性あり）</p>
+                <p class="event-description">赤坂の歴史と伝統を紡いできた「赤坂芸者」は、赤坂のシンボルの一つ。普段はなかなか見ることのできない、赤坂芸者衆の踊りをトークショーをお届けします。赤坂の味、文化、歴史、人を伝えるこのおまつりの目玉イベントです。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>茜まつり実行委員会（TEL：XXXXXXX）</p>
+                  <p><strong>詳細情報：</strong><a href="https://akanematsuri.com/" target="_blank" rel="noopener noreferrer">茜まつり公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <div class="placeholder-gray">
+                  <div class="placeholder-text">画像準備中</div>
+                </div>
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">渋谷和芸「四季の宴―雨―」</h3>
+                <p class="event-date">5月28日開催</p>
+                <p class="kagai-tag tag-shibuya">タグ：渋谷</p>
+                <p class="event-location">📍 料亭 三長（東京都渋谷区円山町6-1）</p>
+                <p class="event-time">🕐 18:00開宴（17:30開場）</p>
+                <p class="event-price">💴 22,000円（お食事・お飲み物代含む）</p>
+                <p class="event-description">渋谷に残る花街・円山町の芸者衆の芸とともに、花柳寿世晶による日本舞踊で、雨をテーマに江戸の情緒をお楽しみください。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>渋谷和芸 運営事務局（TEL：090-3232-1943）</p>
+                  <p><strong>詳細情報：</strong><a href="https://shibuya-wagei.com/" target="_blank" rel="noopener noreferrer">渋谷和芸公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6月 -->
+        <div class="month-content" data-month="6">
+          <div class="month-header">
+            <h2 class="month-title">6月のイベント</h2>
+            <p class="month-theme">初夏の風情</p>
+            <p class="month-description">初夏の風情を楽しむ涼やかな演目が特徴の季節です。幇間芸なども楽しめる時期です。</p>
+          </div>
+          <div class="event-gallery">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/6月/0601_浅草_幇間大競演2.JPG" alt="幇間大競演" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">幇間大競演</h3>
+                <p class="event-date">6月1日開催</p>
+                <p class="kagai-tag tag-asakusa">タグ：浅草</p>
+                <p class="event-location">📍 浅草三業会館（浅草見番：東京都台東区浅草3-33-5）</p>
+                <p class="event-time">🕐 13:00開演（12:30開場）</p>
+                <p class="event-price">💴 5,000円</p>
+                <p class="event-description">宴席で踊りや幇間芸などで場を盛り上げる幇間衆。日本で唯一、幇間衆が活躍している花街は浅草のみ。今回は所属する幇間全員が集い、様々な芸をお届けする、またとない機会です。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>東京浅草組合 浅草見番（TEL：03-3874-3131）</p>
+                  <p><strong>詳細情報：</strong><a href="https://asakusakenban.com/information/" target="_blank" rel="noopener noreferrer">浅草見番公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/6月/0614_渋谷円山町.JPG" alt="さかのうえの大宴会" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">さかのうえの大宴会</h3>
+                <p class="event-date">6月14日開催</p>
+                <p class="kagai-tag tag-shibuya">タグ：渋谷</p>
+                <p class="event-location">📍 つくね侍 さかのうえ（東京都渋谷区円山町20-1 新大宗丸山ビル1階）</p>
+                <p class="event-time">🕐 18:00～21:30</p>
+                <p class="event-price">💴 13,000円（お食事お飲み物付き）</p>
+                <p class="event-description">古民家風のしつらえで、様々な芸能とともに円山芸者衆の芸をご堪能いただきます。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>つくね侍 さかのうえ（TEL：03-6809-0450）</p>
+                  <p><strong>詳細情報：</strong><a href="https://tsukunesamurai-sakanoue.owst.jp/blogs/3438657" target="_blank" rel="noopener noreferrer">つくね侍 さかのうえ公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/6月/0622_赤坂・新橋_札幌をどり2.JPG" alt="第一回札幌をどり" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">第一回札幌をどり</h3>
+                <p class="event-date">6月22日開催</p>
+                <p class="kagai-tag tag-shinbashi">タグ：新橋</p>
+                <p class="kagai-tag tag-akasaka">タグ：赤坂</p>
+                <p class="event-location">📍 道新ホール（札幌市中央区大通西3-6 道新ビル大通館8階）</p>
+                <p class="event-time">🕐 11:00～/18:00～（各回30分前開場）</p>
+                <p class="event-price">💴 7,000円（全席指定）</p>
+                <p class="event-description">さっぽろ名妓連の芸者衆、初めてのをどりに、新橋芸者衆・赤坂芸者衆が賛助出演いたします。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>さっぽろ名妓連事務局（TEL：070-4385-4397）</p>
+                  <p><strong>詳細情報：</strong><a href="https://www.sapporo-cci.or.jp/web/motion/details/post_46.html" target="_blank" rel="noopener noreferrer">札幌商工会議所公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7月-12月 (準備中) -->
+        <div class="month-content" data-month="7">
+          <div class="month-header">
+            <h2 class="month-title">7月のイベント</h2>
+            <p class="month-theme">盛夏の涼</p>
+            <p class="month-description">暑い夏を涼しく過ごす工夫が随所に見られる季節。納涼祭や夏祭りが開催されます。</p>
+          </div>
+          <div class="event-gallery">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/7月/0705-6_八王子_伝承のたまてばこ仮.jpeg" alt="伝承のたまてばこ" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">伝承のたまてばこ 多摩伝統文化フェスティバル「八王子芸妓衆の華と粋 ～艶やかにおもてなし～」</h3>
+                <p class="event-date">7月5・6日開催</p>
+                <p class="kagai-tag tag-hachioji">タグ：八王子</p>
+                <p class="event-location">📍 いちょうホール 大ホール（八王子市本町24-1）</p>
+                <p class="event-time">🕐 14:30～15:00</p>
+                <p class="event-price">💴 観賞無料</p>
+                <p class="event-description">八王子芸者衆が趣向を凝らした見目で、桑都の文化を発信します。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>伝承のたまてばこ事務局 公益財団法人八王子市学園都市文化ふれあい財団（TEL：042-621-3005）</p>
+                  <p><strong>詳細情報：</strong><a href="https://denshonotamatebako.tokyo/" target="_blank" rel="noopener noreferrer">伝承のたまてばこ公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/7月/0706_浅草_ビア座敷3.JPG" alt="ビア座敷" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">ビア座敷</h3>
+                <p class="event-date">7月6日開催</p>
+                <p class="kagai-tag tag-asakusa">タグ：浅草</p>
+                <p class="event-location">📍 浅草三業会館（浅草見番：東京都台東区浅草3-33-5）</p>
+                <p class="event-time">🕐 16:00～18:00</p>
+                <p class="event-price">💴 15,000円（フリードリンク・オードブル付き）</p>
+                <p class="event-description">浴衣姿の浅草芸者衆と幇間衆とご一緒に、ビールとともに暑い夏を乗り切るひとときをお過ごしください。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>東京浅草組合 浅草見番（TEL：03-3874-3131）</p>
+                  <p><strong>詳細情報：</strong><a href="https://asakusakenban.com/information/" target="_blank" rel="noopener noreferrer">浅草見番公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/7月/0719_八王子_朝顔市1.jpeg" alt="見番で朝顔市" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">朝顔市</h3>
+                <p class="event-date">7月19日開催</p>
+                <p class="kagai-tag tag-hachioji">タグ：八王子</p>
+                <p class="event-location">📍 八王子三業組合 見番（東京都八王子市南町1-7）</p>
+                <p class="event-time">🕐 12:00～15:00</p>
+                <p class="event-price">💴 参加無料</p>
+                <p class="event-description">八王子芸者衆による朝顔の販売を（数量限定）いたします。夏の風物詩の涼やかなひとときをお楽しみください。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>八王子三業組合 見番（TEL：042-622-5191）</p>
+                  <p><strong>詳細情報：</strong><a href="https://japan-heritage-soto.jp/calendar/%e3%80%90%e5%85%ab%e7%8e%8b%e5%ad%90%e8%8a%b8%e5%a6%93%e3%80%91%e8%a6%8b%e7%95%aa%e3%81%a7%e6%9c%9d%e9%a1%94%e5%b8%82/" target="_blank" rel="noopener noreferrer">日本遺産「桑都物語」推進協議会公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="month-content" data-month="8">
+          <div class="month-header">
+            <h2 class="month-title">8月のイベント</h2>
+            <p class="month-theme">夏祭り</p>
+            <p class="month-description">各地で夏祭りが開催され、花街も華やかな催しで参加します。</p>
+          </div>
+          <div class="event-gallery">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/8月/0801_八王子_八王子まつり「柳遊まつり」.JPG" alt="八王子まつり「柳遊まつり」" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">八王子まつり「柳遊まつり」</h3>
+                <p class="event-date">8月1日開催</p>
+                <p class="kagai-tag tag-hachioji">タグ：八王子</p>
+                <p class="event-location">📍 八王子三業組合 見番（東京都八王子市南町1-7）</p>
+                <p class="event-time">🕐 16:00～</p>
+                <p class="event-price">💴 入場券：3,000円（定員40名）</p>
+                <p class="event-description">八王子芸者衆の踊りを、お稽古場である見番にて間近でお楽しみいただけます。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>八王子三業組合 見番（TEL：042-622-5191）</p>
+                  <p><strong>詳細情報：</strong><a href="#" target="_blank" rel="noopener noreferrer">詳細情報</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/8月/0801_八王子_八王子まつり「宵宮の舞」1.JPG" alt="八王子まつり「宵宮の舞」" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">八王子まつり「宵宮の舞」</h3>
+                <p class="event-date">8月1日開催</p>
+                <p class="kagai-tag tag-hachioji">タグ：八王子</p>
+                <p class="event-location">📍 西放射線ユーロード中町公園</p>
+                <p class="event-time">🕐 18:30～19:00</p>
+                <p class="event-price">💴 観覧無料</p>
+                <p class="event-description">日本遺産「桑都物語」の構成文化財の１つである八王子芸妓が踊りを披露します。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>八王子まつり実行委員会（(公財) 八王子市学園都市文化ふれあい財団コミュニティ振興課内）（TEL：042-686-0611）</p>
+                  <p><strong>詳細情報：</strong><a href="https://www.hachiojimatsuri.jp/" target="_blank" rel="noopener noreferrer">八王子まつり公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/8月/0802_浅草_ほおずき会1.JPG" alt="ほおずき会" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">ほおずき会</h3>
+                <p class="event-date">8月2日開催</p>
+                <p class="kagai-tag tag-asakusa">タグ：浅草</p>
+                <p class="event-location">📍 雷５６５６会館 ときわホール（東京都台東区浅草3-6-1）</p>
+                <p class="event-time">🕐 13:00開演</p>
+                <p class="event-price">💴 観覧無料</p>
+                <p class="event-description">浅草、上野、隅田川界隈の邦楽愛好家の旦那衆と浅草芸者衆が芸を通じて親睦を深め、地域と花街の繁栄を目指して始まった催しです。日頃の稽古の成果をお楽しみください。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>ほおずき会（浅草観光連盟気付/TEL：03-2844-1221）</p>
+                  <p><strong>詳細情報：</strong><a href="https://e-asakusa.jp/movies/106080" target="_blank" rel="noopener noreferrer">浅草観光連盟公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/8月/0802-03_八王子_八王子まつり「俄山車巡行」1.JPG" alt="八王子まつり「俄山車巡行」" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">八王子まつり「俄山車巡行」</h3>
+                <p class="event-date">8月2・3日開催</p>
+                <p class="kagai-tag tag-hachioji">タグ：八王子</p>
+                <p class="event-location">📍 八王子三業組合 見番（東京都八王子市南町1-7）出発</p>
+                <p class="event-time">🕐 17:20出発</p>
+                <p class="event-price">💴 観覧無料</p>
+                <p class="event-description">八王子芸者衆が所属する中町の俄山車に乗って、唄や三味線を演奏しながら、手古舞姿の芸者衆を先導に街を巡行します。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>八王子まつり実行委員会（(公財) 八王子市学園都市文化ふれあい財団コミュニティ振興課内）（TEL：042-686-0611）</p>
+                  <p><strong>詳細情報：</strong><a href="https://www.hachiojimatsuri.jp/" target="_blank" rel="noopener noreferrer">八王子まつり公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/8月/0809_渋谷円山町.JPG" alt="さかのうえの大宴会」夏の果てまで盛夏の大宴会！！" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">「さかのうえの大宴会」夏の果てまで盛夏の大宴会！！</h3>
+                <p class="event-date">8月9日開催</p>
+                <p class="kagai-tag tag-shibuya">タグ：渋谷</p>
+                <p class="event-location">📍 つくね侍 さかのうえ（東京都渋谷区円山町２０－１ 新大宗丸山ビル１階）</p>
+                <p class="event-time">🕐 18:00～21:30</p>
+                <p class="event-price">💴 13,000円（お食事お飲み物付き）</p>
+                <p class="event-description">古民家風のしつらえで、様々な芸能とともに円山芸者衆の芸をご堪能いただきます。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>つくね侍 さかのうえ（TEL：03-6809-0450）</p>
+                  <p><strong>詳細情報：</strong><a href="https://tsukunesamurai-sakanoue.owst.jp/blogs/3438657" target="_blank" rel="noopener noreferrer">つくね侍 さかのうえ公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/8月/0823_浅草_ビア座敷ANNEX1.JPG" alt="浅草花街・ビア座敷" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">浅草花街・ビア座敷</h3>
+                <p class="event-date">8月23日開催</p>
+                <p class="kagai-tag tag-asakusa">タグ：浅草</p>
+                <p class="event-location">📍 浅草ビューホテル アネックス 六区（東京都台東区浅草2丁目9-10）</p>
+                <p class="event-time">🕐 16:00～18:00</p>
+                <p class="event-price">💴 20,000円（フリードリンク・オードブル付き）</p>
+                <p class="event-description">浴衣姿の浅草芸者衆と幇間衆とご一緒に、ビールとともに暑い夏を乗り切るひとときをお過ごしください。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>東京浅草組合 浅草見番（TEL：03-3874-3131）</p>
+                  <p><strong>詳細情報：</strong><a href="https://asakusakenban.com/information/" target="_blank" rel="noopener noreferrer">浅草見番公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="month-content" data-month="9">
+          <div class="month-header">
+            <h2 class="month-title">9月のイベント</h2>
+          </div>
+          <div class="event-items">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/9月/0906_八王子_ビア処in見番1.jpeg" alt="夕涼みビア処in見番" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">夕涼みビア処in見番</h3>
+                <p class="event-date">9月6日開催</p>
+                <p class="kagai-tag tag-hachioji">タグ：八王子</p>
+                <p class="event-location">📍 八王子三業組合 見番（東京都八王子市南町1-7）</p>
+                <p class="event-time">🕐 17:00～19:00</p>
+                <p class="event-price">💴 15,000円（フリードリンク・お弁当付き）</p>
+                <p class="event-description">八王子芸者衆総出で、お酒やおいしいお弁当、お座敷遊びなど楽しいひとときをお届けします。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>八王子三業組合 見番（TEL：042-622-5191）</p>
+                  <p><strong>詳細情報：</strong><a href="#" target="_blank" rel="noopener noreferrer">詳細情報</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/9月/0913_赤坂_成田伝統芸能まつり1.JPG" alt="成田伝統芸能まつり 秋の陣" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">成田伝統芸能まつり 秋の陣</h3>
+                <p class="event-date">9月13日開催</p>
+                <p class="kagai-tag tag-akasaka">タグ：赤坂</p>
+                <p class="event-location">📍 成田市文化芸術センター なごみの米屋 スカイタウンホール（千葉県成田市花崎町 828-11 スカイタウン成田）</p>
+                <p class="event-time">🕐 14:00～</p>
+                <p class="event-price">💴 観賞無料</p>
+                <p class="event-description">「歌舞伎のまち成田」の地にて、赤坂芸者衆が踊りを披露します。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>成田伝統芸能まつり実行委員会（成田市観光プロモーション課内）（TEL：0476-20-1540）</p>
+                  <p><strong>詳細情報：</strong><a href="https://www.nrtk.jp/enjoy/shikisaisai/traditional-performing-arts.html" target="_blank" rel="noopener noreferrer">成田市観光協会公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/9月/0915_向嶋_牛嶋神社例大祭1.jpg" alt="牛嶋神社例大祭" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">牛嶋神社例大祭</h3>
+                <p class="event-date">9月15日開催</p>
+                <p class="kagai-tag tag-mukojima">タグ：向嶋</p>
+                <p class="event-location">📍 牛嶋神社（東京都墨田区向島1-4-5）</p>
+                <p class="event-time">🕐 12:00～</p>
+                <p class="event-price">💴 観覧無料</p>
+                <p class="event-description">5年に一度の大祭にて、向嶋芸者衆が手古舞を奉納します。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>牛嶋神社（TEL：03-3622-0973）</p>
+                  <p><strong>詳細情報：</strong><a href="https://visit-sumida.jp/event/ushijimajinjya_taisai091417/" target="_blank" rel="noopener noreferrer">すみだ観光サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/9月/0919_八王子_ビア処in見番1.jpeg" alt="夕涼みビア処in見番" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">夕涼みビア処in見番</h3>
+                <p class="event-date">9月19日開催</p>
+                <p class="kagai-tag tag-hachioji">タグ：八王子</p>
+                <p class="event-location">📍 八王子三業組合 見番（東京都八王子市南町1-7）</p>
+                <p class="event-time">🕐 18:00～20:00</p>
+                <p class="event-price">💴 15,000円（フリードリンク・お弁当付き）</p>
+                <p class="event-description">八王子芸者衆総出で、お酒やおいしいお弁当、お座敷遊びなど楽しいひとときをお届けします。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>八王子三業組合 見番（TEL：042-622-5191）</p>
+                  <p><strong>詳細情報：</strong><a href="#" target="_blank" rel="noopener noreferrer">詳細情報</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/9月/0921_赤坂_赤坂氷川祭8.JPG" alt="赤坂氷川祭" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">赤坂氷川祭</h3>
+                <p class="event-date">9月21日開催</p>
+                <p class="kagai-tag tag-akasaka">タグ：赤坂</p>
+                <p class="event-location">📍 赤坂氷川神社出発</p>
+                <p class="event-time">🕐 10:00～氷川神社出発</p>
+                <p class="event-price">💴 観覧無料</p>
+                <p class="event-description">豪華絢爛な山車や神輿が渡御する神幸祭にて、赤坂芸者衆がともに赤坂の街を練り歩きます。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>赤坂氷川神社（TEL：03-3583-1935）</p>
+                  <p><strong>詳細情報：</strong><a href="https://www.akasakahikawa.or.jp/hikawasai-r07/" target="_blank" rel="noopener noreferrer">赤坂氷川神社公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="month-content" data-month="10">
+          <div class="month-header">
+            <h2 class="month-title">10月のイベント</h2>
+          </div>
+          <div class="event-items">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/10月/1004_渋谷円山町.JPG" alt="さかのうえの大宴会" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">「さかのうえの大宴会」さかのうえの大宴会</h3>
+                <p class="event-date">10月4日開催</p>
+                <p class="kagai-tag tag-shibuya">タグ：渋谷</p>
+                <p class="event-location">📍 つくね侍 さかのうえ（東京都渋谷区円山町２０－１ 新大宗丸山ビル１階）</p>
+                <p class="event-time">🕐 18:00～21:30</p>
+                <p class="event-price">💴 13,000円（お食事お飲み物付き）</p>
+                <p class="event-description">古民家風のしつらえで、様々な芸能とともに円山芸者衆の芸をご堪能いただきます。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>つくね侍 さかのうえ（TEL：03-6809-0450）</p>
+                  <p><strong>詳細情報：</strong><a href="https://tsukunesamurai-sakanoue.owst.jp/blogs/3438657" target="_blank" rel="noopener noreferrer">つくね侍 さかのうえ公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/10月/1005_浅草_浅草おどり3.JPG" alt="浅草おどり" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">浅草おどり</h3>
+                <p class="event-date">10月5日開催</p>
+                <p class="kagai-tag tag-asakusa">タグ：浅草</p>
+                <p class="event-location">📍 台東区生涯学習センター ミレニアムホール（台東区西浅草3-25-16）</p>
+                <p class="event-time">🕐 第一部：13時/第二部：16時</p>
+                <p class="event-price">💴 6,000円</p>
+                <p class="event-description">江戸情緒が残る花街・浅草にて、浅草芸者衆や幇間衆が伝承してきた芸をお楽しみいただきます。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>浅草おどり公演事務局（TEL：03-3874-3131）</p>
+                  <p><strong>詳細情報：</strong><a href="https://asakusakenban.com/odori/" target="_blank" rel="noopener noreferrer">浅草見番公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/10月/1005_向嶋_すみだまつり.JPG" alt="すみだまつり" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">すみだまつり</h3>
+                <p class="event-date">10月5日開催</p>
+                <p class="kagai-tag tag-mukojima">タグ：向嶋</p>
+                <p class="event-location">📍 ひがしんアリーナ（墨田区総合体育館）（東京都墨田区錦糸4-15-1）</p>
+                <p class="event-time">🕐 16:15～17:00</p>
+                <p class="event-price">💴 観覧無料</p>
+                <p class="event-description">向嶋芸者衆が四季折々の踊りを披露します。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>すみだまつり実行委員会（墨田区役所文化芸術振興課内）（TEL：03-5608-6181）</p>
+                  <p><strong>詳細情報：</strong><a href="https://sumidamatsuri.com/" target="_blank" rel="noopener noreferrer">すみだまつり公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="month-content" data-month="11">
+          <div class="month-header">
+            <h2 class="month-title">11月のイベント</h2>
+          </div>
+          <div class="event-items">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/11月/1105_渋谷円山町.JPG" alt="渋谷和芸の会―面―" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">「渋谷和芸の会―面―」</h3>
+                <p class="event-date">11月5日開催</p>
+                <p class="kagai-tag tag-shibuya">タグ：渋谷</p>
+                <p class="event-location">📍 料亭 三長（東京都渋谷区円山町6-1）</p>
+                <p class="event-time">🕐 18:00開宴（17:30開場）</p>
+                <p class="event-price">💴 22,000円（お食事・お飲み物代含む）</p>
+                <p class="event-description">渋谷に残る花街・円山町の芸者衆の芸とともに、花柳寿世晶による日本舞踊と、清元國惠太・清元志一朗師をお迎えして、和芸を身近にお楽しみいただくひとときをお届けします。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>渋谷和芸 運営事務局（TEL：090-3232-1943）</p>
+                  <p><strong>詳細情報：</strong><a href="https://shibuya-wagei.com/" target="_blank" rel="noopener noreferrer">渋谷和芸公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/11月/1109_赤坂_札幌をどり3.JPG" alt="第二回 札幌をどり" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">第二回 札幌をどり</h3>
+                <p class="event-date">11月9日開催</p>
+                <p class="kagai-tag tag-akasaka">タグ：赤坂</p>
+                <p class="event-location">📍 札幌市教育文化会館 大ホール（北海道札幌市中央区北1条西13丁目）</p>
+                <p class="event-time">🕐 15:00開演（14:30開場）</p>
+                <p class="event-price">💴 S席：10,000円/A席：7,000円</p>
+                <p class="event-description">さっぽろ名妓連の芸者衆の会に、東京・赤坂から育子と、京都・祇園甲部の芸妓・舞妓が賛助出演いたします。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>さっぽろ名妓連事務所（TEL：070-4385-4397）</p>
+                  <p><strong>詳細情報：</strong><a href="https://www.kyobun.org/event_schedule.html?id=11095" target="_blank" rel="noopener noreferrer">教文ホール公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/11月/1114-15_神楽坂_水穂会.jpeg" alt="水穂会" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">水穂会</h3>
+                <p class="event-date">11月14・15日開催</p>
+                <p class="kagai-tag tag-kagurazaka">タグ：神楽坂</p>
+                <p class="event-location">📍 四谷区民ホール9階（東京都新宿区内藤町87）</p>
+                <p class="event-time">🕐 15:30開演（15:00開場）</p>
+                <p class="event-price">💴 1階席：4,000円（指定席）/2階席：2,000円（自由席）</p>
+                <p class="event-description">「水穂会」は、「舞踊勉強会 花みずか会」を前身とした神楽坂芸者衆による、日頃の稽古の成果を披露する秋の公演です。（※演目は14日(金)と15日(土)で内容が異なります）</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>東京神楽坂組合 見番事務所（TEL：03-3260-3291）</p>
+                  <p><strong>詳細情報：</strong><a href="tel:03-3260-3291" target="_blank" rel="noopener noreferrer">東京神楽坂組合 見番事務所（TEL：03-3260-3291）</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/11月/1121_赤坂・新橋・先斗町_三人会1.JPG" alt="三人会" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">三人会（赤坂 育子・新橋 加津代・先斗町 市園）</h3>
+                <p class="event-date">11月21日開催</p>
+                <div class="kagai-tags">
+                  <p class="kagai-tag tag-akasaka">タグ：赤坂</p>
+                  <p class="kagai-tag tag-shinbashi">タグ：新橋</p>
+                </div>
+                <p class="event-location">📍 日本製鉄紀尾井ホール 小ホール（東京都千代田区紀尾井町6-5）</p>
+                <p class="event-time">🕐 1回目：13:00開演/2回目：16:30開演（開場は各回30分前）</p>
+                <p class="event-price">💴 10,000円（全席指定）</p>
+                <p class="event-description">赤坂 育子、新橋 加津代、先斗町 市園 による「三人会」です。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>日本製鉄紀尾井ホール（TEL：03-5276-4500）</p>
+                  <p><strong>詳細情報：</strong><a href="https://kioihall.jp/" target="_blank" rel="noopener noreferrer">日本製鉄紀尾井ホール公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/11月/1129_向嶋_向嶋をどり3.JPG" alt="向嶋をどり" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">向嶋をどり</h3>
+                <p class="event-date">11月29日開催</p>
+                <p class="kagai-tag tag-mukojima">タグ：向嶋</p>
+                <p class="event-location">📍 曳舟文化センター（東京都墨田区京島1-38-11）</p>
+                <p class="event-time">🕐 第一部：12:00開演/第二部：15:00開演（※第一部、第二部同じ演目）</p>
+                <p class="event-price">💴 指定席6,000円/自由席5,000円</p>
+                <p class="event-description">日頃のお稽古の成果を、向嶋ならではの演目とともにお届けします。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>向嶋墨堤組合（TEL：03-3623-6368）</p>
+                  <p><strong>詳細情報：</strong><a href="tel:03-3623-6368" target="_blank" rel="noopener noreferrer">向嶋墨堤組合（TEL：03-3623-6368）</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/11月/1130_赤坂_伊東旧見番　百二十周年記念公演.JPG" alt="伊東旧見番 百二十周年記念公演" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">伊東旧見番 百二十周年記念公演</h3>
+                <p class="event-date">11月30日開催</p>
+                <p class="kagai-tag tag-akasaka">タグ：赤坂</p>
+                <p class="event-location">📍 伊東市観光会館（静岡県伊東市和田1-16-1）</p>
+                <p class="event-time">🕐 14:00開演（13:30開場）</p>
+                <p class="event-price">💴 5,000円（自由席）</p>
+                <p class="event-description">静岡・伊東の見番120周年を記念して、赤坂芸者衆が友情出演いたします。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>伊東旧見番（TEL：0557-29-6607）</p>
+                  <p><strong>詳細情報：</strong><a href="https://www.facebook.com/p/%E4%BC%8A%E6%9D%B1%E8%8A%B8%E5%A6%93%E7%BD%AE%E5%B1%8B%E5%8D%94%E5%90%8C%E7%B5%84%E5%90%88-%E6%97%A7%E8%A6%8B%E7%95%AA-100057152092651/?locale=ja_JP" target="_blank" rel="noopener noreferrer">伊東芸妓置屋協同組合 旧見番 Facebook</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="month-content" data-month="12">
+          <div class="month-header">
+            <h2 class="month-title">12月のイベント</h2>
+            <p class="month-theme">年の瀬</p>
+            <p class="month-description">一年を締めくくる特別な行事や、新年を迎える準備の季節です。</p>
+          </div>
+          <div class="event-gallery">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/11月/1105_渋谷円山町.JPG" alt="さかのうえの大宴会" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">さかのうえの大宴会</h3>
+                <p class="event-date">12月6日開催</p>
+                <p class="kagai-tag tag-shibuya">タグ：渋谷</p>
+                <p class="event-location">📍 つくね侍 さかのうえ（東京都渋谷区円山町２０－１ 新大宗丸山ビル１階）</p>
+                <p class="event-time">🕐 18:00～21:30</p>
+                <p class="event-price">💴 13,000円（お食事お飲み物付き）</p>
+                <p class="event-description">古民家風のしつらえで、様々な芸能とともに円山芸者衆の芸をご堪能いただきます。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>つくね侍 さかのうえ（TEL：03-6809-0450）</p>
+                  <p><strong>詳細情報：</strong><a href="https://tsukunesamurai-sakanoue.owst.jp/blogs/3438657" target="_blank" rel="noopener noreferrer">つくね侍 さかのうえ公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/12月/1214_浅草_年忘れ日本酒会.JPG" alt="年忘れ日本酒会" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">年忘れ日本酒会</h3>
+                <p class="event-date">12月14日開催</p>
+                <p class="kagai-tag tag-asakusa">タグ：浅草</p>
+                <p class="event-location">📍 浅草三業会館（浅草見番：東京都台東区浅草3-33-5）</p>
+                <p class="event-time">🕐 16:00～</p>
+                <p class="event-price">💴 25,000円（軽食付き）</p>
+                <p class="event-description">八海山の美味しいお酒とおつまみを、浅草芸者衆と幇間衆とともにお楽しみください。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>東京浅草組合 浅草見番（TEL：03-3874-3131）</p>
+                  <p><strong>詳細情報：</strong><a href="https://asakusakenban.com/information/" target="_blank" rel="noopener noreferrer">浅草見番公式サイト</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-image">
+                <img src="../images/12月/1218_浅草_伝統文化まつり.JPG" alt="伝統文化まつり おもてなし舞 浅草芸妓連" loading="lazy" />
+              </div>
+              <div class="event-info">
+                <h3 class="event-title">伝統文化まつり おもてなし舞 浅草芸妓連</h3>
+                <p class="event-date">12月18日開催</p>
+                <p class="kagai-tag tag-asakusa">タグ：浅草</p>
+                <p class="event-location">📍 伝統芸能ステージ（浅草壱福小路「大黒家別館4F」：東京都台東区浅草1-31-10）</p>
+                <p class="event-time">🕐 11:20～11:40（10:30～浅草壱福小路のイベント本部テントにて整理券配布）</p>
+                <p class="event-price">💴 観覧無料（要整理券）</p>
+                <p class="event-description">羽子板市である「歳の市」に合わせて開催される伝統文化まつりで、浅草芸者衆が踊りを披露いたします。</p>
+                <div class="event-contact">
+                  <p><strong>お問い合わせ：</strong>イベント事務局（（株）アド・インターフェース内）（TEL：03-5811-1929）</p>
+                  <p><strong>詳細情報：</strong><a href="http://www.asakusa-ichifuku.com/information/archive/flyer2023dentobunka.pdf" target="_blank" rel="noopener noreferrer">伝統文化まつり詳細PDF</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a class="footer__logo" href="../index.html">
+            <img src="../assets/logo.png" alt="全国花街ポータル ロゴ" loading="lazy" decoding="async" />
+            <span class="footer__brand-text">全国花街ポータル</span>
+          </a>
+          <p class="footer__desc">日本の伝統文化である花街・芸者文化の正しい理解と継承を支えるポータルです。</p>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__col">
+            <h4 class="footer__title">メインコンテンツ</h4>
+            <ul class="footer__links">
+              <li><a href="events.html">イベント</a></li>
+              <li><a href="hanagai-guide.html">花街ガイド</a></li>
+              <li><a href="columns.html">コラム・読み物</a></li>
+              <li><a href="sns-links.html">SNS・リンク</a></li>
+              <li><a href="updates.html">更新情報</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__title">サイト情報</h4>
+            <ul class="footer__links">
+              <li><a href="about.html">サイト概要</a></li>
+              <li><a href="contact.html">お問い合わせ</a></li>
+              <li><a href="privacy.html">利用規約・プライバシーポリシー</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 全国花街ポータル. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/script.js"></script>
+  <script src="../js/monthly-events.js"></script>
+  <script>
+    // 現在の月を動的に設定
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentDate = new Date();
+      const currentMonth = currentDate.getMonth() + 1; // 0ベースなので+1
+      
+      // すべての月ボタンとコンテンツからactiveクラスを削除
+      document.querySelectorAll('.month-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.month-content').forEach(content => content.classList.remove('active'));
+      
+      // 現在の月のボタンとコンテンツにactiveクラスを追加
+      const currentMonthBtn = document.querySelector(`[data-month="${currentMonth}"]`);
+      const currentMonthContent = document.querySelector(`.month-content[data-month="${currentMonth}"]`);
+      
+      if (currentMonthBtn) currentMonthBtn.classList.add('active');
+      if (currentMonthContent) currentMonthContent.classList.add('active');
+    });
+  </script>
+</body>
+</html>

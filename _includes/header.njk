@@ -1,0 +1,23 @@
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a class="brand" href="{{ site.paths.root }}">
+      <img class="brand__mark" src="{{ site.paths.assets }}logo.svg" alt="花街ロゴ" loading="lazy" decoding="async" />
+    </a>
+
+    <div class="header-tools">
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="global-nav" id="globalNav" aria-label="グローバルナビ">
+      <ul class="nav-list">
+        {% for item in site.navigation %}
+        <li class="nav-item">
+          <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

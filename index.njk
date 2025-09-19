@@ -1,0 +1,409 @@
+---
+layout: base.njk
+title: "花街の今と伝統が出会う場所"
+description: "全国の花街ニュース、イベント、文化解説、ガイド、用語集までを横断できるポータル。芸者・舞妓文化の正しい理解と体験をサポートします。"
+css: ["japanMapSpace.css", "heroSlider.css", "events.css"]
+js: ["lang-switcher.js", "japanMap.js", "xlsx-loader.js", "calendar.js"]
+preloadImage: "/images/top/top1.jpg"
+structuredData: |
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "全国花街ポータル",
+    "alternateName": "Hanamachi Portal",
+    "url": "https://hanamachi-portal.com/",
+    "description": "全国の花街ニュース、イベント、文化解説、ガイド、用語集までを横断できるポータル。芸者・舞妓文化の正しい理解と体験をサポートします。",
+    "inLanguage": "ja",
+    "publisher": {
+      "@type": "Organization",
+      "name": "全国花街ポータル",
+      "url": "https://hanamachi-portal.com/"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://hanamachi-portal.com/pages/glossary.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "花街情報",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "イベント",
+          "url": "https://hanamachi-portal.com/pages/events.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "花街ガイド",
+          "url": "https://hanamachi-portal.com/pages/guide.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "コラム・読み物",
+          "url": "https://hanamachi-portal.com/pages/columns.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "文化",
+          "url": "https://hanamachi-portal.com/pages/culture.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "用語集",
+          "url": "https://hanamachi-portal.com/pages/glossary.html"
+        }
+      ]
+    }
+  }
+---
+
+
+<!-- Hero Slider -->
+<section class="hero hero--portal hero-section" id="hero">
+  <div class="hero-slider">
+    <div class="hero-slide active">
+      <picture>
+        <source 
+          media="(min-width: 1280px)"
+          srcset="/images/top/optimized/top1-1920.avif 1920w, /images/top/optimized/top1-1280.avif 1280w"
+          type="image/avif">
+        <source 
+          media="(min-width: 1280px)"
+          srcset="/images/top/optimized/top1-1920.webp 1920w, /images/top/optimized/top1-1280.webp 1280w"
+          type="image/webp">
+        <source 
+          media="(min-width: 768px)"
+          srcset="/images/top/optimized/top1-1280.avif 1280w, /images/top/optimized/top1-768.avif 768w"
+          type="image/avif">
+        <source 
+          media="(min-width: 768px)"
+          srcset="/images/top/optimized/top1-1280.webp 1280w, /images/top/optimized/top1-768.webp 768w"
+          type="image/webp">
+        <source 
+          srcset="/images/top/optimized/top1-768.avif 768w"
+          type="image/avif">
+        <source 
+          srcset="/images/top/optimized/top1-768.webp 768w"
+          type="image/webp">
+        <img 
+          src="/images/top/top1.jpg" 
+          alt="花街の美しい風景" 
+          class="hero-slide__image"
+          width="1920"
+          height="1080"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async" />
+      </picture>
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__content">
+        <div class="hero__glass-panel">
+          <div class="hero__stack">
+            <img class="hero__logo" src="/assets/kagailogo_top_w.png" alt="全国花街ポータル ロゴ" loading="lazy" decoding="async" />
+            <p class="hero__desc">全国の花街文化を一箇所で。美しく静謐な情報体験を。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <picture>
+        <source 
+          media="(min-width: 1280px)"
+          srcset="/images/top/optimized/top2-1920.webp 1920w, /images/top/optimized/top2-1280.webp 1280w"
+          type="image/webp">
+        <source 
+          media="(min-width: 768px)"
+          srcset="/images/top/optimized/top2-1280.webp 1280w, /images/top/optimized/top2-768.webp 768w"
+          type="image/webp">
+        <source 
+          srcset="/images/top/optimized/top2-768.webp 768w"
+          type="image/webp">
+        <img 
+          src="/images/top/top2.jpg" 
+          alt="伝統文化の継承" 
+          class="hero-slide__image"
+          width="1920"
+          height="1080"
+          loading="lazy"
+          decoding="async" />
+      </picture>
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__content">
+        <div class="hero__glass-panel">
+          <div class="hero__stack">
+            <img class="hero__logo" src="/assets/kagailogo_top_w.png" alt="全国花街ポータル ロゴ" loading="lazy" decoding="async" />
+            <p class="hero__desc">受け継がれる技芸と四季の美をお届けします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <picture>
+        <source 
+          media="(min-width: 1280px)"
+          srcset="/images/top/optimized/top3-1920.webp 1920w, /images/top/optimized/top3-1280.webp 1280w"
+          type="image/webp">
+        <source 
+          media="(min-width: 768px)"
+          srcset="/images/top/optimized/top3-1280.webp 1280w, /images/top/optimized/top3-768.webp 768w"
+          type="image/webp">
+        <source 
+          srcset="/images/top/optimized/top3-768.webp 768w"
+          type="image/webp">
+        <img 
+          src="/images/top/top3.jpg" 
+          alt="花街マップ" 
+          class="hero-slide__image"
+          width="1920"
+          height="1080"
+          loading="lazy"
+          decoding="async" />
+      </picture>
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__content">
+        <div class="hero__glass-panel">
+          <div class="hero__stack">
+            <img class="hero__logo" src="/assets/kagailogo_top_w.png" alt="全国花街ポータル ロゴ" loading="lazy" decoding="async" />
+            <p class="hero__desc">全国の花街をマップで探索できます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slider__controls">
+      <button class="hero-slider__prev" aria-label="前のスライド">‹</button>
+      <button class="hero-slider__next" aria-label="次のスライド">›</button>
+    </div>
+    <div class="hero-slider__indicators">
+      <button class="indicator active" data-slide="0"></button>
+      <button class="indicator" data-slide="1"></button>
+      <button class="indicator" data-slide="2"></button>
+    </div>
+  </div>
+</section>
+
+<!-- Japan Map Section -->
+<section class="japan-map-section">
+  <div class="map-container">
+    <h2 class="section-title">全国花街マップ</h2>
+    <p class="section-subtitle">日本各地の花街をクリックして詳細をご覧ください</p>
+    <div id="japan-map-container">
+      <div class="map-wrapper">
+        <img src="/assets/map.png" alt="日本地図" class="map-image" loading="lazy" decoding="async" />
+        <div class="map-spots" id="mapSpots"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Current Month Events -->
+<section class="section section--surface" id="current-events">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__subtitle">今月のピックアップ</span>
+      <h2 class="section__title">今月のイベント</h2>
+    </div>
+    <div class="event-cards">
+      <div class="event-card">
+        <time class="event-card__date">2025.09.06</time>
+        <h3 class="event-card__title">夕涼みビア処in見番</h3>
+        <p class="event-card__location">八王子</p>
+        <p class="event-card__desc">八王子芸者衆総出でお座敷遊びを楽しむひととき</p>
+      </div>
+      <div class="event-card">
+        <time class="event-card__date">2025.09.13</time>
+        <h3 class="event-card__title">成田伝統芸能まつり 秋の陣</h3>
+        <p class="event-card__location">赤坂</p>
+        <p class="event-card__desc">赤坂芸者衆が成田の地で踊りを披露</p>
+      </div>
+      <div class="event-card">
+        <time class="event-card__date">2025.09.15</time>
+        <h3 class="event-card__title">牛嶋神社例大祭</h3>
+        <p class="event-card__location">向嶋</p>
+        <p class="event-card__desc">5年に一度の大祭で向嶋芸者衆が手古舞を奉納</p>
+      </div>
+    </div>
+    <div class="section__footer">
+      <a class="btn btn--primary" href="#calendar">イベントカレンダーを見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- Event Calendar -->
+<section id="calendar" class="section section--surface calendar-section">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__subtitle">Calendar</span>
+      <h2 class="section__title">イベントカレンダー</h2>
+    </div>
+    <div class="calendar-container">
+      <div class="calendar-header">
+        <button class="calendar-nav prev-month" aria-label="前の月へ">‹</button>
+        <h3 class="calendar-title">
+          <span class="calendar-month">1月</span>
+          <span class="calendar-year">2025</span>
+        </h3>
+        <button class="calendar-nav next-month" aria-label="次の月へ">›</button>
+      </div>
+      <div class="calendar-grid">
+        <div class="calendar-weekday">日</div>
+        <div class="calendar-weekday">月</div>
+        <div class="calendar-weekday">火</div>
+        <div class="calendar-weekday">水</div>
+        <div class="calendar-weekday">木</div>
+        <div class="calendar-weekday">金</div>
+        <div class="calendar-weekday">土</div>
+        <div class="calendar-day prev-month">29</div>
+        <div class="calendar-day prev-month">30</div>
+        <div class="calendar-day prev-month">31</div>
+        <div class="calendar-day">1</div>
+        <div class="calendar-day">2</div>
+        <div class="calendar-day">3</div>
+        <div class="calendar-day">4</div>
+        <div class="calendar-day">5</div>
+        <div class="calendar-day">6</div>
+        <div class="calendar-day has-event" data-event="初春の舞" data-location="八王子">7</div>
+        <div class="calendar-day">8</div>
+        <div class="calendar-day">9</div>
+        <div class="calendar-day">10</div>
+        <div class="calendar-day">11</div>
+        <div class="calendar-day">12</div>
+        <div class="calendar-day">13</div>
+        <div class="calendar-day">14</div>
+        <div class="calendar-day">15</div>
+        <div class="calendar-day">16</div>
+        <div class="calendar-day">17</div>
+        <div class="calendar-day">18</div>
+        <div class="calendar-day">19</div>
+        <div class="calendar-day">20</div>
+        <div class="calendar-day">21</div>
+        <div class="calendar-day">22</div>
+        <div class="calendar-day">23</div>
+        <div class="calendar-day">24</div>
+        <div class="calendar-day">25</div>
+        <div class="calendar-day">26</div>
+        <div class="calendar-day">27</div>
+        <div class="calendar-day">28</div>
+        <div class="calendar-day">29</div>
+        <div class="calendar-day">30</div>
+        <div class="calendar-day">31</div>
+        <div class="calendar-day next-month">1</div>
+        <div class="calendar-day next-month">2</div>
+        <div class="calendar-day next-month">3</div>
+        <div class="calendar-day next-month">4</div>
+        <div class="calendar-day next-month">5</div>
+        <div class="calendar-day next-month">6</div>
+        <div class="calendar-day next-month">7</div>
+        <div class="calendar-day next-month">8</div>
+      </div>
+    </div>
+    <div class="calendar-legend">
+      <div class="legend-item">
+        <span class="legend-dot event"></span>
+        <span>公演・イベント</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-dot experience"></span>
+        <span>体験教室</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-dot special"></span>
+        <span>特別公演</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portal Modules / Quick Access -->
+<section class="section" id="modules">
+  <div class="container">
+    <div class="module-grid">
+      <a class="module-card" href="/pages/events.html">
+        <div class="module-card__media"><img src="/images/1.jpg" alt="イベント" loading="lazy" decoding="async" /></div>
+        <div class="module-card__body">
+          <h3 class="module-card__title">イベント</h3>
+          <p class="module-card__text">全国の公演・催しの予定を確認。</p>
+        </div>
+      </a>
+      <a class="module-card" href="/pages/guide.html">
+        <div class="module-card__media"><img src="/images/2.jpg" alt="花街ガイド" loading="lazy" decoding="async" /></div>
+        <div class="module-card__body">
+          <h3 class="module-card__title">花街ガイド</h3>
+          <p class="module-card__text">花街の歴史と文化をわかりやすく。</p>
+        </div>
+      </a>
+      <a class="module-card" href="/pages/columns.html">
+        <div class="module-card__media"><img src="/images/3.jpg" alt="コラム・読み物" loading="lazy" decoding="async" /></div>
+        <div class="module-card__body">
+          <h3 class="module-card__title">コラム・読み物</h3>
+          <p class="module-card__text">特集記事やインタビューをお届け。</p>
+        </div>
+      </a>
+      <a class="module-card" href="/pages/sns-links.html">
+        <div class="module-card__media"><img src="/images/4.jpg" alt="SNS・リンク" loading="lazy" decoding="async" /></div>
+        <div class="module-card__body">
+          <h3 class="module-card__title">SNS・リンク</h3>
+          <p class="module-card__text">各花街のSNSと関連サイト。</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Updates Ticker -->
+<section class="section section--surface" id="updates">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__subtitle">直近の更新</span>
+      <h2 class="section__title">更新情報</h2>
+    </div>
+    <div class="updates-ticker" role="region" aria-label="更新情報ティッカー">
+      <div class="ticker-controls">
+        <button class="ticker-pause" aria-label="ティッカーを一時停止" title="ティッカーを一時停止/再開">
+          <span class="pause-icon">⏸</span>
+          <span class="play-icon" style="display: none;">▶</span>
+        </button>
+      </div>
+      <div class="ticker-content" aria-live="polite" role="status">
+        <div class="ticker-item">
+          <time>2025.01.05</time>
+          <span>新春特別公演「寿ぎの舞」イベント情報を追加</span>
+        </div>
+        <div class="ticker-item">
+          <time>2025.01.03</time>
+          <span>花街ガイド「歴史と文化」コンテンツを更新</span>
+        </div>
+        <div class="ticker-item">
+          <time>2024.12.28</time>
+          <span>冬の茶事特集記事を公開</span>
+        </div>
+        <div class="ticker-item">
+          <time>2024.12.25</time>
+          <span>各花街Instagram情報を更新</span>
+        </div>
+      </div>
+    </div>
+    <div class="section__footer">
+      <a class="btn btn--ghost" href="/pages/updates.html">すべての更新情報を見る</a>
+    </div>
+  </div>
+</section>
+
+<div id="event-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="モーダルを閉じる">&times;</button>
+    <div class="modal-header">
+      <h3 id="modal-title">イベント詳細</h3>
+      <div id="modal-date"></div>
+    </div>
+    <div class="modal-body">
+      <div id="modal-events-list"></div>
+    </div>
+  </div>
+</div>

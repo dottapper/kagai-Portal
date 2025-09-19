@@ -1,0 +1,66 @@
+---
+layout: base.njk
+title: イベント
+description: 花街の最新イベント情報、月別カレンダー、年中行事一覧、過去イベントアーカイブをお届けします。全国の花街公演、文化体験の詳細をご覧いただけます。
+css: events.css
+js: calendar.js
+templateLoader: true
+structuredData: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "花街イベント情報",
+    "description": "花街の最新イベント情報、月別カレンダー、年中行事一覧、過去イベントアーカイブをお届けします。全国の花街公演、文化体験の詳細をご覧いただけます。",
+    "url": "https://hanamachi-portal.com/pages/events.html",
+    "inLanguage": "ja",
+    "organizer": {
+      "@type": "Organization",
+      "name": "全国花街ポータル",
+      "url": "https://hanamachi-portal.com/"
+    },
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "全国の花街",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "JP"
+      }
+    }
+  }
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1 class="page-title">イベント</h1>
+    <p class="page-description">全国の花街で開催されるイベントや年中行事をご紹介します。</p>
+  </div>
+</section>
+
+<section class="event-calendar-section">
+  <div class="container">
+    <h2 id="calendar" class="section-title">月別カレンダー</h2>
+    <div id="calendar-app"></div>
+  </div>
+</section>
+
+<section class="annual-events-section">
+  <div class="container">
+    <h2 id="annual" class="section-title">年中行事一覧</h2>
+    <div id="annual-events-list">
+      <!-- 年中行事のコンテンツがここに動的にロードされます -->
+      <p>年中行事のデータが読み込み中です...</p>
+    </div>
+  </div>
+</section>
+
+<section class="event-archive-section">
+  <div class="container">
+    <h2 id="archive" class="section-title">過去イベントアーカイブ</h2>
+    <div id="event-archive-list">
+      <!-- 過去イベントのコンテンツがここに動的にロードされます -->
+      <p>過去イベントのデータが読み込み中です...</p>
+    </div>
+  </div>
+</section>

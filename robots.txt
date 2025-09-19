@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+
+# 開発段階のため、すべてのクロールを禁止
+# 本番公開時に削除または変更してください
+
+# サイトマップの場所
+Sitemap: https://hanamachi-portal.com/sitemap.xml

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- テーマ適用の先行スクリプト - FOUC/白画面解消 -->
+  <script>try{var d=document.documentElement;var s=(new URLSearchParams(location.search).get("theme"))||localStorage.getItem("theme")||"light";if(s==="light"||s==="dark"){d.setAttribute("data-theme",s);localStorage.setItem("theme",s);}d.classList.add("theme-loaded");}catch(e){document.documentElement.classList.add("theme-loaded");}</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>For Visitors | Hanamachi Portal</title>
+  <meta name="description" content="Essential guide for international visitors: etiquette, how to experience Hanamachi culture, basic glossary, and booking tips." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="../js/template-loader.js"></script>
+  <link rel="stylesheet" href="../css/overseas.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="For Visitors | Hanamachi Portal" />
+  <meta property="og:description" content="English guide to Hanamachi culture" />
+  <link rel="icon" href="../assets/logo.png" type="image/png" />
+</head>
+<body class="is-subpage">
+  
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span>/</span>
+        <span>For Visitors</span>
+      </div>
+      <h1 class="page-title">For International Visitors</h1>
+      <p class="page-description">外国の方向けのご案内（英語コンテンツ）。日本語サイトのナビは他ページと統一しています。</p>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <!-- Quick Cards (reuse module-card design) -->
+    <section class="section section--surface" id="quick">
+      <div class="container">
+        <div class="module-grid">
+          <a class="module-card" href="manners.html">
+            <div class="module-card__media"><img src="../images/assets/03.png" alt="Etiquette" /></div>
+            <div class="module-card__body">
+              <h3 class="module-card__title">Etiquette (Manners)</h3>
+              <p class="module-card__text">Essential do's and don'ts at Hanamachi and ozashiki.</p>
+            </div>
+          </a>
+          <a class="module-card" href="guide.html">
+            <div class="module-card__media"><img src="../images/assets/06.png" alt="How to Book" /></div>
+            <div class="module-card__body">
+              <h3 class="module-card__title">How to Book</h3>
+              <p class="module-card__text">Ways to experience: shows, lessons, cultural tours.</p>
+            </div>
+          </a>
+          <a class="module-card" href="glossary.html">
+            <div class="module-card__media"><img src="../images/assets/08.png" alt="Basic Glossary" /></div>
+            <div class="module-card__body">
+              <h3 class="module-card__title">Basic Glossary</h3>
+              <p class="module-card__text">Key terms you will hear during the experience.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Enjoy (reuse news-card design) -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">How to Enjoy</span>
+          <h2 class="section__title">Enjoying Hanamachi with Respect</h2>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <h3 class="news-card__title">Before Your Visit</h3>
+            <ul class="news-card__excerpt">
+              <li>Read Etiquette and dress appropriately</li>
+              <li>Be on time and follow staff instructions</li>
+              <li>Ask before taking photos</li>
+            </ul>
+          </article>
+          <article class="news-card">
+            <h3 class="news-card__title">During the Experience</h3>
+            <ul class="news-card__excerpt">
+              <li>Enjoy performances quietly and clap at the end</li>
+              <li>Conversations are part of hospitality</li>
+              <li>Alcohol is optional; enjoy moderately</li>
+            </ul>
+          </article>
+          <article class="news-card">
+            <h3 class="news-card__title">Language Support</h3>
+            <ul class="news-card__excerpt">
+              <li>English support available depending on program</li>
+              <li>Ask organizers in advance if you need an interpreter</li>
+              <li>Some terms remain Japanese; check the glossary</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--surface" id="cta">
+      <div class="container">
+        <div class="cta">
+          <h3 class="cta-title">Ready to Experience?</h3>
+          <p class="cta-text">Start with the Etiquette and find a program that suits you.</p>
+          <div class="cta-actions">
+            <a class="btn btn--primary" href="manners.html">Read Etiquette</a>
+            <a class="btn btn--ghost" href="guide.html">Find a Program</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
+
+

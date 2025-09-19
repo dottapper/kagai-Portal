@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- テーマ適用の先行スクリプト - FOUC/白画面解消 -->
+  <script>try{var d=document.documentElement;var s=(new URLSearchParams(location.search).get("theme"))||localStorage.getItem("theme")||"light";if(s==="light"||s==="dark"){d.setAttribute("data-theme",s);localStorage.setItem("theme",s);}d.classList.add("theme-loaded");}catch(e){document.documentElement.classList.add("theme-loaded");}</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>イベント詳細 | 全国花街ポータル</title>
+  <meta name="description" content="イベントの詳細情報を表示します。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/events.css" />
+  <script src="../js/template-loader.js"></script>
+</head>
+<body class="is-subpage">
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html">
+        <img class="brand__mark" src="../assets/logo.png" alt="花街ロゴ" />
+        <span class="brand__type">全国花街ポータル</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span>/</span>
+        <a href="events.html">イベント</a>
+        <span>/</span>
+        <span id="crumb-title">イベント詳細</span>
+      </div>
+      <h1 class="page-title" id="page-title">イベント詳細</h1>
+      <p class="page-description" id="page-desc">スケジュールと会場情報をご確認ください。</p>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <section class="section">
+      <div class="container">
+        <article class="event-detail" id="event-detail">
+          <div class="event-detail__media" id="event-image"></div>
+          <div class="event-detail__body">
+            <h2 class="event-detail__title" id="event-title">イベント名</h2>
+            <ul class="event-detail__meta">
+              <li id="event-date">📅 日時: -</li>
+              <li id="event-location">📍 場所: -</li>
+              <li id="event-price">💴 料金: -</li>
+              <li id="event-type">🏷 種別: -</li>
+            </ul>
+            <div class="event-detail__desc" id="event-description"></div>
+          </div>
+        </article>
+        <div class="section__footer">
+          <a class="btn btn--ghost" href="events.html#calendar">カレンダーに戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="container footer__bottom">
+      <p class="copyright">© 2025 全国花街ポータル</p>
+    </div>
+  </footer>
+
+  <script src="../js/xlsx-loader.js"></script>
+  <script src="../js/event-detail.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/lang-switcher.js"></script>
+</body>
+</html>
+
+

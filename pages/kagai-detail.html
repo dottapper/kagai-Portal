@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- テーマ適用の先行スクリプト - FOUC/白画面解消 -->
+  <script>try{var d=document.documentElement;var s=(new URLSearchParams(location.search).get("theme"))||localStorage.getItem("theme")||"light";if(s==="light"||s==="dark"){d.setAttribute("data-theme",s);localStorage.setItem("theme",s);}d.classList.add("theme-loaded");}catch(e){document.documentElement.classList.add("theme-loaded");}</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>花街詳細 | 全国花街ポータル</title>
+  <meta name="description" content="花街の詳細情報を表示します。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/kagai-detail.css" />
+  <script src="../js/template-loader.js"></script>
+</head>
+<body class="is-subpage">
+  <!-- Header / Global Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html">
+        <img class="brand__mark" src="../assets/logo.png" alt="花街ロゴ" loading="lazy" decoding="async" />
+        <span class="brand__type">全国花街ポータル</span>
+      </a>
+
+      <div class="header-tools">
+        <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="global-nav" id="globalNav" aria-label="グローバルナビ">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="events.html" class="nav-link">イベント</a>
+          </li>
+          <li class="nav-item">
+            <a href="guide.html" class="nav-link">花街ガイド</a>
+          </li>
+          <li class="nav-item">
+            <a href="columns.html" class="nav-link">コラム・読み物</a>
+          </li>
+          <li class="nav-item">
+            <a href="sns-links.html" class="nav-link">SNS・リンク</a>
+          </li>
+          <li class="nav-item">
+            <a href="updates.html" class="nav-link">更新情報</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span>/</span>
+        <a href="../index.html#japan-map-container">全国花街マップ</a>
+        <span>/</span>
+        <span id="crumb-title">花街詳細</span>
+      </div>
+      <h1 class="page-title" id="page-title">花街詳細</h1>
+      <p class="page-description" id="page-desc">基本情報と関連リンクをご確認ください。</p>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <section class="section">
+      <div class="container">
+        <article class="kagai-detail" id="kagai-detail">
+          <div class="kagai-detail__media" id="hana-image"></div>
+          <div class="kagai-detail__body">
+            <h2 class="kagai-detail__title" id="hana-title">花街名</h2>
+            <ul class="kagai-detail__meta">
+              <li id="hana-pref">📍 都道府県: -</li>
+              <li id="hana-area">🗺 エリア: -</li>
+              <li id="hana-links">🔗 リンク: -</li>
+            </ul>
+            <div class="kagai-detail__desc" id="hana-description"></div>
+          </div>
+        </article>
+        <div class="section__footer">
+          <a class="btn btn--ghost" href="../index.html#japan-map-container">マップに戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a class="footer__logo" href="../index.html">
+            <img src="../assets/logo.png" alt="全国花街ポータル ロゴ" loading="lazy" decoding="async" />
+            <span class="footer__brand-text">全国花街ポータル</span>
+          </a>
+          <p class="footer__desc">日本の伝統文化である花街・芸者文化の正しい理解と継承を支えるポータルです。</p>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__col">
+            <h4 class="footer__title">メインコンテンツ</h4>
+            <ul class="footer__links">
+              <li><a href="events.html">イベント</a></li>
+              <li><a href="guide.html">花街ガイド</a></li>
+              <li><a href="columns.html">コラム・読み物</a></li>
+              <li><a href="sns-links.html">SNS・リンク</a></li>
+              <li><a href="updates.html">更新情報</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__title">サイト情報</h4>
+            <ul class="footer__links">
+              <li><a href="about.html">このサイトについて</a></li>
+              <li><a href="contact.html">お問い合わせ</a></li>
+              <li><a href="privacy.html">プライバシーポリシー</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="copyright">© 2025 全国花街ポータル</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/xlsx-loader.js"></script>
+  <script src="../js/kagai-detail.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/lang-switcher.js"></script>
+</body>
+</html>
+
+

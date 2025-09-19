@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <!-- テーマ適用の先行スクリプト - FOUC/白画面解消 -->
+  <script>try{var d=document.documentElement;var s=(new URLSearchParams(location.search).get('theme'))||localStorage.getItem('theme')||'light';if(s==='light'||s==='dark'){d.setAttribute('data-theme',s);localStorage.setItem('theme',s);}d.classList.add('theme-loaded');}catch(e){document.documentElement.classList.add('theme-loaded');}</script>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>コラム・読み物 | 全国花街ポータル</title>
+  <meta name="description" content="花街・芸者文化に関する特集記事、インタビュー、エッセイをお届けします。深い洞察と豊かな読み物で、伝統文化の世界を探求。" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/columns.css" />
+
+  <!-- OG -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="コラム・読み物 | 全国花街ポータル" />
+  <meta property="og:description" content="花街・芸者文化の特集記事、インタビュー、エッセイ" />
+  <link rel="icon" href="../assets/logo.png" type="image/png" />
+</head>
+<body class="is-subpage">
+  <!-- Header / Global Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html">
+        <img class="brand__mark" src="../assets/logo.png" alt="花街ロゴ" loading="lazy" decoding="async" />
+        <span class="brand__type">全国花街ポータル</span>
+      </a>
+
+      <div class="header-tools">
+        <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="global-nav" id="globalNav" aria-label="グローバルナビ">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="events.html" class="nav-link">イベント</a>
+          </li>
+          <li class="nav-item">
+            <a href="guide.html" class="nav-link">花街ガイド</a>
+          </li>
+          <li class="nav-item">
+            <a href="columns.html" class="nav-link" aria-current="page">コラム・読み物</a>
+          </li>
+          <li class="nav-item">
+            <a href="sns-links.html" class="nav-link">SNS・リンク</a>
+          </li>
+          <li class="nav-item">
+            <a href="updates.html" class="nav-link">更新情報</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span>/</span>
+        <span>コラム・読み物</span>
+      </div>
+      <h1 class="page-title">コラム・読み物</h1>
+      <p class="page-description">花街・芸者文化に関する特集記事、インタビュー、エッセイをお届けします。深い洞察と豊かな読み物で、伝統文化の世界を探求。</p>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <!-- 特集記事 -->
+    <section class="section section--surface" id="featured">
+      <div class="container">
+        <div class="featured-article">
+          <div class="featured-article__image">
+            <img src="../images/1.jpg" alt="特集記事" />
+            <div class="featured-article__badge">特集</div>
+          </div>
+          <div class="featured-article__content">
+            <div class="featured-article__meta">
+              <span class="featured-article__category">インタビュー</span>
+              <span class="featured-article__date">2025年3月15日</span>
+            </div>
+            <h2 class="featured-article__title">芸妓の日常を探る～伝統と革新の狭間で</h2>
+            <p class="featured-article__excerpt">
+              現代の芸妓たちは、伝統を守りながらも新しい時代に合わせた表現を模索しています。本記事では、
+              京都祇園甲部の芸妓さんにお話を伺い、花街文化の未来について語っていただきました。
+            </p>
+            <a href="#featured-article" class="featured-article__cta">記事を読む</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- カテゴリフィルター -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="category-filter">
+          <a href="#all" class="filter-btn active">すべて</a>
+          <a href="#interview" class="filter-btn">インタビュー</a>
+          <a href="#culture" class="filter-btn">文化解説</a>
+          <a href="#history" class="filter-btn">歴史</a>
+          <a href="#column" class="filter-btn">コラム</a>
+          <a href="#essay" class="filter-btn">エッセイ</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 記事一覧 -->
+    <section class="section section--surface" id="articles">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Articles</span>
+          <h2 class="section__title">最新の記事</h2>
+        </div>
+        
+        <div class="article-grid">
+          <article class="article-card">
+            <div class="article-card__image">
+              <img src="../images/2.jpg" alt="舞妓の世界" />
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <span class="article-card__category">文化解説</span>
+                <span class="article-card__date">2025.03.12</span>
+              </div>
+              <h3 class="article-card__title">舞妓の世界～修行から一人前まで</h3>
+              <p class="article-card__excerpt">
+                舞妓から芸妓になるまでの道のりを、日々の稽古やお座敷の様子を通して紹介します。
+              </p>
+              <a href="#article-1" class="article-card__read-more">詳しく読む →</a>
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="article-card__image">
+              <img src="../images/3.jpg" alt="花街の四季" />
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <span class="article-card__category">コラム</span>
+                <span class="article-card__date">2025.03.10</span>
+              </div>
+              <h3 class="article-card__title">花街の四季～季節とともに変化する美</h3>
+              <p class="article-card__excerpt">
+                春の桜から冬の雪景まで、季節ごとに異なる花街の魅力と、それに合わせた演目を紹介。
+              </p>
+              <a href="#article-2" class="article-card__read-more">詳しく読む →</a>
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="article-card__image">
+              <img src="../images/4.jpg" alt="伝統芸能" />
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <span class="article-card__category">歴史</span>
+                <span class="article-card__date">2025.03.08</span>
+              </div>
+              <h3 class="article-card__title">日本舞踊の源流と花街の関係</h3>
+              <p class="article-card__excerpt">
+                日本舞踊の成り立ちから現代までの変遷を、花街文化との関わりを中心に探ります。
+              </p>
+              <a href="#article-3" class="article-card__read-more">詳しく読む →</a>
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="article-card__image">
+              <img src="../images/1.jpg" alt="お茶屋文化" />
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <span class="article-card__category">エッセイ</span>
+                <span class="article-card__date">2025.03.05</span>
+              </div>
+              <h3 class="article-card__title">お茶屋文化とおもてなしの心</h3>
+              <p class="article-card__excerpt">
+                花街のお茶屋で培われる「おもてなし」の心と、それが現代でどのように活かされているかを考察。
+              </p>
+              <a href="#article-4" class="article-card__read-more">詳しく読む →</a>
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="article-card__image">
+              <img src="../images/2.jpg" alt="着物文化" />
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <span class="article-card__category">インタビュー</span>
+                <span class="article-card__date">2025.03.03</span>
+              </div>
+              <h3 class="article-card__title">着物職人に聞く、花街の装い</h3>
+              <p class="article-card__excerpt">
+                芸妓・舞妓の美しい着物を手がける職人の皆さんに、伝統的な技法とこだわりを伺いました。
+              </p>
+              <a href="#article-5" class="article-card__read-more">詳しく読む →</a>
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="article-card__image">
+              <img src="../images/3.jpg" alt="花街の未来" />
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <span class="article-card__category">コラム</span>
+                <span class="article-card__date">2025.03.01</span>
+              </div>
+              <h3 class="article-card__title">花街文化の未来～伝統と革新のバランス</h3>
+              <p class="article-card__excerpt">
+                急速に変化する現代社会の中で、花街文化がどのように伝統を守り、新しい価値を創造していくか。
+              </p>
+              <a href="#article-6" class="article-card__read-more">詳しく読む →</a>
+            </div>
+          </article>
+        </div>
+        
+        <div class="load-more-section">
+          <button class="load-more-btn">さらに記事を読み込む</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ニュースレター登録 -->
+    <section class="section" id="newsletter">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Newsletter</span>
+          <h2 class="section__title">最新記事をお届け</h2>
+          <p class="section__description">新しいコラムや特集記事の情報をメールでお届けします。</p>
+        </div>
+        
+        <div style="max-width: 500px; margin: 0 auto; text-align: center;">
+          <form class="newsletter-form" style="display: flex; gap: var(--s-3); margin-bottom: var(--s-4);">
+            <input type="email" placeholder="メールアドレスを入力" style="flex: 1; padding: var(--s-3); border: 1px solid var(--line); border-radius: var(--r-md);" required>
+            <button type="submit" class="btn btn--primary">登録</button>
+          </form>
+          <p style="font-size: 0.875rem; color: var(--text-dim);">
+            配信停止はいつでも可能です。プライバシーポリシーに同意の上ご登録ください。
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a class="footer__logo" href="../index.html">
+            <img src="../assets/logo.png" alt="全国花街ポータル ロゴ" loading="lazy" decoding="async" />
+            <span class="footer__brand-text">全国花街ポータル</span>
+          </a>
+          <p class="footer__desc">日本の伝統文化である花街・芸者文化の正しい理解と継承を支えるポータルです。</p>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__col">
+            <h4 class="footer__title">メインコンテンツ</h4>
+            <ul class="footer__links">
+              <li><a href="events.html">イベント</a></li>
+              <li><a href="guide.html">花街ガイド</a></li>
+              <li><a href="columns.html">コラム・読み物</a></li>
+              <li><a href="sns-links.html">SNS・リンク</a></li>
+              <li><a href="updates.html">更新情報</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__title">サイト情報</h4>
+            <ul class="footer__links">
+              <li><a href="about.html">サイト概要</a></li>
+              <li><a href="contact.html">お問い合わせ</a></li>
+              <li><a href="privacy.html">利用規約・プライバシーポリシー</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 全国花街ポータル. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/script.js"></script>
+</body>
+</html>

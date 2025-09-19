@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- テーマ適用の先行スクリプト - FOUC/白画面解消 -->
+  <script>try{var d=document.documentElement;var s=(new URLSearchParams(location.search).get("theme"))||localStorage.getItem("theme")||"light";if(s==="light"||s==="dark"){d.setAttribute("data-theme",s);localStorage.setItem("theme",s);}d.classList.add("theme-loaded");}catch(e){document.documentElement.classList.add("theme-loaded");}</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>お問い合わせ | 全国花街ポータル</title>
+  <meta name="description" content="お問い合わせフォーム。ご意見・ご感想・情報提供などはこちらからお寄せください。" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
+  <script src="../js/template-loader.js"></script>
+</head>
+<body class="is-subpage">
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">ホーム</a> <span>/</span> <span>お問い合わせ</span></div>
+      <h1 class="page-title">お問い合わせ</h1>
+      <p class="page-description">ご意見・ご感想・情報提供など、下記フォームよりお寄せください。</p>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <section class="section section--surface">
+      <div class="container">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">お名前 <span class="req">必須</span></label>
+            <input id="name" name="name" type="text" placeholder="山田 太郎" required />
+            <p class="error" data-for="name"></p>
+          </div>
+          <div class="form-row">
+            <label for="email">メールアドレス <span class="req">必須</span></label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <p class="error" data-for="email"></p>
+          </div>
+          <div class="form-row">
+            <label for="subject">件名</label>
+            <input id="subject" name="subject" type="text" placeholder="お問い合わせの件名" />
+          </div>
+          <div class="form-row">
+            <label for="message">本文 <span class="req">必須</span></label>
+            <textarea id="message" name="message" rows="8" placeholder="お問い合わせ内容をできるだけ具体的にご記入ください。" required></textarea>
+            <p class="error" data-for="message"></p>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary">送信する</button>
+            <p class="form-note">送信前に入力内容をご確認ください。</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">個人情報の取扱い</h2>
+        <p>ご提供いただいた個人情報は、お問い合わせ対応の目的に限り利用し、適切に管理いたします。</p>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="../js/script.js"></script>
+  <script src="../js/contact.js"></script>
+</body>
+</html>

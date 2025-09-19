@@ -1,0 +1,125 @@
+/* Hanamachi Detail Page Styles */
+
+.page-hero {
+  padding: 120px 0 80px;
+  background: var(--bg-app);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+
+.breadcrumb { margin-bottom: var(--s-6); font-size: .875rem; color: var(--text-mute); font-family: var(--sans); }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; transition: var(--t); }
+.breadcrumb a:hover { color: var(--accent); }
+.breadcrumb span { margin: 0 var(--s-2); opacity: .6; }
+
+.page-title { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: var(--s-4); color: var(--text); font-family: var(--serif); font-weight: 600; }
+.page-description { font-size: 1.1rem; color: var(--text-dim); max-width: 680px; margin: 0 auto; line-height: 1.7; }
+
+/* Layout */
+.kagai-detail { 
+  display: grid; 
+  grid-template-columns: 1fr 1.2fr; 
+  gap: var(--s-12); 
+  align-items: start; 
+}
+
+@media (max-width: 960px) {
+  .kagai-detail { grid-template-columns: 1fr; }
+}
+
+.kagai-detail__media { 
+  position: sticky; 
+  top: calc(72px + var(--s-6));
+  border: 1px solid var(--line); 
+  border-radius: var(--r-xl); 
+  overflow: hidden; 
+  background: var(--bg-surface);
+  min-height: 420px; /* 写真スペース */
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kagai-detail__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* 画像プレースホルダー */
+.kagai-detail__media::before {
+  content: "📸 画像準備中";
+  color: var(--text-mute);
+  font-size: 1.1rem;
+  font-family: var(--sans);
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0.05) 100%);
+}
+
+.kagai-detail__media:has(img)::before {
+  display: none;
+}
+
+.kagai-detail__body { 
+  background: var(--bg-surface); 
+  border: 1px solid var(--line); 
+  border-radius: var(--r-xl); 
+  padding: var(--s-8);
+  box-shadow: var(--shadow-md);
+}
+
+.kagai-detail__title { font-family: var(--serif); font-weight: 600; font-size: clamp(1.6rem, 3.6vw, 2.2rem); margin-top: 0; margin-bottom: var(--s-4); }
+
+.kagai-detail__meta { 
+  list-style: none; padding: 0; margin: 0 0 var(--s-6) 0; 
+  display: flex; flex-wrap: wrap; gap: var(--s-3); 
+  font-family: var(--sans); color: var(--text-mute);
+}
+.kagai-detail__meta li { 
+  background: rgba(0,0,0,.03); 
+  padding: var(--s-2) var(--s-4); 
+  border: 1px solid var(--line); 
+  border-radius: 999px; 
+  font-size: 0.9rem;
+  transition: var(--t);
+}
+.kagai-detail__meta li:hover {
+  background: rgba(0,0,0,.05);
+  transform: translateY(-1px);
+}
+
+.kagai-detail__desc { color: var(--text-dim); line-height: 1.9; font-size: 1.05rem; }
+.kagai-detail__desc p { margin-top: 0; }
+
+.section__footer { text-align: center; margin-top: var(--s-10); }
+
+/* Link styling */
+.kagai-detail a { color: var(--accent); text-decoration: none; }
+.kagai-detail a:hover { opacity: .9; }
+
+/* Loading state */
+.kagai-detail.loading .kagai-detail__title::after {
+  content: "...";
+  animation: dots 1.5s infinite;
+}
+
+@keyframes dots {
+  0%, 20% { content: ""; }
+  40% { content: "."; }
+  60% { content: ".."; }
+  80%, 100% { content: "..."; }
+}
+
+/* Error state */
+.kagai-detail.error .kagai-detail__body {
+  border-color: #e74c3c;
+  background: rgba(231, 76, 60, 0.05);
+}
+
+.kagai-detail.error .kagai-detail__title::before {
+  content: "⚠️ ";
+  color: #e74c3c;
+}
+
+
