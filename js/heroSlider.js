@@ -22,10 +22,43 @@ class HeroSlider {
   }
 
   init() {
-    this.replaceVideoWithSlider();
-    this.createSliderControls();
+    // 既存のスライダーがあるかチェック
+    const existingSlider = document.querySelector('.hero-slider');
+    if (existingSlider) {
+      // 既存のスライダーを初期化
+      this.initializeExistingSlider();
+    } else {
+      // 新しいスライダーを作成
+      this.replaceVideoWithSlider();
+      this.createSliderControls();
+    }
     this.startAutoSlide();
     this.addEventListeners();
+  }
+
+  initializeExistingSlider() {
+    // 既存のスライダーの初期状態を設定
+    const slides = document.querySelectorAll('.hero-slide');
+    const indicators = document.querySelectorAll('.indicator');
+    
+    // 最初のスライドをアクティブに設定
+    slides.forEach((slide, index) => {
+      slide.classList.remove('active');
+      if (index === 0) {
+        slide.classList.add('active');
+      }
+    });
+    
+    // 最初のインジケーターをアクティブに設定
+    indicators.forEach((indicator, index) => {
+      indicator.classList.remove('active');
+      if (index === 0) {
+        indicator.classList.add('active');
+      }
+    });
+    
+    // 現在のスライドを0に設定
+    this.currentSlide = 0;
   }
 
   replaceVideoWithSlider() {
@@ -90,7 +123,8 @@ class HeroSlider {
   createSliderControls() {
     // HTMLに既にコントロールが存在する場合は何もしない
     const existingControls = document.querySelector('.hero-slider__controls');
-    if (existingControls) return;
+    const existingIndicators = document.querySelector('.hero-slider__indicators');
+    if (existingControls && existingIndicators) return;
 
     const heroSection = document.querySelector('.hero');
     if (!heroSection) return;

@@ -242,7 +242,7 @@
 
 
   document.addEventListener('DOMContentLoaded', function() {
-    if (document.getElementById('japan-map-container')) {
+    if (document.getElementById('mapSpots')) {
       createHotspots();
     }
   });

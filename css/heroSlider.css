@@ -1,5 +1,5 @@
-/* Modern Hero Slider Styles - Updated */
-.hero-slider {
+/* Modern Hero Styles - Simplified */
+.hero__bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -9,7 +9,7 @@
   border-radius: 0;
 }
 
-.hero-slider::after {
+.hero__bg::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -28,52 +28,44 @@
   z-index: 8;
 }
 
-.hero-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all 1.4s cubic-bezier(0.25, 0.1, 0.25, 1);
-  transform: scale(1.05);
-  filter: blur(2px);
-}
-
-.hero-slide.active {
-  opacity: 1;
-  transform: scale(1);
-  filter: blur(0px);
-}
-
-.hero-slide__image {
+.hero__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   transition: transform 8s cubic-bezier(0.25, 0.1, 0.25, 1);
   will-change: transform;
+  animation: kenBurns 8s ease-in-out infinite alternate;
 }
 
-/* Ken Burns効果 - よりエレガントなズーム */
-.hero-slide.active .hero-slide__image {
-  transform: scale(1.08);
+/* Ken Burns効果 - ふわっとズーム */
+@keyframes kenBurns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
 }
 
-.hero-slide__overlay {
+.hero__overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(ellipse 80% 50% at 50% 40%, rgba(212, 176, 114, 0.12) 0%, transparent 50%),
-    linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, transparent 40%, transparent 60%, rgba(0, 0, 0, 0.3) 100%),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%);
+    /* 繊細な白っぽいグラデーション - 全体に薄く */
+    linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 30%, transparent 60%),
+    linear-gradient(45deg, rgba(255, 255, 255, 0.08) 0%, transparent 40%, transparent 60%, rgba(255, 255, 255, 0.12) 100%),
+    /* ロゴ周辺を明るくするための中心グラデーション */
+    radial-gradient(ellipse 60% 40% at 50% 45%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.1) 30%, transparent 70%),
+    /* 下部の微細なグラデーション */
+    linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.03) 70%, rgba(255, 255, 255, 0.08) 100%);
   pointer-events: none;
 }
 
-.hero-slide__content {
+.hero__content {
   position: absolute;
   top: 0;
   left: 0;
@@ -85,142 +77,10 @@
   z-index: 5;
 }
 
-.hero-slide__content {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 100% !important;
-  height: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  max-width: none !important;
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-}
-
-/* Refined Slider Controls - Hidden */
-.hero-slider__controls {
-  display: none !important;
-}
-
-/* Navigation buttons hidden */
-.hero-slider__prev,
-.hero-slider__next {
-  display: none !important;
-}
-
-/* Shimmer effect hidden */
-.hero-slider__prev::before,
-.hero-slider__next::before {
-  display: none !important;
-}
-
-/* Hover effects hidden */
-.hero:hover .hero-slider__prev,
-.hero:hover .hero-slider__next {
-  display: none !important;
-}
-
-/* Button hover effects hidden */
-.hero-slider__prev:hover,
-.hero-slider__next:hover {
-  display: none !important;
-}
-
-/* Shimmer hover effects hidden */
-.hero-slider__prev:hover::before,
-.hero-slider__next:hover::before {
-  display: none !important;
-}
-
-/* Button active effects hidden */
-.hero-slider__prev:active,
-.hero-slider__next:active {
-  display: none !important;
-}
-
-/* Refined Subtle Indicators */
-.hero-slider__indicators {
-  position: absolute;
-  bottom: 2rem;
-  /* ロゴの見た目中心に合わせる微調整を可変に */
-  left: calc(50% + var(--indicator-offset-x, 0px));
-  transform: translateX(-50%);
-  display: none !important; /* ユーザー要望により非表示 */
-  gap: 0.5rem;
-  z-index: 10;
-  padding: 0.5rem 0.75rem;
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(16px) saturate(120%);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-}
-
-.indicator {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(255, 255, 255, 0.25);
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-  position: relative;
-}
-
-.indicator::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 12px;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 1px;
-  opacity: 0;
-  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-
-.indicator:hover {
-  background: rgba(255, 255, 255, 0.4);
-  transform: scale(1.2);
-}
-
-.indicator.active {
-  background: rgba(212, 176, 114, 0.7);
-  transform: scale(1.3);
-  box-shadow: 0 0 0 2px rgba(212, 176, 114, 0.15);
-}
-
-.indicator.active::before {
-  opacity: 1;
-  width: 16px;
-  background: rgba(212, 176, 114, 0.4);
-}
-
-/* デフォルトのオフセット（PC） */
-.hero--portal .hero-slider__indicators { --indicator-offset-x: 6px; }
-/* タブレットで少し弱める */
-@media (max-width: 1024px) {
-  .hero--portal .hero-slider__indicators { --indicator-offset-x: 4px; }
-}
-/* モバイルではさらに弱める */
-@media (max-width: 600px) {
-  .hero--portal .hero-slider__indicators { --indicator-offset-x: 2px; }
-}
-
-/* Enhanced hero content positioning over slider */
-.hero__content {
-  position: relative;
-  z-index: 5;
-}
+/* スライダー関連のスタイルは削除済み */
 
 /* Force override styles.css settings - Position hero__stack in screen center */
-.hero-slide .hero__stack {
+.hero--portal .hero__stack {
   max-width: 380px !important;
   width: 86% !important;
   margin: 0 !important;
@@ -236,10 +96,10 @@
   transform: translateX(-50%) !important;
   z-index: 10 !important;
   padding: 3.5rem 1.75rem !important;
-  height: 100% !important; /* スライダーの縦いっぱい */
+  height: 100% !important;
 }
 
-.hero-slide .hero__logo {
+.hero--portal .hero__logo {
   max-width: 200px !important;
   width: 200px !important;
   height: auto !important;
@@ -257,8 +117,7 @@
   animation: contentFadeIn 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) 0.5s both;
 }
 
-.hero--portal .hero__stack,
-.hero-slide .hero__stack {
+.hero--portal .hero__stack {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
@@ -269,12 +128,13 @@
   animation: contentFadeIn 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.8s both;
 }
 
-.hero--portal .hero__logo,
-.hero-slide .hero__logo {
+.hero--portal .hero__logo {
   filter:
-    brightness(1.05)
-    drop-shadow(0 8px 32px rgba(0, 0, 0, 0.4))
-    drop-shadow(0 2px 8px rgba(212, 176, 114, 0.2));
+    brightness(1.15)
+    contrast(1.1)
+    drop-shadow(0 12px 40px rgba(0, 0, 0, 0.5))
+    drop-shadow(0 4px 16px rgba(255, 255, 255, 0.3))
+    drop-shadow(0 2px 8px rgba(212, 176, 114, 0.4));
   max-width: 240px !important;
   width: 240px !important;
   height: auto !important;
@@ -285,13 +145,43 @@
   position: relative !important;
 }
 
-.hero--portal .hero__logo:hover,
-.hero-slide .hero__logo:hover {
+.hero--portal .hero__logo:hover {
   transform: scale(1.02);
+  filter:
+    brightness(1.2)
+    contrast(1.15)
+    drop-shadow(0 16px 48px rgba(0, 0, 0, 0.6))
+    drop-shadow(0 6px 20px rgba(255, 255, 255, 0.4))
+    drop-shadow(0 3px 12px rgba(212, 176, 114, 0.5));
 }
 
-.hero--portal .hero__desc,
-.hero-slide .hero__desc {
+/* ロゴ周辺の微細な光の効果 */
+.hero--portal .hero__logo::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+  animation: logoGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes logoGlow {
+  0% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.hero--portal .hero__desc {
   color: rgba(255, 255, 255, 0.88);
   text-shadow:
     0 2px 8px rgba(0, 0, 0, 0.5),
@@ -323,162 +213,15 @@
   }
 }
 
-@keyframes slideTransition {
-  0% {
-    opacity: 0;
-    transform: scale(1.08) rotate(0.5deg);
-    filter: blur(3px);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
-    filter: blur(0px);
-  }
-}
-
-@keyframes shimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-
-.hero-slider__indicators {
-  animation: contentFadeIn 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.8s both;
-}
-
-.hero-slider__controls {
-  animation: contentFadeIn 1s cubic-bezier(0.25, 0.1, 0.25, 1) 1s both;
-}
-
-/* Slide transition effect */
-.hero-slide.entering {
-  animation: slideTransition 1.4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-}
-
-/* Additional styles for event cards and ticker */
-.event-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.event-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-}
-
-.event-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: var(--accent);
-}
-
-.event-card__date {
-  color: var(--accent);
-  font-weight: 500;
-  font-size: 0.9rem;
-}
-
-.event-card__title {
-  margin: 0.5rem 0;
-  color: var(--text);
-  font-size: 1.1rem;
-  line-height: 1.4;
-}
-
-.event-card__location {
-  color: var(--accent-2);
-  font-size: 0.9rem;
-  margin: 0.25rem 0;
-}
-
-.event-card__desc {
-  color: var(--text-dim);
-  font-size: 0.9rem;
-  margin: 0.5rem 0 0;
-}
-
-/* Updates ticker styles */
-.updates-ticker {
-  background: var(--bg-surface);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 1.5rem 0;
-}
-
-.ticker-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.ticker-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.75rem;
-  border-radius: 6px;
-  transition: background-color 0.2s ease;
-}
-
-.ticker-item:hover {
-  background: var(--bg-app);
-}
-
-.ticker-item time {
-  flex-shrink: 0;
-  color: var(--accent);
-  font-size: 0.85rem;
-  font-weight: 500;
-}
-
-.ticker-item span {
-  color: var(--text);
-  font-size: 0.9rem;
-}
+/* イベントカードとティッカーのスタイルは styles.css で定義済み */
 
 /* Modern Responsive Design */
 @media (max-width: 768px) {
-  .hero-slider__controls {
-    padding: 0 1.5rem;
-  }
-  
-  .hero-slider__prev,
-  .hero-slider__next {
-    width: 52px;
-    height: 52px;
-    font-size: 18px;
-  }
-  
-  .hero-slider__indicators {
-    bottom: 2rem;
-    gap: 0.6rem;
-    padding: 0.6rem 1rem;
-  }
-  
-  .indicator {
-    width: 6px;
-    height: 6px;
-  }
-  
-  .indicator.active::after {
-    width: 12px;
-    height: 12px;
-    border-width: 1.5px;
-  }
-  
-
-  .hero--portal .hero__stack,
-  .hero-slide .hero__stack {
+  .hero--portal .hero__stack {
     gap: var(--s-4);
   }
 
-  .hero--portal .hero__logo,
-  .hero-slide .hero__logo {
+  .hero--portal .hero__logo {
     max-width: 200px !important;
     width: 200px !important;
     display: block !important;
@@ -487,54 +230,26 @@
     position: relative !important;
   }
   
-  .hero--portal .hero__desc,
-  .hero-slide .hero__desc {
+  .hero--portal .hero__logo::before {
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+  }
+  
+  .hero--portal .hero__desc {
     font-size: clamp(0.95rem, 2.2vw, 1.1rem);
     margin: 1.2rem auto 0 auto;
     max-width: 300px;
   }
-
-  .event-cards {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .ticker-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
 }
 
 @media (max-width: 480px) {
-  .hero-slider__controls {
-    opacity: 0.7;
-    padding: 0 1rem;
-  }
-  
-  .hero-slider__prev,
-  .hero-slider__next {
-    width: 44px;
-    height: 44px;
-    font-size: 16px;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(12px);
-  }
-  
-  .hero-slider__indicators {
-    bottom: 1.5rem;
-    padding: 0.5rem 0.8rem;
-    gap: 0.5rem;
-  }
-  
-
-  .hero--portal .hero__stack,
-  .hero-slide .hero__stack {
+  .hero--portal .hero__stack {
     gap: var(--s-3);
   }
 
-  .hero--portal .hero__logo,
-  .hero-slide .hero__logo {
+  .hero--portal .hero__logo {
     max-width: 160px !important;
     width: 160px !important;
     display: block !important;
@@ -543,8 +258,14 @@
     position: relative !important;
   }
   
-  .hero--portal .hero__desc,
-  .hero-slide .hero__desc {
+  .hero--portal .hero__logo::before {
+    top: -12px;
+    left: -12px;
+    right: -12px;
+    bottom: -12px;
+  }
+  
+  .hero--portal .hero__desc {
     font-size: clamp(0.9rem, 2vw, 1rem);
     line-height: 1.6;
     margin: 1rem auto 0 auto;
@@ -554,25 +275,11 @@
 
 /* Ultra-wide screens */
 @media (min-width: 1600px) {
-  .hero-slider__prev,
-  .hero-slider__next {
-    width: 72px;
-    height: 72px;
-    font-size: 22px;
-  }
-  
-  .hero-slider__controls {
-    padding: 0 4rem;
-  }
-  
-
-  .hero--portal .hero__stack,
-  .hero-slide .hero__stack {
+  .hero--portal .hero__stack {
     gap: var(--s-8);
   }
 
-  .hero--portal .hero__logo,
-  .hero-slide .hero__logo {
+  .hero--portal .hero__logo {
     max-width: 280px !important;
     width: 280px !important;
     display: block !important;
@@ -582,38 +289,20 @@
   }
 }
 
-/* Modern Accessibility & Performance */
-.hero-slider__prev:focus-visible,
-.hero-slider__next:focus-visible,
-.indicator:focus-visible {
-  outline: 3px solid rgba(212, 176, 114, 0.8);
-  outline-offset: 3px;
-  box-shadow: 
-    0 0 0 6px rgba(212, 176, 114, 0.2),
-    0 12px 40px rgba(0, 0, 0, 0.2);
-}
-
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
-  .hero-slide,
-  .hero-slide__image,
-  .hero-slider__prev,
-  .hero-slider__next,
-  .indicator {
-    transition-duration: 0.2s;
-    animation-duration: 0.2s;
-  }
-  
-  .hero-slide.active .hero-slide__image {
-    transform: scale(1.02);
-  }
-  
-  .indicator.active::after {
+  .hero__image {
     animation: none;
+    transform: scale(1.02);
   }
   
   .hero__stack {
     animation: none;
+  }
+  
+  .hero--portal .hero__logo::before {
+    animation: none;
+    opacity: 0.8;
   }
 }
 
@@ -626,12 +315,7 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
-[data-theme="dark"] .hero-slider__indicators {
-  background: rgba(0, 0, 0, 0.25);
-  border-color: rgba(255, 255, 255, 0.06);
-}
-
-[data-theme="dark"] .hero-slider::after {
+[data-theme="dark"] .hero__bg::after {
   background: linear-gradient(to bottom, 
     transparent 0%, 
     rgba(14, 14, 15, 0.05) 25%,
@@ -642,30 +326,12 @@
   );
 }
 
-[data-theme="dark"] .hero-slider__prev,
-[data-theme="dark"] .hero-slider__next {
-  background: rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.95);
-}
-
-[data-theme="dark"] .hero-slider__prev:hover,
-[data-theme="dark"] .hero-slider__next:hover {
-  background: rgba(255, 255, 255, 0.12);
-}
-
 /* Performance optimizations */
-.hero-slider,
-.hero-slide,
-.hero-slide__image {
+.hero__bg,
+.hero__image {
   contain: layout style paint;
 }
 
-.hero-slide__image {
+.hero__image {
   will-change: transform;
-}
-
-.hero-slider__prev,
-.hero-slider__next,
-.indicator {
-  will-change: transform, opacity;
 }
