@@ -1,14 +1,14 @@
 (function() {
   const HOTSPOTS = [
     // name: ラベル, percent based position on the map image wrapper
-    { key: 'tokyo',   label: '東京',   x: 78, y: 58 },
-    { key: 'kyoto',   label: '京都',   x: 60, y: 66 },
-    { key: 'ishikawa',label: '石川',   x: 48, y: 46 },
-    { key: 'yamagata',label: '山形',   x: 58, y: 34 },
-    { key: 'niigata', label: '新潟',   x: 63, y: 38 },
-    { key: 'fukuoka', label: '福岡',   x: 33, y: 82 },
-    { key: 'akita',   label: '秋田',   x: 58, y: 26 },
-    { key: 'fukui',   label: '福井',   x: 49, y: 56 },
+    { key: 'tokyo',   label: '東京',   x: 56, y: 61 },
+    { key: 'kyoto',   label: '京都',   x: 36, y: 62 },
+    { key: 'ishikawa',label: '石川',   x: 43, y: 54 },
+    { key: 'yamagata',label: '山形',   x: 58, y: 43 },
+    { key: 'niigata', label: '新潟',   x: 53, y: 50 },
+    { key: 'fukuoka', label: '福岡',   x: 12, y: 72 },
+    { key: 'akita',   label: '秋田',   x: 60, y: 34 },
+    { key: 'fukui',   label: '福井',   x: 40, y: 58 },
   ];
 
   // XLSXライブラリの遅延読込
