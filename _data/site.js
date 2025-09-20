@@ -84,7 +84,7 @@ module.exports = {
       url: withBase("/pages/columns.html")
     },
     {
-      title: "SNS・リンク",
+      title: "リンク",
       url: withBase("/pages/sns-links.html")
     },
     {

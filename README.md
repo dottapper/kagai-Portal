@@ -20,7 +20,7 @@
 │   ├── events.html               # イベントページ
 │   ├── guide.html                # 花街ガイド
 │   ├── columns.html              # コラム・読み物
-│   ├── sns-links.html            # SNS・リンク
+│   ├── sns-links.html            # リンク
 │   ├── updates.html              # ニュース
 │   ├── about.html                # サイト概要
 │   ├── contact.html              # お問い合わせ
@@ -42,7 +42,7 @@
 │   ├── events.css                # イベントページ専用
 │   ├── guide.css                 # 花街ガイド専用
 │   ├── columns.css               # コラム・読み物専用
-│   ├── sns-links.css             # SNS・リンク専用
+│   ├── sns-links.css             # リンク専用
 │   ├── updates.css               # ニュース専用
 │   ├── heroSlider.css            # ヒーロースライダー
 │   ├── japanMapSpace.css         # 日本地図
@@ -124,7 +124,7 @@ npm run build
 1. **イベント** - 月別カレンダー、年中行事一覧、過去イベントアーカイブ
 2. **花街ガイド** - 花街とは、歴史と文化、体験方法、基本マナー
 3. **コラム・読み物** - 特集記事、インタビュー、エッセイ
-4. **SNS・リンク** - 各花街 Instagram、関連リンク集
+4. **リンク** - 各花街 Instagram、関連リンク集
 5. **ニュース** - サイトからのお知らせ、コンテンツ追加履歴
 
 ### フッターメニュー

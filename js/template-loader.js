@@ -34,7 +34,7 @@
                 <a href="\${homeUrl}pages/columns.html" class="nav-link">コラム・読み物</a>
               </li>
               <li class="nav-item">
-                <a href="\${homeUrl}pages/sns-links.html" class="nav-link">SNS・リンク</a>
+                <a href="\${homeUrl}pages/sns-links.html" class="nav-link">リンク</a>
               </li>
               <li class="nav-item">
                 <a href="\${homeUrl}pages/updates.html" class="nav-link">ニュース</a>
@@ -63,7 +63,7 @@
                   <li><a href="\${homeUrl}pages/events.html">イベント</a></li>
                   <li><a href="\${homeUrl}pages/guide.html">花街ガイド</a></li>
                   <li><a href="\${homeUrl}pages/columns.html">コラム・読み物</a></li>
-                  <li><a href="\${homeUrl}pages/sns-links.html">SNS・リンク</a></li>
+                  <li><a href="\${homeUrl}pages/sns-links.html">リンク</a></li>
                   <li><a href="\${homeUrl}pages/updates.html">ニュース</a></li>
                 </ul>
               </div>
