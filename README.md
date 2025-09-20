@@ -21,7 +21,7 @@
 │   ├── guide.html                # 花街ガイド
 │   ├── columns.html              # コラム・読み物
 │   ├── sns-links.html            # SNS・リンク
-│   ├── updates.html              # 更新情報
+│   ├── updates.html              # ニュース
 │   ├── about.html                # サイト概要
 │   ├── contact.html              # お問い合わせ
 │   ├── privacy.html              # プライバシーポリシー
@@ -43,7 +43,7 @@
 │   ├── guide.css                 # 花街ガイド専用
 │   ├── columns.css               # コラム・読み物専用
 │   ├── sns-links.css             # SNS・リンク専用
-│   ├── updates.css               # 更新情報専用
+│   ├── updates.css               # ニュース専用
 │   ├── heroSlider.css            # ヒーロースライダー
 │   ├── japanMapSpace.css         # 日本地図
 │   ├── contact.css               # お問い合わせ
@@ -125,7 +125,7 @@ npm run build
 2. **花街ガイド** - 花街とは、歴史と文化、体験方法、基本マナー
 3. **コラム・読み物** - 特集記事、インタビュー、エッセイ
 4. **SNS・リンク** - 各花街 Instagram、関連リンク集
-5. **更新情報** - サイトからのお知らせ、コンテンツ追加履歴
+5. **ニュース** - サイトからのお知らせ、コンテンツ追加履歴
 
 ### フッターメニュー
 

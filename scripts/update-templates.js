@@ -69,7 +69,7 @@ function main() {
   console.log('\n📋 更新内容:');
   console.log('  - 古いヘッダー/フッターを削除');
   console.log('  - 統一テンプレートシステムを適用');
-  console.log('  - 新しいナビ構成（イベント、花街ガイド、コラム・読み物、SNS・リンク、更新情報）');
+  console.log('  - 新しいナビ構成（イベント、花街ガイド、コラム・読み物、SNS・リンク、ニュース）');
 }
 
 if (require.main === module) {

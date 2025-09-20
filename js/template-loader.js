@@ -37,7 +37,7 @@
                 <a href="\${homeUrl}pages/sns-links.html" class="nav-link">SNS・リンク</a>
               </li>
               <li class="nav-item">
-                <a href="\${homeUrl}pages/updates.html" class="nav-link">更新情報</a>
+                <a href="\${homeUrl}pages/updates.html" class="nav-link">ニュース</a>
               </li>
             </ul>
           </nav>
@@ -64,7 +64,7 @@
                   <li><a href="\${homeUrl}pages/guide.html">花街ガイド</a></li>
                   <li><a href="\${homeUrl}pages/columns.html">コラム・読み物</a></li>
                   <li><a href="\${homeUrl}pages/sns-links.html">SNS・リンク</a></li>
-                  <li><a href="\${homeUrl}pages/updates.html">更新情報</a></li>
+                  <li><a href="\${homeUrl}pages/updates.html">ニュース</a></li>
                 </ul>
               </div>
               <div class="footer__col">
@@ -193,7 +193,7 @@
       'manners.html': '基本マナー',
       'columns.html': 'コラム',
       'glossary.html': '用語集',
-      'updates.html': '更新情報',
+      'updates.html': 'ニュース',
       'overseas.html': '海外向け情報',
       'press.html': 'プレスリリース',
       'guide.html': '花街ガイド',

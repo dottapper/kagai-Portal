@@ -88,7 +88,7 @@ module.exports = {
       url: withBase("/pages/sns-links.html")
     },
     {
-      title: "更新情報",
+      title: "ニュース",
       url: withBase("/pages/updates.html")
     }
   ]
